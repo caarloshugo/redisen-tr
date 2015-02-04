@@ -49,7 +49,7 @@
 			<div class="col-md-5">
 				<div class="arrow-left"></div> <span class="pointer underline OpenSansBold">Nombre completo del Dueño</span>
 			</div>
-			<div class="col-md-5" style="border:1px solid; text-align: right;">
+			<div class="col-md-5 text-right">
 				<img style="" src="css/images/inquilinos-contacto-tel.png" alt="Conacto inquilino telefono" 
 				data-toggle="tooltip" 
 				data-placement="bottom"
@@ -79,7 +79,7 @@
 			<div class="col-md-5">
 				<div class="arrow-left"></div> <span class="pointer underline OpenSansBold">Nombre completo del dueño</span>
 			</div>
-			<div class="col-md-2">
+			<div class="col-md-5 text-right" >
 				<img style="" src="css/images/inquilinos-contacto-tel.png" alt="Conacto inquilino telefono"
 				data-toggle="tooltip" 
 				data-placement="bottom"
@@ -89,30 +89,63 @@
 				data-placement="bottom"
 				title="Casa: 01 81 83 66 55 88 Celular: 044 81 15 43 99 62 Correo: caarloshugo@gmail.com"/>
 			</div>
+			<!--
 			<div class="col-md-5">
 				Contrato: <a href="" title="Contrato" class="color-link underline">Oficinas en rio bravo #45</a>
 			</div>
+		-->
 		</div>
 		
 		<div class="col-md-12 collapse" id="collapse-cuenta-propiedad" style="padding:5px 20px 5px 20px;">	
-			<div class="col-md-11" style="border-bottom:1px solid #ccc; padding:20px 0 20px 0;">
+			<div class="col-md-11" style="border-bottom:1px solid #ccc; padding:20px 0 20px 0; margin-left:-9px">
 				<div class="col-md-12" style="padding:initial;">
-					<div class="col-md-2 ">
-						<span class="text-gray">Contrato 1:</span>
+					<div class="col-md-2 text-left" style="padding: 0px; border:0px solid;">
+						<span class="text-gray"> <img style="width:20px; height: 20px; overflow:hidden" src="iconos/02-Dashboard-InfoToolTip.png">  Logotipo</span>
 					</div>
+					<div class="col-md-4" style="margin-left:-50px;" >
+						<span class="text-gray">
+							<div class="col-md-4" style="border:1px solid; height: 80px;"></div>
+
+						</span>
+					</div>
+				<!--
 					<div class="col-md-10" style="margin-left:-50px;">
 						<span class="text-black">Casa de monterrey en romero de terreros</span>
 					</div>
+				-->
 				</div>
-				
+				<!--
 				<div class="col-md-12" style="padding:initial; padding-top:10px;">
+				
 					<div class="col-md-2 ">
 						<span class="text-gray">Contrato 2:</span>
 					</div>
 					<div class="col-md-10" style="margin-left:-50px;">
 						<span class="text-black">Casa en Colima, Colima</span>
 					</div>
+				
 				</div>
+				-->
+			</div>
+			<div class="col-md-11" style="border-bottom:1px solid #ccc; padding:20px 0 20px 0; margin-left: -9px">
+				<div class="row">
+					<div class="col-md-2"> <span class="text-gray">  <img style="width:20px; height: 20px; overflow:hidden" src="iconos/02-Dashboard-InfoToolTip.png"> propiedades</span> </div>
+					<div class="col-md-10" style="margin-left:-50px;">case de monterrey en Satélite Numero 1-A</div>
+				</div>
+				<div class="row">
+					<div class="col-md-2"></div>
+					<div class="col-md-10" style="margin-left:-50px;"  >Propiedad 2</div>
+				</div>
+				<div class="row">
+					<div class="col-md-2"></div>
+					<div class="col-md-10" style="margin-left:-50px;"  >Propiedad 3</div>
+				</div>
+				<div class="row">
+					<div class="col-md-2"></div>
+					<div class="col-md-10" style="margin-left:-50px;"  >Propiedad 3</div>
+				</div>
+				
+				
 			</div>
 			
 			<div class="col-md-1 pull-right">
@@ -127,7 +160,7 @@
 			
 			<div class="col-md-11" style="border-bottom:1px solid #ccc; padding:20px 0 20px 0;">
 				<div class="col-md-12" style="padding:initial; padding-top:10px;">
-					<div class="col-md-2 ">
+					<div class="col-md-2">
 						<span class="text-gray">Tel. Casa:</span>
 					</div>
 					<div class="col-md-10" style="margin-left:-50px;">
@@ -143,7 +176,7 @@
 						<span class="text-black">0443121138379</span>
 					</div>
 				</div>
-				
+				<!--
 				<div class="col-md-12" style="padding:initial; padding-top:10px;">
 					<div class="col-md-2">
 						<span class="text-gray">Tel Oficina:</span>
@@ -152,7 +185,7 @@
 						<span class="text-black"></span>
 					</div>
 				</div>
-				
+				-->
 				<div class="col-md-12" style="padding:initial; padding-top:10px;">
 					<div class="col-md-2">
 						<span class="text-gray">Correo 1:</span>
@@ -161,7 +194,7 @@
 						<span class="text-black">caarloshugo@gmail.com</span>
 					</div>
 				</div>
-				
+				<!--
 				<div class="col-md-12" style="padding:initial; padding-top:10px;">
 					<div class="col-md-2">
 						<span class="text-gray">Correo 2:</span>
@@ -170,6 +203,7 @@
 						<span class="text-black"></span>
 					</div>
 				</div>
+			-->
 			</div>
 			<div class="col-md-1"></div>
 			
@@ -209,9 +243,9 @@
 					</div>
 				</div>
 				
-				<div class="col-md-12" style="padding:initial; padding-top:20px;">
-					<div class="col-md-2">
-						<span class="text-gray">Documentos:</span>
+				<div class="col-md-12" style="padding:initial; padding-top:20px; margin-left: -9px; border:0px solid">
+					<div class="col-md-2" style=" padding-left: 0px;" >
+						<span class="text-gray"><img style="width:20px; height: 20px; overflow:hidden;" src="iconos/02-Dashboard-InfoToolTip.png"> Documentos:</span>
 					</div>
 					<div class="col-md-4" style="margin-left:-50px; padding-right:0px;">
 						<input type="text" class="form-control" readonly>
@@ -248,7 +282,7 @@
 						<a href="" style="margin-left:15px;"><img src="css/images/eliminar.png" alt="Eliminar"/></a>
 					</div>
 				</div>
-				
+				<!--
 				<div class="col-md-12" style="padding:initial; padding-top:30px;">
 					<div class="col-md-8" style="padding:initial;">
 						<div class="table-responsive">
@@ -276,6 +310,7 @@
 						</div>
 					</div>
 				</div>
+			-->
 			</div>
 			<div class="col-md-1"></div>
 		</div>
@@ -286,7 +321,7 @@
 			<div class="col-md-5">
 				<div class="arrow-left"></div> <span class="pointer underline OpenSansBold">Nombre completo del dueño</span>
 			</div>
-			<div class="col-md-2">
+			<div class="col-md-5 text-right">
 				<img style="" src="css/images/inquilinos-contacto-tel.png" alt="Conacto inquilino telefono" 
 				data-toggle="tooltip" 
 				data-placement="bottom"
@@ -297,9 +332,11 @@
 				data-placement="bottom"
 				title="Casa: 01 81 83 66 55 88 Celular: 044 81 15 43 99 62 Correo: caarloshugo@gmail.com"/>
 			</div>
+			<!--
 			<div class="col-md-5">
 				Contrato:
 			</div>
+		-->
 		</div>
 		
 		<div class="col-md-12 collapse" id="collapse-historial-propiedad" style="margin-top:20px;">
@@ -354,8 +391,6 @@
 					 </div>
 
 				    <br><br><hr style="width:740px; overflow:hidden; float:left; margin-left: 35px;">
-
-				    
 
 				    <div class="col-xs-10" style="border:0px solid; margin-bottom:2px; margin-left: 10px; height:130px;">
 				    	<label for="niaddlogotipo" class="col-lg-1 control-label" style="overflow:hidden; width:90px; overflow:hidden; padding:0px; border:0px solid; text-align: left; margin-left: -2px"> <img style="width:20px; height: 20px; overflow:hidden" src="iconos/02-Dashboard-InfoToolTip.png"> Logotipo:</label>				    	
@@ -476,11 +511,11 @@
 
 <script type="text/javascript">
 $(function(){
-	
+	/*
 	$('#adddueno').modal({
         show: 'true'
     }); 
-	  
+	*/	  
 
 })
 
