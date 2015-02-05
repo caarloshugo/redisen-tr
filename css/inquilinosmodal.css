@@ -4,6 +4,14 @@
 @media screen and (min-width: 768px) {	
 	#adddueno .modal-dialog  {width:920px;}
 }
+@media screen and (min-width: 768px) {  
+    #modal-dueno-existente .modal-dialog  {width:920px;}
+}
+@media screen and (min-width: 768px) {  
+    #modal-dueno-nuevo .modal-dialog  {width:920px;}
+}
+
+
 .btn-file {
     position: relative;
     overflow: hidden;			   
@@ -29,3 +37,6 @@
 	-moz-border-radius: 8px;
 	-webkit-border-radius: 8px;
 }	
+.zxc {
+    border: 1px solid;
+}
