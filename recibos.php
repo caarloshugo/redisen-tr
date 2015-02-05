@@ -42,8 +42,20 @@
 						<option selected="selected">Todos</option>
 					</select>
 				</div>
-			</div>
+			</div>			
 		</div>
+
+		<div class="clearfix"></div>
+		<div class="row" style="overflow:hidden; margin-bottom: 10px;">
+			<div class="col-md-12">
+				<div class="col-md-3 col-md-offset-6">
+					<button  type="button" class="btn btn-mini superradiusin col-md-12" style="float:right; margin: 8px 5px 0 8px; color: gray; border: 2px solid #FAFAFA; border-top: none; border-left: none; background-color:white;"> <strong>Registrar Pagos Seleccionados</strong> </button>
+	    		</div>
+	    		<div class="col-md-3">
+					<button type="button" class="btn btn-mini superradiusin col-md-12 col-md-pull-1" style="float:right; margin: 8px 5px 0 8px; color: gray; border: 2px solid #FAFAFA; border-top: none; border-left: none; background-color:white;"> <strong>Generar Recibos Seleccionados</strong> </button>
+	    		</div>
+			</div>
+		</div>  		
 		
 		<div class="col-md-12">
 			<div class="col-md-12" style="padding:0 20px 20px 20px;">
@@ -52,6 +64,7 @@
 						<table class="table table-regular">
 							<thead>
 								<tr class="text-center">
+									<td> <input type="checkbox" value=""></td>
 									<td>Folio</td>
 									<td>Propiedad</td>
 									<td>Periodo</td>
@@ -64,6 +77,7 @@
 							</thead>
 							<tbody>
 								<tr class="text-center tr-last">
+									<td> <input type="checkbox" value=""></td>
 									<td>TR00001</td>
 									<td><a href="" title="Propiedad">Propiedad 1</a></td>
 									<td>01/02/2015</td>
@@ -88,6 +102,7 @@
 									</td>
 								</tr>
 								<tr class="text-center tr-last">
+									<td> <input type="checkbox" value=""></td>
 									<td>TR00001</td>
 									<td><a href="" title="Propiedad" class="underline">Propiedad 1</a></td>
 									<td>01/02/2015</td>
@@ -112,6 +127,7 @@
 									</td>
 								</tr>
 								<tr class="text-center">
+									<td> <input type="checkbox" value=""></td>
 									<td>TR00001</td>
 									<td><a href="" title="Propiedad" class="underline">Propiedad 1</a></td>
 									<td>01/02/2015</td>
@@ -133,6 +149,7 @@
 									</td>
 								</tr>
 								<tr class="text-center">
+									<td> <input type="checkbox" value=""></td>
 									<td>TR00001</td>
 									<td><a href="" title="Propiedad" class="underline">Propiedad 1</a></td>
 									<td>01/02/2015</td>
@@ -154,6 +171,7 @@
 									</td>
 								</tr>
 								<tr class="text-center">
+									<td> <input type="checkbox" value=""></td>
 									<td>TR00001</td>
 									<td><a href="" title="Propiedad" class="underline">Propiedad 1</a></td>
 									<td>01/02/2015</td>
@@ -175,6 +193,7 @@
 									</td>
 								</tr>
 								<tr class="text-center">
+									<td> <input type="checkbox" value=""></td>
 									<td>TR00001</td>
 									<td><a href="" title="Propiedad" class="underline">Propiedad 1</a></td>
 									<td>01/02/2015</td>
@@ -200,6 +219,19 @@
 					</div>
 				</div>
 			</div>
+
+			<div class="clearfix"></div>
+		<div class="row" style="overflow:hidden; margin-bottom: 5px;">
+			<div class="col-md-12">
+				<div class="col-md-3 col-md-offset-6">
+					<button  type="button" class="btn btn-mini superradiusin col-md-12 col-md-push-1" style="float:right; margin: 8px 5px 0 8px; color: gray; border: 2px solid #FAFAFA; border-top: none; border-left: none; background-color:white;"> <strong>Registrar Pagos Seleccionados</strong> </button>
+	    		</div>
+	    		<div class="col-md-3">
+					<button type="button" class="btn btn-mini superradiusin col-md-12" style="float:right; margin: 8px 5px 0 8px; color: gray; border: 2px solid #FAFAFA; border-top: none; border-left: none; background-color:white;"> <strong>Generar Recibos Seleccionados</strong> </button>
+	    		</div>
+			</div>
+		</div>  
+
 		</div>
 	</div>
 </div>
