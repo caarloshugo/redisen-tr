@@ -76,72 +76,7 @@
 				<div class="row" style="margin-top:45px">
 					<div class="col-md-4"> <a href="#" style="color:#1db2a4" data-toggle="modal" data-target="#modal-dueno-nuevo"> <strong> Agregar Nuevo</strong></a> </div>
 				</div>
-				
 				<!--
-				<div class="col-md-12" style="padding-top:20px;">
-					<div class="col-md-6 label-input-2">Tipo de persona*</div>
-					<div class="col-md-6 label-input-2">RFC*</div>
-				</div>
-
-				<div class="col-md-12" style="padding-top:5px;">
-					<div class="col-md-6">
-						<input type="text" class="form-control col-md-2" name="input-tipo-persona" id="input-tipo-persona" required>
-					</div>
-					<div class="col-md-6">
-						<input type="text" class="form-control col-md-2" name="input-rfc" id="input-rfc" required>
-					</div>
-				</div>
-				
-				<div class="col-md-12" style="padding-top:20px;">
-					<div class="col-md-6 label-input-2">Calle*</div>
-					<div class="col-md-3 label-input-2">Núm Ext.*</div>
-					<div class="col-md-3 label-input-2">Núm Int.</div>
-				</div>
-				
-				<div class="col-md-12" style="padding-top:5px;">
-					<div class="col-md-6">
-						<input type="text" class="form-control col-md-2" name="input-calle" id="input-calle" required>
-					</div>
-					<div class="col-md-3">
-						<input type="text" class="form-control col-md-2" name="input-num-ext" id="input-num-ext" required>
-					</div>
-					<div class="col-md-3">
-						<input type="text" class="form-control col-md-2" name="input-num-int" id="input-num-int">
-					</div>
-				</div>
-				
-				<div class="col-md-12" style="padding-top:20px;">
-					<div class="col-md-6 label-input-2">Colonia*</div>
-					<div class="col-md-6 label-input-2">C.P.*</div>
-				</div>
-				
-				<div class="col-md-12" style="padding-top:5px;">
-					<div class="col-md-6">
-						<input type="text" class="form-control col-md-2" name="input-colonia" id="input-colonia" required>
-					</div>
-					<div class="col-md-6">
-						<input type="text" class="form-control col-md-2" name="input-cp" id="input-cp" required>
-					</div>
-				</div>
-				
-				<div class="col-md-12" style="padding-top:20px;">
-					<div class="col-md-4 label-input-2">Municipio*</div>
-					<div class="col-md-4 label-input-2">Estado*</div>
-					<div class="col-md-4 label-input-2">País*</div>
-				</div>
-				
-				<div class="col-md-12" style="padding-top:5px;">
-					<div class="col-md-4">
-						<input type="text" class="form-control col-md-2" name="input-municipio" id="input-municipio" required>
-					</div>
-					<div class="col-md-4">
-						<input type="text" class="form-control col-md-2" name="input-estado" id="input-estado" required>
-					</div>
-					<div class="col-md-4">
-						<input type="text" class="form-control col-md-2" name="input-pais" id="input-pais" required>
-					</div>
-				</div>
-				-->
 				<div class="col-md-12 pull-right" style="padding-top:30px;">
 					<h4 class="pull-right">
 						<a id="next-step-2" title="Siguiente" class="btn-add-propiedad no-decoration">
@@ -149,6 +84,7 @@
 						</a>
 					</h4>
 				</div>
+			-->
 			</div>
 			<div class="col-md-12">
 				<div class="col-md-10 col-md-offset-2 label-input" style="padding:20px 20px 0 0;">* Campos Requeridos</div>
@@ -183,8 +119,8 @@
 			<div class="row">
 				<div class="col-md-8" style="margin-top:15px">
 				 	<div class="col-md-4">Tipo de Persona*</div>
-				 	<div class="col-md-4 col-md-pull-1"> <input type="radio" name="optradio" checked> Persona física </div>
-				 	<div class="col-md-4 col-md-pull-2"> <input type="radio" name="optradio">Persona Moral </div>
+				 	<div class="col-md-4 col-md-pull-1"> <input type="radio" id="inputperfisica-dueno-existe" name="inputperfisica-dueno-existe" checked> Persona física </div>
+				 	<div class="col-md-4 col-md-pull-2"> <input type="radio" id="inputpermoral-dueno-existe" name="inputpermoral-dueno-existe">Persona Moral </div>
 				</div>
 			</div>
 
@@ -195,97 +131,90 @@
 					<div class="col-md-6"><input type="text" class="form-control superradiusin input-sm" maxlength="30" id="inputrfc-dueno-existe" name="inputrfc-dueno-existe"  placeholder=""></div>
 				</div>				
 			</div>
+			<div class="row" style="margin-top:10px;">
+				<div class="col-md-12">
+					<div class="row col-md-6">
+						<div class="col-md-6 text-gray">Calle*</div>
+						<div class="clearfix"></div>
+						<div class="col-md-6">
+							<input style="width:335px; float: left;" type="text" maxlength="30" class="form-control superradiusin input-sm" id="inputcallenom-dueno-existe" name="inputcallenom-dueno-existe"  placeholder="">
+						</div>
+					</div>
+					<div class="row col-md-3">
+						<div class="col-md-12 col-md-pull-1 text-gray">Núm Ext*</div>
+						<div class="clearfix"></div>
+						<div class="col-md-12 col-md-pull-1">
+							<input style="" type="text" maxlength="30" class="form-control superradiusin input-sm" id="inputcallenumint-dueno-existe" name="inputcallenumint-dueno-existe"  placeholder="">
+						</div>
+					</div>
+					<div class="row col-md-3">
+						<div class="col-md-12 col-md-pull-1 text-gray">Núm Int</div>
+						<div class="clearfix"></div>
+						<div class="col-md-12 col-md-pull-1">
+							<input style=" " type="text" maxlength="30" class="form-control superradiusin input-sm" id="inputcallenumext-dueno-existe" name="inputcallenumext-dueno-existe"  placeholder="">
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<div class="row" style="margin-top:10px;">
+				<div class="col-md-12">
+					<div class="row col-md-6">
+						<div class="col-md-12">Colonia*</div>
+						<div class="col-md-11">
+							<input type="text" maxlength="30" class="form-control superradiusin input-sm" id="inputcolonia-dueno-existe" name="inputcolonia-dueno-existe"  placeholder="">
+						</div>
+					</div>
+					<div class="row col-md-6" style="margin-left:5px;">
+						<div class="col-md-12 col-md-pull-1">C.P*</div>
+						<div class="col-md-11 col-md-pull-1">
+							<input type="text" maxlength="30" class="form-control superradiusin input-sm" id="inputcpostal-dueno-existe" name="inputcpostal-dueno-existe"  placeholder="">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row" style="margin:10px 0 20px 0 ;">
+				<div class="col-md-12">
+					<div class="row col-md-4" style="margin:0 3px 0-30px">
+						<div class="col-md-12">Municipio*</div>
+						<div class="col-md-12">
+							<input style="" type="text" maxlength="30" class="form-control superradiusin input-sm" id="inputciudad-dueno-existe" name="inputciudad-dueno-existe"  placeholder="">
+						</div>
+					</div>
+					<div class="row col-md-4">
+						<div class="col-md-12">Estado*</div>
+						<div class="col-md-12">
+							<input style="" type="text" maxlength="30" class="form-control superradiusin input-sm" id="inputestado-dueno-existe" name="inputestado-dueno-existe"  placeholder="">
+						</div>
+					</div>
+					<div class="row col-md-4">
+						<div class="col-md-12">Pais*</div>
+						<div class="col-md-12">
+							<input style="" type="text" maxlength="30" class="form-control superradiusin input-sm" id="inputpais-dueno-existe" name="inputpais-dueno-existe"  placeholder="">
+						</div>
+					</div>
+
+				</div>
+			</div>
+			
 
 
       	</div>
       	      		
-
-       	<!-- cuerpo -->
-       	<!--
-	       	<div style="border: 0px solid; overflow:hidden; width:880px"  >
-	      		<div class="form-group">      			
-				    
-
-				    <br><br><hr style="width:740px; overflow:hidden; float:left; margin-left: 35px;">
-				    
-				    <div class="col-xs-10" style="border:0px solid; margin-bottom:2px; margin-left: 10px;">
-				    	<label for="nitelcasa" class="col-lg-1 control-label"  style="overflow:hidden; width:85px; padding-left:0px; border:0px solid; text-align: left; margin-left: -0px">Tel. Casa:</label>
-				    	<div class="col-xs-4"><input type="text" class="form-control superradiusin col-xs-6 input-sm" maxlength="20" id="nitelcasa" name="nitelcasa"  placeholder=""></div>
-				    </div>
-				    <div class="col-xs-10" style="border:0px solid; margin-bottom:2px; margin-left: 10px;">
-				    	<label for="nicelular" class="col-lg-1 control-label"  style="overflow:hidden; width:85px; padding-left:0px; border:0px solid; text-align: left; margin-left: -0px">Celular:</label>
-					    <div class="col-xs-4"><input type="text" class="form-control superradiusin input-sm" maxlength="20" id="nicelular" name="nicelular"  placeholder=""></div>
-				    </div>
-					<div class="col-xs-10" style="border:0px solid; margin-bottom:6px; margin-left: 10px;">
-				    	<label for="nitelofi" class="col-lg-1 control-label" style="overflow:hidden; width:90px; padding-left:0px; border:0px solid; text-align: left; margin-left: -0px">Tel. Oficina:</label>
-					    <div class="col-xs-4"><input style="margin-left: -5px;" type="text" maxlength="20" class="form-control superradiusin input-sm" id="nitelofi" name="nitelofi"  placeholder=""></div>
-				    </div>
-				    <div class="col-xs-10" style="border:0px solid; margin-bottom:2px; margin-left: 10px;">
-				    	<label for="niemail1" class="col-lg-1 control-label" style="overflow:hidden; width:85px; padding-left:0px; border:0px solid; text-align: left; margin-left: -0px">Correo 1:</label>
-					    <div class="col-xs-6"><input type="text" class="form-control superradiusin input-sm" maxlength="30" id="niemail1" name="niemail1"  placeholder=""></div>
-				    </div>
-				    <div class="col-xs-10" style="border:0px solid; margin-bottom:2px; margin-left: 10px;">
-				    	<label for="niemail2" class="col-lg-1 control-label" style="overflow:hidden; width:85px; padding-left:0px; border:0px solid; text-align: left; margin-left: -0px">Correo 2:</label>
-					    <div class="col-xs-6"><input type="text" class="form-control superradiusin input-sm" maxlength="20" id="niemail2" name="niemail2"  placeholder=""></div>
-				    </div>
-
-				    <br><br><hr style="width:740px; overflow:hidden; float:left; margin-left: 35px;">
-
-				    
-				    <div class="col-xs-10" style="border:0px solid; margin-bottom:2px; margin-left: 10px;">
-				    	<label for="ninomcalle" class="col-lg-1 control-label" style="overflow:hidden; width:85px; padding-left:0px; border:0px solid; text-align: left; margin-left: -0px">Dirección:</label>
-				    	 <div class="col-xs-10" style="overflow: hidden">
-			    	 	   <input style="width:335px; float: left;" type="text" maxlength="30" class="form-control superradiusin input-sm" id="ninomcalle" name="ninomcalle"  placeholder="Nombre de la Calle">
-						    <input style="width:104px; float: left; margin-left:15px;" type="text" maxlength="10" class="form-control input-sm" id="ninumint" name="ninumint"  placeholder="Núm. Ext">
-						    <input style="width:104px; float: left; margin-left:15px;" type="text" maxlength="10" class="form-control input-sm" id="ninumext" name="ninumext"  placeholder="Núm. Int">				    
-				    	 </div>
-
-					 </div>
-				    <div class="col-xs-10" style="border:0px solid; margin-bottom:2px; margin-left: 10px;">
-				    	<label for="ninomcolonia" class="col-lg-1 control-label" style="overflow:hidden; width:85px; padding-left:0px; border:0px solid; text-align: left; margin-left: -0px"></label>
-					     <div class="col-xs-8" style="overflow: hidden">
-					     	<input style="width:335px; float: left;" type="text" maxlength="30" class="form-control superradiusin input-sm" id="ninomcolonia" name="ninomcolonia"  placeholder="Nombre de la Colonia">
-					    	<input style="width:104px; float: left; margin-left:15px;" maxlength="30" type="text" class="form-control input-sm" id="ninumcp" name="ninumcp"  placeholder="C.P.">
-					    </div>					   
-					 </div>
-
-					 <div class="col-xs-10" style="border:0px solid; margin-bottom:2px; margin-left: 10px;">
-				    	<label for="ninomcciudad" class="col-lg-1 control-label" style="overflow:hidden; width:85px; padding-left:0px; border:0px solid; text-align: left; margin-left: -0px"></label>
-					    <div class="col-xs-8" style="overflow: hidden">
-					    	<input style="width:141px; float: left;" type="text" maxlength="30" class="form-control superradiusin input-sm" id="ninomcciudad" name="ninomcciudad"  placeholder="Ciudad">
-					    	<input style="width:141px; float: left; margin-left:15px;" type="text" maxlength="30" class="form-control superradiusin input-sm" id="ninomestado" name="ninomestado"  placeholder="Estado">
-					    	<input style="width:141px; float: left; margin-left:15px;" type="text" maxlength="30" class="form-control superradiusin input-sm" id="ninompais" name="ninompais"  placeholder="País">
-					    </div>
-					 </div>
-
-					  <br><br><hr style="width:740px; overflow:hidden; float:left; margin-left: 35px;">
-
-					  <div class="col-xs-10" style="border:0px solid; margin-bottom:6px; margin-left: 10px;">
-				    	<label for="nicomentarios" class="col-lg-1 control-label" style="overflow:hidden; width:85px; padding-left:0px; border:0px solid; text-align: left; margin-left: -0px" maxlength="200">Comentarios</label>
-					    <div class="col-xs-8" style="overflow: hidden">
-					   		<textarea class="form-control superradiusin" rows="2" id="nicomentarios" style="resize: none;"></textarea>
-					   </div>
-					 </div>
-					 <div class="col-xs-10" style="border:0px solid; margin-bottom:2px; margin-left: -0px;">
-				    	  <label for="nidocumentos" class="col-lg-1 control-label" style="overflow:hidden; width:107px; overflow:hidden; padding:0px; border:0px solid; text-align: left; margin-left: -2px"> <img style="width:20px; height: 20px; overflow:hidden" src="iconos/02-Dashboard-InfoToolTip.png"> Documentos</label>
-					    <div class="col-xs-8" style="overflow: hidden; padding-left: 0px; border:0px solid; margin-left:-10px;">
-				    		<input style="width:295px; float: left; margin-left:15px; margin-right:25px; background-color: white" maxlength="200" type="text" class="form-control superradiusin" id="nitexturldocument" name="nitexturldocument"  placeholder="" disabled>					    
-					    	<span class="btn btn-file superradiusin" style="color: black; border: 2px solid #FAFAFA; border-top: none; border-left: 3px solid #FAFAFA; background-color:white;">
-					    		<strong>Seleccionar</strong>  <input id="nidocumentofile" class="btn btn-mini superradiusin" type="file" >
-					    	</span>					   		
-					   </div>
-					 </div>
-				</div>	
-
-	  		</div>
-	  	-->
 	  		<div style="border:0px solid; overflow:hidden; margin-bottom:3px;" >
 		  			<div class="col-xs-8" style="border:0px solid; ">
 						
 					</div>
 					<div class="col-xs-4" style="border:0px solid; overflow:hidden;">
+						<h4 class="pull-right">
+							<a id="next-step-2" title="Siguiente"  data-dismiss="modal" class="btn-add-propiedad no-decoration next-step-2">
+								<span class="label label-warning"><img src="css/images/candado.png"/> Siguiente </span>
+							</a>
+						</h4>
+						<!--
 						<button type="button" class="btn btn-mini superradiusin" style="float:right; margin-right: 0px; background-color: #1db2a4; color: white; "><strong>Siguiente</strong></button>
 						<!--<button type="button" class="btn btn-mini superradiusin" style="float:right; margin-right: 8px; color: gray; border: 2px solid #FAFAFA; border-top: none; border-left: none; background-color:white;" data-dismiss="modal"> <strong>Cancelar</strong> </button>-->
+		        		<button type="button" class="btn btn-mini superradiusin" style="float:right; margin: 8px 5px 0 8px; color: gray; border: 2px solid #FAFAFA; border-top: none; border-left: none; background-color:white;" data-dismiss="modal"> <strong>Cancelar</strong> </button>
 		        		
 					</div>
       			</div> 
@@ -312,10 +241,11 @@
       </div>
       <div class="modal-body" >
       	<div style="padding: 0 15px 0 15px ">
+      		<!--
       		<div class="row">
       			<div class="col-md-3" style=""><a href="#" data-dismiss="modal"> <strong>&lt;&lt; Regresar</strong> </a></div>
       		</div>  			
-  							
+  							-->
   			<div class="row">
   				<div class="col-md-8" style="margin-top: 12px;">
 					<div class="col-md-4"> <h4>Agregar Nuevo</h4> </div>					
@@ -325,8 +255,8 @@
 			<div class="row">
 				<div class="col-md-8" style="margin-top:15px">
 				 	<div class="col-md-4">Tipo de Persona*</div>
-				 	<div class="col-md-4 col-md-pull-1"> <input type="radio" name="optradio" checked> Persona física </div>
-				 	<div class="col-md-4 col-md-pull-2"> <input type="radio" name="optradio">Persona Moral </div>
+				 	<div class="col-md-4 col-md-pull-1"> <input type="radio" id="inputperfisica-dueno-nuevo" name="inputperfisica-dueno-nuevo" checked> Persona física </div>
+				 	<div class="col-md-4 col-md-pull-2"> <input type="radio" id="inputpermoral-dueno-nuevo" name="inputpermoral-dueno-nuevo">Persona Moral </div>
 				</div>
 			</div>
 
@@ -334,120 +264,111 @@
 				<div class="col-md-12" style="margin-top:15px">
 					<div class="col-md-3">Nombre Completo*</div>
 					<div class="col-md-3 col-md-pull-1">
-						<input style="width:210px; float: left;" type="text" class="form-control superradiusin" name ="niNombres" id="niNombres" maxlength="30"  placeholder="Nombres(s)">				    	
+						<input style="width:210px; float: left;" type="text" class="form-control superradiusin" name ="inputpernombre-dueno-nuevo" id="inputpernombre-dueno-nuevo" maxlength="30"  placeholder="Nombres(s)">				    	
 					</div>
 					<div class="col-md-3 col-md-pull-1">
-						<input style="width:210px; float: left; margin-left:5px;" type="text" class="form-control superradiusin" maxlength="30" name ="niapepaterno" id="niapepaterno"  placeholder="Apellido Paterno">				    	
+						<input style="width:210px; float: left; margin-left:5px;" type="text" class="form-control superradiusin" maxlength="30" name ="inputperape1-dueno-nuevo" id="inputperape1-dueno-nuevo"  placeholder="Apellido Paterno">				    	
 					</div>
 					<div class="col-md-3 col-md-pull-1">
-						   	<input style="width:210px; float: left; margin-left:5px;" type="text" class="form-control superradiusin" maxlength="30" name ="niapematerno" id="niapematerno"  placeholder="Apellido Materno">						   
+						   	<input style="width:210px; float: left; margin-left:10px;" type="text" class="form-control superradiusin" maxlength="30" name ="inputperape2-dueno-nuevo" id="inputperape2-dueno-nuevo"  placeholder="Apellido Materno">						   
 			     	</div>
 				</div>	
 			</div>			
 
 			<div class="row">
-				<div class="col-md-8" style="margin-top:15px">
+				<div class="col-md-12" style="margin-top:10px">
 					<div class="col-md-4">RFC*</div>
 					<div class="clearfix"></div>
-					<div class="col-md-6"><input type="text" class="form-control superradiusin input-sm" maxlength="30" id="inputrfc-dueno-existe" name="inputrfc-dueno-existe"  placeholder=""></div>
+					<div class="col-md-5"><input type="text" class="form-control superradiusin input-sm" maxlength="30" id="inputrfc-dueno-nuevo" name="inputrfc-dueno-nuevo"  placeholder=""></div>
 				</div>				
 			</div>
+			<div class="row" style="margin-top:10px;">
+				<div class="col-md-12">
+					<div class="row col-md-6">
+						<div class="col-md-6 text-gray">Calle*</div>
+						<div class="clearfix"></div>
+						<div class="col-md-6">
+							<input style="width:335px; float: left;" type="text" maxlength="30" class="form-control superradiusin input-sm" id="inputcallenom-dueno-nuevo" name="inputcallenom-dueno-nuevo"  placeholder="">
+						</div>
+					</div>
+					<div class="row col-md-3">
+						<div class="col-md-12 col-md-pull-1 text-gray">Núm Ext*</div>
+						<div class="clearfix"></div>
+						<div class="col-md-12 col-md-pull-1">
+							<input style="" type="text" maxlength="30" class="form-control superradiusin input-sm" id="inputcallenumint-dueno-nuevo" name="inputcallenumint-dueno-nuevo"  placeholder="">
+						</div>
+					</div>
+					<div class="row col-md-3">
+						<div class="col-md-12 col-md-pull-1 text-gray">Núm Int</div>
+						<div class="clearfix"></div>
+						<div class="col-md-12 col-md-pull-1">
+							<input style=" " type="text" maxlength="30" class="form-control superradiusin input-sm" id="inputcallenumext-dueno-nuevo" name="inputcallenumext-dueno-nuevo"  placeholder="">
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<div class="row" style="margin-top:10px;">
+				<div class="col-md-12">
+					<div class="row col-md-6">
+						<div class="col-md-12">Colonia*</div>
+						<div class="col-md-11">
+							<input type="text" maxlength="30" class="form-control superradiusin input-sm" id="inputcolonia-dueno-nuevo" name="inputcolonia-dueno-nuevo"  placeholder="">
+						</div>
+					</div>
+					<div class="row col-md-6" style="margin-left:5px;">
+						<div class="col-md-12 col-md-pull-1">C.P*</div>
+						<div class="col-md-11 col-md-pull-1">
+							<input type="text" maxlength="30" class="form-control superradiusin input-sm" id="inputcpostal-dueno-nuevo" name="inputcpostal-dueno-nuevo"  placeholder="">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row" style="margin:10px 0 20px 0 ;">
+				<div class="col-md-12">
+					<div class="row col-md-4" style="margin:0 3px 0-30px">
+						<div class="col-md-12">Municipio*</div>
+						<div class="col-md-12">
+							<input style="" type="text" maxlength="30" class="form-control superradiusin input-sm" id="inputciudad-dueno-nuevo" name="inputciudad-dueno-nuevo"  placeholder="">
+						</div>
+					</div>
+					<div class="row col-md-4">
+						<div class="col-md-12">Estado*</div>
+						<div class="col-md-12">
+							<input style="" type="text" maxlength="30" class="form-control superradiusin input-sm" id="inputestado-dueno-nuevo" name="inputestado-dueno-nuevo"  placeholder="">
+						</div>
+					</div>
+					<div class="row col-md-4">
+						<div class="col-md-12">Pais*</div>
+						<div class="col-md-12">
+							<input style="" type="text" maxlength="30" class="form-control superradiusin input-sm" id="inputpais-dueno-nuevo" name="inputpais-dueno-nuevo"  placeholder="">
+						</div>
+					</div>
 
+				</div>
+			</div>
+			
+
+					    
 
       	</div>
-      	      		
-
-       	<!-- cuerpo -->
-       	<!--
-	       	<div style="border: 0px solid; overflow:hidden; width:880px"  >
-	      		<div class="form-group">      			
-				    
-
-				    <br><br><hr style="width:740px; overflow:hidden; float:left; margin-left: 35px;">
-				    
-				    <div class="col-xs-10" style="border:0px solid; margin-bottom:2px; margin-left: 10px;">
-				    	<label for="nitelcasa" class="col-lg-1 control-label"  style="overflow:hidden; width:85px; padding-left:0px; border:0px solid; text-align: left; margin-left: -0px">Tel. Casa:</label>
-				    	<div class="col-xs-4"><input type="text" class="form-control superradiusin col-xs-6 input-sm" maxlength="20" id="nitelcasa" name="nitelcasa"  placeholder=""></div>
-				    </div>
-				    <div class="col-xs-10" style="border:0px solid; margin-bottom:2px; margin-left: 10px;">
-				    	<label for="nicelular" class="col-lg-1 control-label"  style="overflow:hidden; width:85px; padding-left:0px; border:0px solid; text-align: left; margin-left: -0px">Celular:</label>
-					    <div class="col-xs-4"><input type="text" class="form-control superradiusin input-sm" maxlength="20" id="nicelular" name="nicelular"  placeholder=""></div>
-				    </div>
-					<div class="col-xs-10" style="border:0px solid; margin-bottom:6px; margin-left: 10px;">
-				    	<label for="nitelofi" class="col-lg-1 control-label" style="overflow:hidden; width:90px; padding-left:0px; border:0px solid; text-align: left; margin-left: -0px">Tel. Oficina:</label>
-					    <div class="col-xs-4"><input style="margin-left: -5px;" type="text" maxlength="20" class="form-control superradiusin input-sm" id="nitelofi" name="nitelofi"  placeholder=""></div>
-				    </div>
-				    <div class="col-xs-10" style="border:0px solid; margin-bottom:2px; margin-left: 10px;">
-				    	<label for="niemail1" class="col-lg-1 control-label" style="overflow:hidden; width:85px; padding-left:0px; border:0px solid; text-align: left; margin-left: -0px">Correo 1:</label>
-					    <div class="col-xs-6"><input type="text" class="form-control superradiusin input-sm" maxlength="30" id="niemail1" name="niemail1"  placeholder=""></div>
-				    </div>
-				    <div class="col-xs-10" style="border:0px solid; margin-bottom:2px; margin-left: 10px;">
-				    	<label for="niemail2" class="col-lg-1 control-label" style="overflow:hidden; width:85px; padding-left:0px; border:0px solid; text-align: left; margin-left: -0px">Correo 2:</label>
-					    <div class="col-xs-6"><input type="text" class="form-control superradiusin input-sm" maxlength="20" id="niemail2" name="niemail2"  placeholder=""></div>
-				    </div>
-
-				    <br><br><hr style="width:740px; overflow:hidden; float:left; margin-left: 35px;">
-
-				    
-				    <div class="col-xs-10" style="border:0px solid; margin-bottom:2px; margin-left: 10px;">
-				    	<label for="ninomcalle" class="col-lg-1 control-label" style="overflow:hidden; width:85px; padding-left:0px; border:0px solid; text-align: left; margin-left: -0px">Dirección:</label>
-				    	 <div class="col-xs-10" style="overflow: hidden">
-			    	 	   <input style="width:335px; float: left;" type="text" maxlength="30" class="form-control superradiusin input-sm" id="ninomcalle" name="ninomcalle"  placeholder="Nombre de la Calle">
-						    <input style="width:104px; float: left; margin-left:15px;" type="text" maxlength="10" class="form-control input-sm" id="ninumint" name="ninumint"  placeholder="Núm. Ext">
-						    <input style="width:104px; float: left; margin-left:15px;" type="text" maxlength="10" class="form-control input-sm" id="ninumext" name="ninumext"  placeholder="Núm. Int">				    
-				    	 </div>
-
-					 </div>
-				    <div class="col-xs-10" style="border:0px solid; margin-bottom:2px; margin-left: 10px;">
-				    	<label for="ninomcolonia" class="col-lg-1 control-label" style="overflow:hidden; width:85px; padding-left:0px; border:0px solid; text-align: left; margin-left: -0px"></label>
-					     <div class="col-xs-8" style="overflow: hidden">
-					     	<input style="width:335px; float: left;" type="text" maxlength="30" class="form-control superradiusin input-sm" id="ninomcolonia" name="ninomcolonia"  placeholder="Nombre de la Colonia">
-					    	<input style="width:104px; float: left; margin-left:15px;" maxlength="30" type="text" class="form-control input-sm" id="ninumcp" name="ninumcp"  placeholder="C.P.">
-					    </div>					   
-					 </div>
-
-					 <div class="col-xs-10" style="border:0px solid; margin-bottom:2px; margin-left: 10px;">
-				    	<label for="ninomcciudad" class="col-lg-1 control-label" style="overflow:hidden; width:85px; padding-left:0px; border:0px solid; text-align: left; margin-left: -0px"></label>
-					    <div class="col-xs-8" style="overflow: hidden">
-					    	<input style="width:141px; float: left;" type="text" maxlength="30" class="form-control superradiusin input-sm" id="ninomcciudad" name="ninomcciudad"  placeholder="Ciudad">
-					    	<input style="width:141px; float: left; margin-left:15px;" type="text" maxlength="30" class="form-control superradiusin input-sm" id="ninomestado" name="ninomestado"  placeholder="Estado">
-					    	<input style="width:141px; float: left; margin-left:15px;" type="text" maxlength="30" class="form-control superradiusin input-sm" id="ninompais" name="ninompais"  placeholder="País">
-					    </div>
-					 </div>
-
-					  <br><br><hr style="width:740px; overflow:hidden; float:left; margin-left: 35px;">
-
-					  <div class="col-xs-10" style="border:0px solid; margin-bottom:6px; margin-left: 10px;">
-				    	<label for="nicomentarios" class="col-lg-1 control-label" style="overflow:hidden; width:85px; padding-left:0px; border:0px solid; text-align: left; margin-left: -0px" maxlength="200">Comentarios</label>
-					    <div class="col-xs-8" style="overflow: hidden">
-					   		<textarea class="form-control superradiusin" rows="2" id="nicomentarios" style="resize: none;"></textarea>
-					   </div>
-					 </div>
-					 <div class="col-xs-10" style="border:0px solid; margin-bottom:2px; margin-left: -0px;">
-				    	  <label for="nidocumentos" class="col-lg-1 control-label" style="overflow:hidden; width:107px; overflow:hidden; padding:0px; border:0px solid; text-align: left; margin-left: -2px"> <img style="width:20px; height: 20px; overflow:hidden" src="iconos/02-Dashboard-InfoToolTip.png"> Documentos</label>
-					    <div class="col-xs-8" style="overflow: hidden; padding-left: 0px; border:0px solid; margin-left:-10px;">
-				    		<input style="width:295px; float: left; margin-left:15px; margin-right:25px; background-color: white" maxlength="200" type="text" class="form-control superradiusin" id="nitexturldocument" name="nitexturldocument"  placeholder="" disabled>					    
-					    	<span class="btn btn-file superradiusin" style="color: black; border: 2px solid #FAFAFA; border-top: none; border-left: 3px solid #FAFAFA; background-color:white;">
-					    		<strong>Seleccionar</strong>  <input id="nidocumentofile" class="btn btn-mini superradiusin" type="file" >
-					    	</span>					   		
-					   </div>
-					 </div>
-				</div>	
-
-	  		</div>
-	  	-->
+      	      	
 	  		<div style="border:0px solid; overflow:hidden; margin-bottom:3px;" >
 		  			<div class="col-xs-8" style="border:0px solid; ">
 						
 					</div>
 					<div class="col-xs-4" style="border:0px solid; overflow:hidden;">
-						<button type="button" class="btn btn-mini superradiusin" style="float:right; margin-right: 0px; background-color: #1db2a4; color: white; "><strong>Siguiente</strong></button>
-						<!--<button type="button" class="btn btn-mini superradiusin" style="float:right; margin-right: 8px; color: gray; border: 2px solid #FAFAFA; border-top: none; border-left: none; background-color:white;" data-dismiss="modal"> <strong>Cancelar</strong> </button>-->
+						<h4 class="pull-right">
+						<a id="next-step-2" title="Siguiente"  data-dismiss="modal" class="btn-add-propiedad no-decoration  next-step-2">
+							<span class="label label-warning"><img src="css/images/candado.png"/> Siguiente </span>
+						</a>
+					</h4>
+
+						<!--<button type="button" class="btn btn-mini superradiusin" style="float:right; margin-right: 0px; background-color: #1db2a4; color: white; "><strong>Siguiente</strong></button>-->
+						<button type="button" class="btn btn-mini superradiusin" style="float:right; margin: 8px 5px 0 8px; color: gray; border: 2px solid #FAFAFA; border-top: none; border-left: none; background-color:white;" data-dismiss="modal"> <strong>Cancelar</strong> </button>
 		        		
 					</div>
       			</div> 
-
-  		<!--</form>	-->
 
       </div>     
       
@@ -466,23 +387,44 @@
 					<div class="col-md-5 label-input-2">Nombre Completo/Razón Sociial*</div>
 					
 					<div class="col-md-7" style="margin-left: -70px;">
-						<input type="text" class="form-control col-md-2" name="nombre-razon-social-inquilino" id="nombre-razon-social-inquilino" required>
+						<input type="text" style="width:475px;" class="form-control col-md-2" name="nombre-razon-social-inquilino" id="nombre-razon-social-inquilino" required>
 					</div>
 				</div>
-				
+				<!--
+				<div class="col-md-4">RFC*</div>
 				<div class="col-md-12" style="padding-top:20px;">					
 					<div class="col-md-4 col-md-offset-7 label-input-2">RFC*</div>
 				</div>
+				-->
+				<div class="row" style="margin-top:25px">
+					<div class="col-md-12" style="margin:20px 0 -10px 0">
+						<div class="col-md-1 col-md-offset-7 text-gray">RFC*</div>
+					</div>					
+				</div>
+
+				<div class="row" style="">
+					<div class="col-md-7" style="margin-top:25px">
+					 	<div class="col-md-4">Tipo de Persona*</div>
+					 	<div class="col-md-4"> <input type="radio" id="inputperfisica-dueno-nuevo" value="inputperfisica-dueno-nuevo" name="radio-dueno-nuevo" checked> Persona física </div>
+					 	<div class="col-md-4"> <input type="radio" id="inputpermoral-dueno-nuevo" value="inputpermoral-dueno-nuevo" name="radio-dueno-nuevo">Persona Moral </div>
+					</div>
+					<div class="col-md-5" style="margin-top:15px" >					 	
+					 	<input type="text" style="width:280px;" class="form-control col-md-2" name="input-rfc-inquilino" id="input-rfc-inquilino" required>
+					 </div>
+
+				</div>
 				
+				<!--
 				<div class="col-md-12" style="padding-top:5px;">
 					<div class="col-md-3 label-input-2" style="border:0px solid;  ">Tipo de persona*</div>
 					<div class="col-md-4" style="margin-left:-0px;">
 						<input type="text" class="form-control col-md-2" name="input-tipo-persona-inquilino" id="input-tipo-persona-inquilino" required>
 					</div>
 					<div class="col-md-4">
-						<input type="text" class="form-control col-md-2" name="input-rfc-inquilino" id="input-rfc-inquilino" required>
+						
 					</div>
 				</div>
+			-->
 				
 				<div class="col-md-12" style="padding-top:20px;">
 					<div class="col-md-6 label-input-2">Calle*</div>
@@ -537,35 +479,6 @@
 				</div>
 
 
-				<!--
-				<div class="col-md-12" style="padding-top:0px;">
-					<div class="col-md-3 OpenSansBold title-section-propiedad">Cargar CSD</div>
-					<div class="col-md-6">
-						<a href="" title="Que es esto?">&iquest;Qué es esto?</a>
-					</div>
-				</div>
-				
-				<div class="col-md-12" style="padding-top:20px;">
-					<div class="col-md-4 label-input-2">Contraseña Llave Privada:</div>
-					<div class="col-md-8">
-						<input type="text" name="contra-llave-privada" id="contra-llave-privada" class="form-control"/>
-					</div>
-				</div>
-				
-				<div class="col-md-12" style="padding-top:20px;">
-					<div class="col-md-3 label-input-2">Certitifcado (.cer):</div>
-					<div class="col-md-9">
-						<input type="file" name="documento-propiedad" id="documento-propiedad" class="form-control"/>
-					</div>
-				</div>
-				
-				<div class="col-md-12" style="padding-top:20px;">
-					<div class="col-md-3 label-input-2">Llave privada (.key):</div>
-					<div class="col-md-9">
-						<input type="file" name="llave-privada" id="llave-privada" class="form-control"/>
-					</div>
-				</div>
-				-->
 				<div class="col-md-12 pull-right" style="padding-top:30px;">
 					<h4 class="pull-right">
 						<a id="next-step-3" title="Siguiente" class="btn-add-propiedad no-decoration">
@@ -631,81 +544,6 @@
 
 				</div>
 
-
-				<!--
-				<div class="col-md-12" style="padding-top:20px;">
-					<div class="col-md-6 label-input-2">Nombre Completo/Razón Social*</div>
-					<div class="col-md-6">
-						<input type="text" class="form-control col-md-2" name="nombre-razon-social-inquilino" id="nombre-razon-social-inquilino" required>
-					</div>
-				</div>
-				
-				<div class="col-md-12" style="padding-top:20px;">
-					<div class="col-md-6 label-input-2">Tipo de personaa*</div>
-					<div class="col-md-6 label-input-2">RFC*</div>
-				</div>
-				
-				<div class="col-md-12" style="padding-top:5px;">
-					<div class="col-md-6">
-						<input type="text" class="form-control col-md-2" name="input-tipo-persona-inquilino" id="input-tipo-persona-inquilino" required>
-					</div>
-					<div class="col-md-6">
-						<input type="text" class="form-control col-md-2" name="input-rfc-inquilino" id="input-rfc-inquilino" required>
-					</div>
-				</div>
-				
-				<div class="col-md-12" style="padding-top:20px;">
-					<div class="col-md-6 label-input-2">Calle*</div>
-					<div class="col-md-3 label-input-2">Núm Ext.*</div>
-					<div class="col-md-3 label-input-2">Núm Int.</div>
-				</div>
-				
-				<div class="col-md-12" style="padding-top:5px;">
-					<div class="col-md-6">
-						<input type="text" class="form-control col-md-2" name="input-calle-inquilino" id="input-calle-inquilino" required>
-					</div>
-					<div class="col-md-3">
-						<input type="text" class="form-control col-md-2" name="input-num-ext-inquilino" id="input-num-ext-inquilino" required>
-					</div>
-					<div class="col-md-3">
-						<input type="text" class="form-control col-md-2" name="input-num-int-inquilino" id="input-num-int-inquilino">
-					</div>
-				</div>
-			
-				
-				<div class="col-md-12" style="padding-top:20px;">
-					<div class="col-md-6 label-input-2">Colonia*</div>
-					<div class="col-md-6 label-input-2">C.P.*</div>
-				</div>
-				
-				<div class="col-md-12" style="padding-top:5px;">
-					<div class="col-md-6">
-						<input type="text" class="form-control col-md-2" name="input-colonia-inquilino" id="input-colonia-inquilino" required>
-					</div>
-					<div class="col-md-6">
-						<input type="text" class="form-control col-md-2" name="input-cp-inquilino" id="input-cp-inquilino" required>
-					</div>
-				</div>
-			
-				
-				<div class="col-md-12" style="padding-top:20px;">
-					<div class="col-md-4 label-input-2">Municipio*</div>
-					<div class="col-md-4 label-input-2">Estado*</div>
-					<div class="col-md-4 label-input-2">País*</div>
-				</div>
-				
-				<div class="col-md-12" style="padding-top:5px;">
-					<div class="col-md-4">
-						<input type="text" class="form-control col-md-2" name="input-municipio-inquilino" id="input-municipio-inquilino" required>
-					</div>
-					<div class="col-md-4">
-						<input type="text" class="form-control col-md-2" name="input-estado-inquilino" id="input-estado-inquilino" required>
-					</div>
-					<div class="col-md-4">
-						<input type="text" class="form-control col-md-2" name="input-pais-inquilino" id="input-pais-inquilino" required>
-					</div>
-				</div>
-				-->
 				<div class="col-md-12 pull-right" style="padding-top:30px;">
 					<h4 class="pull-right">
 						<a id="save-and-exit" title="Finalizar" class="btn-add-propiedad no-decoration">
@@ -738,7 +576,7 @@
 		});
 		
 		/*Next Step*/
-		$('#next-step-2').click(function() {
+		$('.next-step-2').click(function() {
 			$("#step-1").addClass("hide");
 			$("#step-2").removeClass("hide");
 			$("#step-3").addClass("hide");
@@ -830,298 +668,13 @@
 </script>
 
 
-
-
-
-<!-- modal -->
-<!-- Step Process Contrato -->
-<!--
-<div class="col-md-12 section-propiedad" style="padding:10px; margin-top:10px;">
-	<div class="col-md-12 pull-right">
-		<a href="" title="Cerrar" class="pointer close-x pull-right">x</a>
-	</div>
-	
-	<div class="col-md-10 col-md-offset-1 step-process-contrato text-center">
-		<div class="col-md-4 step-active" id="section-step-1">
-			<div class="col-md-12">
-				<div class="circle-blue">1</div>
-			</div>
-			<div class="col-md-12 black-bold">Ingresa los Datos Fiscales del Dueño</div>
-			<div class="col-md-12 padding-top-15">
-				<img style="margin-left:-20px;" src="css/images/step-facturas-1.png" alt="Paso 1 - Datos fiscales del Dueño"/>
-			</div>
-		</div>
-		
-		<div class="col-md-4 step-inactive" id="section-step-2">
-			<div class="col-md-12">
-				<div class="circle-blue">2</div>
-			</div>
-			<div class="col-md-12 black-bold">Completa los Datos Fiscales del Inquilino</div>
-			<div class="col-md-12 padding-top-15">
-				<img style="margin-left:-20px;" src="css/images/step-facturas-3.png" alt="Paso 2 - Datos fiscales del inquilino"/>
-			</div>
-		</div>
-		
-		<div class="col-md-4 step-inactive" id="section-step-3">
-			<div class="col-md-12">
-				<div class="circle-blue">3</div>
-			</div>
-			<div class="col-md-12 black-bold">Verifica el monto</div>
-			<div class="col-md-12 padding-top-15">
-				<img style="margin-left:-20px;" src="css/images/step-facturas-2.png" alt="Paso 3 - Datos fiscales del inquilino"/>
-			</div>
-		</div>
-	</div>
-	
-	<form name="step-process-contrato" id="step-process-factura">
-		-->
-		<!-- Step 1 -->
-		<!--
-		<div class="col-md-11 col-md-offset-1" style="padding:40px 20px 20px 20px;" id="step-1">
-			<div class="col-md-2 text-center OpenSansBold title-section-propiedad" id="title-datos-propiedad">Dueño</div>
-			<div class="col-md-8 section-process-form" id="section-datos-propiedad" style="padding:60px 0 0 20px;">
-				<div class="col-md-12" style="padding-top:20px;">
-					<div class="col-md-6 label-input-2">Nombre Completo/Razón Social*</div>
-					<div class="col-md-6">
-						<input type="text" class="form-control col-md-2" name="nombre-razon-social" id="nombre-razon-social" required>
-					</div>
-				</div>
-				
-				<div class="col-md-12" style="padding-top:20px;">
-					<div class="col-md-6 label-input-2">Tipo de persona*</div>
-					<div class="col-md-6 label-input-2">RFC*</div>
-				</div>
-				
-				<div class="col-md-12" style="padding-top:5px;">
-					<div class="col-md-6">
-						<input type="text" class="form-control col-md-2" name="input-tipo-persona" id="input-tipo-persona" required>
-					</div>
-					<div class="col-md-6">
-						<input type="text" class="form-control col-md-2" name="input-rfc" id="input-rfc" required>
-					</div>
-				</div>
-				
-				<div class="col-md-12" style="padding-top:20px;">
-					<div class="col-md-6 label-input-2">Calle*</div>
-					<div class="col-md-3 label-input-2">Núm Ext.*</div>
-					<div class="col-md-3 label-input-2">Núm Int.</div>
-				</div>
-				
-				<div class="col-md-12" style="padding-top:5px;">
-					<div class="col-md-6">
-						<input type="text" class="form-control col-md-2" name="input-calle" id="input-calle" required>
-					</div>
-					<div class="col-md-3">
-						<input type="text" class="form-control col-md-2" name="input-num-ext" id="input-num-ext" required>
-					</div>
-					<div class="col-md-3">
-						<input type="text" class="form-control col-md-2" name="input-num-int" id="input-num-int">
-					</div>
-				</div>
-				
-				<div class="col-md-12" style="padding-top:20px;">
-					<div class="col-md-6 label-input-2">Colonia*</div>
-					<div class="col-md-6 label-input-2">C.P.*</div>
-				</div>
-				
-				<div class="col-md-12" style="padding-top:5px;">
-					<div class="col-md-6">
-						<input type="text" class="form-control col-md-2" name="input-colonia" id="input-colonia" required>
-					</div>
-					<div class="col-md-6">
-						<input type="text" class="form-control col-md-2" name="input-cp" id="input-cp" required>
-					</div>
-				</div>
-				
-				<div class="col-md-12" style="padding-top:20px;">
-					<div class="col-md-4 label-input-2">Municipio*</div>
-					<div class="col-md-4 label-input-2">Estado*</div>
-					<div class="col-md-4 label-input-2">País*</div>
-				</div>
-				
-				<div class="col-md-12" style="padding-top:5px;">
-					<div class="col-md-4">
-						<input type="text" class="form-control col-md-2" name="input-municipio" id="input-municipio" required>
-					</div>
-					<div class="col-md-4">
-						<input type="text" class="form-control col-md-2" name="input-estado" id="input-estado" required>
-					</div>
-					<div class="col-md-4">
-						<input type="text" class="form-control col-md-2" name="input-pais" id="input-pais" required>
-					</div>
-				</div>
-				
-				<div class="col-md-12 pull-right" style="padding-top:30px;">
-					<h4 class="pull-right">
-						<a id="next-step-2" title="Siguiente" class="btn-add-propiedad no-decoration">
-							<span class="label label-warning"><img src="css/images/candado.png"/> Siguiente </span>
-						</a>
-					</h4>
-				</div>
-			</div>
-			<div class="col-md-12">
-				<div class="col-md-10 col-md-offset-2 label-input" style="padding:20px 20px 0 0;">* Campos Requeridos</div>
-			</div>
-		</div>
-		-->
-		<!-- Step 2 -->
-		<!--
-		<div class="col-md-11 col-md-offset-1 hide" style="padding:40px 20px 20px 20px;" id="step-2">
-			<div class="col-md-2 text-center OpenSansBold title-section-propiedad" id="title-datos-propiedad">Dueño</div>
-			<div class="col-md-8 section-process-form" id="section-datos-propiedad" style="padding:60px 0 0 20px;">
-				<div class="col-md-12" style="padding-top:0px;">
-					<div class="col-md-3 OpenSansBold title-section-propiedad">Cargar CSD</div>
-					<div class="col-md-6">
-						<a href="" title="Que es esto?">&iquest;Qué es esto?</a>
-					</div>
-				</div>
-				
-				<div class="col-md-12" style="padding-top:20px;">
-					<div class="col-md-4 label-input-2">Contraseña Llave Privada:</div>
-					<div class="col-md-8">
-						<input type="text" name="contra-llave-privada" id="contra-llave-privada" class="form-control"/>
-					</div>
-				</div>
-				
-				<div class="col-md-12" style="padding-top:20px;">
-					<div class="col-md-3 label-input-2">Certitifcado (.cer):</div>
-					<div class="col-md-9">
-						<input type="file" name="documento-propiedad" id="documento-propiedad" class="form-control"/>
-					</div>
-				</div>
-				
-				<div class="col-md-12" style="padding-top:20px;">
-					<div class="col-md-3 label-input-2">Llave privada (.key):</div>
-					<div class="col-md-9">
-						<input type="file" name="llave-privada" id="llave-privada" class="form-control"/>
-					</div>
-				</div>
-				
-				<div class="col-md-12 pull-right" style="padding-top:30px;">
-					<h4 class="pull-right">
-						<a id="next-step-3" title="Siguiente" class="btn-add-propiedad no-decoration">
-							<span class="label label-warning"><img src="css/images/candado.png"/> Siguiente </span>
-						</a>
-					</h4>
-					
-					<h4 class="pull-right" style="margin-right:20px;">
-						<a id="back-step-1" title="Anterior" class="btn-finish no-decoration">
-							<span class="label label-finish">< Anterior</span>
-						</a>
-					</h4>
-				</div>
-			</div>
-			<div class="col-md-12">
-				<div class="col-md-10 col-md-offset-2 label-input" style="padding:20px 20px 0 0;">* Campos Requeridos</div>
-			</div>
-		</div>
-		-->
-		<!-- Step 3 -->
-		<!--
-		<div class="col-md-11 col-md-offset-1 hide" style="padding:40px 20px 20px 20px;" id="step-3">
-			<div class="col-md-2 text-center OpenSansBold title-section-propiedad" id="title-datos-propiedad">Inquilino</div>
-			<div class="col-md-8 section-process-form" id="section-datos-propiedad" style="padding:30px 0 0 20px;">
-				<div class="col-md-12" style="padding-top:20px;">
-					<div class="col-md-6 label-input-2">Nombre Completo/Razón Social*</div>
-					<div class="col-md-6">
-						<input type="text" class="form-control col-md-2" name="nombre-razon-social-inquilino" id="nombre-razon-social-inquilino" required>
-					</div>
-				</div>
-				
-				<div class="col-md-12" style="padding-top:20px;">
-					<div class="col-md-6 label-input-2">Tipo de persona*</div>
-					<div class="col-md-6 label-input-2">RFC*</div>
-				</div>
-				
-				<div class="col-md-12" style="padding-top:5px;">
-					<div class="col-md-6">
-						<input type="text" class="form-control col-md-2" name="input-tipo-persona-inquilino" id="input-tipo-persona-inquilino" required>
-					</div>
-					<div class="col-md-6">
-						<input type="text" class="form-control col-md-2" name="input-rfc-inquilino" id="input-rfc-inquilino" required>
-					</div>
-				</div>
-				
-				<div class="col-md-12" style="padding-top:20px;">
-					<div class="col-md-6 label-input-2">Calle*</div>
-					<div class="col-md-3 label-input-2">Núm Ext.*</div>
-					<div class="col-md-3 label-input-2">Núm Int.</div>
-				</div>
-				
-				<div class="col-md-12" style="padding-top:5px;">
-					<div class="col-md-6">
-						<input type="text" class="form-control col-md-2" name="input-calle-inquilino" id="input-calle-inquilino" required>
-					</div>
-					<div class="col-md-3">
-						<input type="text" class="form-control col-md-2" name="input-num-ext-inquilino" id="input-num-ext-inquilino" required>
-					</div>
-					<div class="col-md-3">
-						<input type="text" class="form-control col-md-2" name="input-num-int-inquilino" id="input-num-int-inquilino">
-					</div>
-				</div>
-				
-				<div class="col-md-12" style="padding-top:20px;">
-					<div class="col-md-6 label-input-2">Colonia*</div>
-					<div class="col-md-6 label-input-2">C.P.*</div>
-				</div>
-				
-				<div class="col-md-12" style="padding-top:5px;">
-					<div class="col-md-6">
-						<input type="text" class="form-control col-md-2" name="input-colonia-inquilino" id="input-colonia-inquilino" required>
-					</div>
-					<div class="col-md-6">
-						<input type="text" class="form-control col-md-2" name="input-cp-inquilino" id="input-cp-inquilino" required>
-					</div>
-				</div>
-				
-				<div class="col-md-12" style="padding-top:20px;">
-					<div class="col-md-4 label-input-2">Municipio*</div>
-					<div class="col-md-4 label-input-2">Estado*</div>
-					<div class="col-md-4 label-input-2">País*</div>
-				</div>
-				
-				<div class="col-md-12" style="padding-top:5px;">
-					<div class="col-md-4">
-						<input type="text" class="form-control col-md-2" name="input-municipio-inquilino" id="input-municipio-inquilino" required>
-					</div>
-					<div class="col-md-4">
-						<input type="text" class="form-control col-md-2" name="input-estado-inquilino" id="input-estado-inquilino" required>
-					</div>
-					<div class="col-md-4">
-						<input type="text" class="form-control col-md-2" name="input-pais-inquilino" id="input-pais-inquilino" required>
-					</div>
-				</div>
-				
-				<div class="col-md-12 pull-right" style="padding-top:30px;">
-					<h4 class="pull-right">
-						<a id="save-and-exit" title="Finalizar" class="btn-add-propiedad no-decoration">
-							<span class="label label-warning"><img src="css/images/candado.png"/> Finalizar </span>
-						</a>
-					</h4>
-					
-					<h4 class="pull-right" style="margin-right:20px;">
-						<a id="back-step-2" title="Anterior" class="btn-finish no-decoration">
-							<span class="label label-finish">< Anterior</span>
-						</a>
-					</h4>
-				</div>
-			</div>
-			<div class="col-md-12">
-				<div class="col-md-10 col-md-offset-2 label-input" style="padding:20px 20px 0 0;">* Campos Requeridos</div>
-			</div>
-		</div>
-	</form>
-</div>
--->
-<!-- /Step Process Contrato -->
-
 <script type="text/javascript">
 $(function(){
-	
+	/*
 	$('#modal-dueno-nuevo').modal({
         show: 'true'
     }); 
-	 
+	 */
 
 })
 
