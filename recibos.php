@@ -236,12 +236,184 @@
 	</div>
 </div>
 
+ <!-- MODAL DE GENERAR RECIBO-->
+
+<div class="modal fade in" id="generarrecibos" data-backdrop="static"  >
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header" style="background-color: #FAFAFA; height: 80px; border:0px solid">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h3 class="modal-title text-center" id="modaltitulo" style=" padding-top:5px; padding-left:15px; " > <strong> Casa Monterrey en ciudad satelite 1-A</strong> </h3>
+
+      </div>
+  		 <!--<h4 class="modal-title">Modal title</h4>-->
+  		 <!--
+  		 http://www.tutorialrepublic.com/codelab.php?topic=bootstrap&file=carousel-methods
+  		 http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-carousel.php
+  		 http://stackoverflow.com/questions/10521165/bootstrap-javascript-carousel-doesnt-stop-cycling
+		
+      	-->
+      <div class="modal-body" style="overflow:hidden; border:0px solid;">      	
+      	<div class="bs-example" syle="width:100%; overflow:hidden; margin:-10px">
+		    <div id="myCarousel" class="carousel slide" data-interval="false" data-ride="carousel" style="width:80%; float:left; border:0px solid; margin:0px; padding:0px;">
+		        <!-- Carousel items -->
+		        <div class="carousel-inner " style="whidth:100%; padding:0px; height:1000px">
+		        	
+
+		            <div class="active item" style="background-color: white; padding:0px; width:100%; ">
+		            	<!-- INICIO DE FORMULARIO -->
+		            	<div class="row" style="height:140px;">
+		            		<div class="col-md-3">
+		            			<div class="col-md-4" >
+		            				<div class="col-md-12 col-md-push-0" style="border:1px solid; width:120px; height:130px; background-color: gray"></div>
+		            			</div>
+		            		</div>
+		            		<div class="col-md-5 ">
+		            			<div class="col-md-12 col-md-push-1 text-left"> <strong>Nombre/Razon social del dueño</strong> </div>
+	            				<div class="col-md-12 col-md-push-1 text-left" style="margin-top: 10px">Nomrbe de la calle, Núm Ext</div>
+	            				<div class="col-md-12 col-md-push-1 text-left">Nombre de la colonia</div>
+	            				<div class="col-md-12 col-md-push-1 text-left">Municipio, Estado</div>
+	            				<div class="col-md-12 col-md-push-1 text-left">Pais, C.P.</div>
+	            				<div class="col-md-12 col-md-push-1 text-left">RFC</div>		            			
+		            		</div>
+		            		<div class="col-md-4 ">
+		            			<div class="col-md-10 col-md-push-1 text-center" style="border-width: 1px 1px 0 1px; border-style: solid; border-color: gray;">Recibo #1</div>
+	            				<div class="col-md-10 col-md-push-1 text-center" style=" border-width: 0 1px 0 1px; border-style: solid; border-color: gray;">Fecha</div>
+	            				<div class="col-md-10 col-md-push-1 text-center " style=" border: 1px solid gray;">17/02/2015 19:30:00</div>
+		            		</div>			                  
+	                	</div>
+
+	                	<div class="row " style="margin-top:15px">
+	                		<div class="col-md-12">
+		            			<div class="col-md-12" >
+		            				<div class="col-md-12 col-md-offset-0" style="border: 1px solid gray">Receptor del recibo de Arrendamiento</div>
+		            			</div>
+		            		</div>
+	                	</div>
+
+	                	<div class="row " style="">
+	                		<div class="col-md-12">
+		            			<div class="col-md-12" >
+		            				<div class="col-md-12" style="border-width: 0px 1px 1px 1px; border-style: solid; border-color: gray;">
+		            					<div class="col-md-9" style="margin-top: 4px">
+		            						 	<input type="text" maxlength="30" value="Nombre/Razón Social del Inquilino" class="form-control superradiusin input-sm" id="ninompais" name="ninompais"  placeholder="">					   
+		            					</div>
+		            					<div class="col-md-10 " style="margin-left:-15px; margin-top: 4px">
+		            						<div class="col-md-6">		            							
+		            								<input type="text" maxlength="30" value="Nombre de Calle" class="form-control superradiusin input-sm" id="ninompais" name="ninompais"  placeholder="">					   		            									               							
+		            						</div>
+		            						<div class="col-md-3">
+		            							<input type="text" maxlength="30" value="Núm ext" class="col-md-pull-1 form-control superradiusin input-sm col-md-4" id="ninompais" name="ninompais"  placeholder="">					   		            							
+		            						</div>
+		            						<div class="col-md-3">
+		            								 	<input type="text" maxlength="30" value="Núm int" class="col-md-pull-3 form-control superradiusin input-sm col-md-4" id="ninompais" name="ninompais"  placeholder="">					   		            					
+		            					 	</div>
+		            					</div>
+		            					<div class="col-md-8" style="margin-left:-15px; margin-top: 4px">
+		            						<div class="col-md-11" >			            							
+			            							<input type="text" maxlength="30" value="Colonia" class="form-control superradiusin input-sm" id="ninompais" name="ninompais"  placeholder="">					   		            									               							
+							           						
+            								</div>		            						
+		            					</div>
+		            					
+		            					<div class="col-md-8" style="margin-left:-15px; margin-top: 4px">
+		            						<div class="col-md-5" >			            							
+			            							<input type="text" maxlength="30" value="Municipio" class="form-control superradiusin input-sm" id="ninompais" name="ninompais"  placeholder="">					   		            									               											           							
+            								</div>	
+            								<div class="col-md-5" >			            							
+			            							<input type="text" maxlength="30" value="Estado" class="form-control superradiusin input-sm" id="ninompais" name="ninompais"  placeholder="">					   		            									               											           							
+            								</div>		            						
+		            					</div>
+		            					<div class="col-md-8" style="margin-left:-15px; margin-top: 4px">
+		            						<div class="col-md-5" >			            							
+			            							<input type="text" maxlength="30" value="País" class="5 form-control superradiusin input-sm" id="ninompais" name="ninompais"  placeholder="">					   		            									               											           							
+            								</div>		
+            								<div class="col-md-5" >			            							
+			            							<input type="text" maxlength="30" value="C.P" class="form-control superradiusin input-sm" id="ninompais" name="ninompais"  placeholder="">					   		            									               											           							
+            								</div>	            						
+		            					</div>
+		            				
+
+
+
+		            				</div>
+		            			</div>
+		            		</div>
+	                	</div>
+	                
+
+
+
+
+
+		                
+
+		            </div>
+		            <div class="item" >		 
+
+		                <input type="text">
+		            </div>
+		            <div class="item" style="background-color: white;">
+		            	<input type="text">
+		            	<input type="text">
+		            	<!--
+		                <h2>Slide 3</h2>
+		                <div class="carousel-caption">
+		                  <h3>Third slide label</h3>
+		                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+		                </div>-->
+		            </div>
+		        </div>
+		    </div>
+		    <!-- Controls buttons -->
+		    <div class="control-buttons" style="color:#1db2a4; width:18%; min-height:500px; float:left; border-left: 1px solid gray; padding-top:15px;">		        		       
+		        <div class="row">
+		        	<div class="btn" id="uno" onClick="cambiarform(0)" class="col-md-12"> <strong>Casa Monterrey...</strong>  </div>
+		        </div>	 
+		        <div class="row">
+		        	<div class="btn" onClick="cambiarform(1)" class="col-md-12"><strong>Casa Monterrey...</strong> </div>
+		        </div>	
+		        <div class="row">
+		        	<div class="btn" onClick="cambiarform(2)" class="col-md-12"><strong>Casa Monterrey...</strong> </div>
+		        </div>	       		      
+		    </div>
+		</div>      	
+
+      </div>     
+       <div class="modal-footer">
+      
+
+      	
+
+      </div> 
+      
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+ <!-- MODAL DE GENERAR RECIBO-->
+
 
 <?php include 'footer.php';?>
 <script>
+	function cambiarform(cambio){	
+		$("#myCarousel").carousel(cambio);
+		//$("#myCarousel").carousel('pause');	
+	}
+
 $(document).ready(function() {
 	$(function () {
 		$('[data-toggle="tooltip"]').tooltip()
 	});
+	$('#generarrecibos').modal({
+	        show: 'true'
+	    });  
+	
+	//setTimeout('window.location.href="recibos.php"', 2000);
 });
+
+
+
 </script>

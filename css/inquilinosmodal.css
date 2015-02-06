@@ -40,3 +40,42 @@
 .zxc {
     border: 1px solid;
 }
+@media screen and (min-width: 768px) {  
+    #generarrecibos .modal-dialog  {width:1024px;}
+}
+
+/*
+carrucel
+*/
+.tales {
+  width: 100%;
+}
+.carousel-inner{
+  width:100%;
+  max-height: 500px !important;
+}
+
+h2{
+    margin: 0;     
+    color: #666;
+    padding-top: 90px;
+    font-size: 52px;
+    font-family: "trebuchet ms", sans-serif;    
+}
+.item{
+    background: #333;    
+    text-align: center;
+    height: 300px !important;
+}
+.carousel{
+    margin: 20px 0;
+}
+.control-buttons{
+    text-align:center;
+}
+.bs-example{
+    margin: 20px;
+}
+.zxc {
+    border: 1px solid;
+}
