@@ -55,15 +55,15 @@
 
 			<div class="col-md-8 section-process-form" id="section-datos-propiedad" style="padding:30px 0 0 20px; ">
 				<div class="col-md-12" style="padding: 0px; padding-top:10px;">
-					<div class="col-md-4 " style="padding:0px;"> <a href="#" data-toggle="modal" data-target="#modal-dueno-existente"> Dueño existente</a></div>
+					<div class="col-md-4 " style="padding:0px;">  Dueño existente</div>
 					<div class="col-md-6" style="margin-left:-50px">
 						<!--<input type="text" class="form-control col-md-2" name="nombre-razon-social" id="nombre-razon-social" required>-->
-						<select class="form-control">
+						<select class="form-control"  onchange="moDueExis()" id="moDueExis">
 						  <option value="id">marcos julio hernandes</option>
-						  <option>2</option>
-						  <option>3</option>
-						  <option>4</option>
-						  <option>5</option>
+						  <option value="id">2</option>
+						  <option value="id">3</option>
+						  <option value="id">4</option>
+						  <option value="id">5</option>
 						</select>
 					</div>
 				</div>
@@ -669,11 +669,25 @@
 
 
 <script type="text/javascript">
+
+function moDueExis(){
+	alert("cds");
+
+}
+
 $(function(){
-	/*
-	$('#modal-dueno-nuevo').modal({
-        show: 'true'
-    }); 
+	$('#moDueExis').on('change', function() {
+  		$('#modal-dueno-existente').modal({
+        	show: 'true'
+    	}); 
+	});
+
+	
+	 /*
+	 $('#modal-dueno-existente').modal({
+        	show: 'true'
+    	}); 
+
 	 */
 
 })
