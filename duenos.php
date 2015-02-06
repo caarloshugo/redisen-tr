@@ -399,7 +399,16 @@
 
 				    <div class="col-xs-10" style="border:0px solid; margin-bottom:2px; margin-left: 10px;">
 				    	<label for="niaddpropiedad" class="col-lg-1 control-label" style="overflow:hidden; width:160px; overflow:hidden; padding:0px; border:0px solid; text-align: left; margin-left: -2px"> <img style="width:20px; height: 20px; overflow:hidden" src="iconos/02-Dashboard-InfoToolTip.png"> Agregar Propiedades:</label>				    	
-				    	<div class="col-xs-4"><input type="text" class="form-control superradiusin col-xs-6 input-sm" maxlength="20" id="niaddpropiedad" name="niaddpropiedad"  placeholder=""></div>
+				    	<div class="col-xs-4">
+				    		<select name="" class="col-md-4 col-md-pull-1 form-control box-shadow" style="margin-left:40px;">
+								<option>Propiedad...</option>
+								<option>Casa moterrey</option>
+								<option>casa monterrey</option>
+							</select>
+				    		<!--
+				    		<input type="text" class="form-control superradiusin col-xs-6 input-sm" maxlength="20" id="niaddpropiedad" name="niaddpropiedad"  placeholder="">
+				    		-->
+				    	</div>
 				    </div>
 
 				     <br><br><hr style="width:740px; overflow:hidden; float:left; margin-left: 35px;">
