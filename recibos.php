@@ -241,7 +241,7 @@
 
 <div class="modal fade in" id="generarrecibos" data-backdrop="static"  >
   <div class="modal-dialog">
-    <div class="modal-content">
+    <div class="modal-content" style="min-width:800px;">
 
       <div class="modal-header" style="background-color: #FAFAFA; height: 80px; border:0px solid">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -434,7 +434,38 @@
 		            			</div>
 		            		</div>
 	                	</div>
-		                
+
+	                	<!-- BOTONES DE GUARDAR HE IMPRIMIR -->
+
+	                	<div class="row" style="margin-top:10px;" id="modal1-form1-1">
+	                		<div class="col-md-12">
+		            			<div class="col-md-12  text-center" >
+		            				<div class="col-md-12" style="padding-top: 7px;">
+		            					<strong>
+		            					<button type="button" onclick="modalshowbutton(1)" class="btn btn-mini superradiusin"  style="margin-right: 0px; background-color: #1db2a4; color: white; "><strong>GUARDAR</strong></button>		                
+		            					</strong>
+		            				</div>
+		            			</div>		            			
+		            		</div>
+	                	</div>
+
+	                	<div class="row" style="margin-top:10px; display: none; overflow: hidden" id="modal1-form1-2">
+	                		<div class="col-md-12">
+		            			<div class="col-md-12  text-center" >
+		            				<div class="col-md-12" style="padding-top: 7px;">
+		            					<strong>
+		            					<button type="button" onClick="modalhiddenbutton(2)" class="btn btn-mini superradiusin" style="margin-right: 5px; background-color: #1db2a4; color: white; "><strong>Descargar PDF</strong></button>		                
+		            					<button type="button" onClick="modalhiddenbutton(2)" class="btn btn-mini superradiusin" style="margin-left: 15px; background-color: #1db2a4; color: white; "><strong>Imprimir</strong></button>		                
+		            					
+		            					</strong>
+		            				</div>
+		            			</div>		            			
+		            		</div>
+	                	</div>
+
+	                	
+
+	                	
 
 		            </div>
 		           <!-- segundo slider -->
@@ -612,6 +643,35 @@
 		            			</div>
 		            		</div>
 	                	</div>
+
+	                	<!-- BOTONES DE GUARDAR HE IMPRIMIR -->
+
+	                	<div class="row" style="margin-top:10px;" id="modal1-form1-3">
+	                		<div class="col-md-12">
+		            			<div class="col-md-12  text-center" >
+		            				<div class="col-md-12" style="padding-top: 7px;">
+		            					<strong>
+		            					<button type="button" onclick="modalshowbutton(3)" class="btn btn-mini superradiusin"  style="margin-right: 0px; background-color: #1db2a4; color: white; "><strong>GUARDAR</strong></button>		                
+		            					</strong>
+		            				</div>
+		            			</div>		            			
+		            		</div>
+	                	</div>
+
+	                	<div class="row" style="margin-top:10px; display: none; overflow: hidden" id="modal1-form1-4">
+	                		<div class="col-md-12">
+		            			<div class="col-md-12  text-center" >
+		            				<div class="col-md-12" style="padding-top: 7px;">
+		            					<strong>
+		            					<button type="button" onClick="modalhiddenbutton(4)" class="btn btn-mini superradiusin" id="modal1-form1-2" style="margin-right: 5px; background-color: #1db2a4; color: white; "><strong>Descargar PDF</strong></button>		                
+		            					<button type="button" onClick="modalhiddenbutton(4)" class="btn btn-mini superradiusin" id="modal1-form1-3" style="margin-left: 15px; background-color: #1db2a4; color: white; "><strong>Imprimir</strong></button>		                
+		            					
+		            					</strong>
+		            				</div>
+		            			</div>		            			
+		            		</div>
+	                	</div>
+
 		                
 		            </div>
 		            <!-- tercer slider -->
@@ -788,6 +848,34 @@
 		            		</div>
 	                	</div>
 
+	                	<!-- BOTONES DE GUARDAR HE IMPRIMIR -->
+
+	                	<div class="row" style="margin-top:10px;" id="modal1-form1-5">
+	                		<div class="col-md-12">
+		            			<div class="col-md-12  text-center" >
+		            				<div class="col-md-12" style="padding-top: 7px;">
+		            					<strong>
+		            					<button type="button" onclick="modalshowbutton(5)" class="btn btn-mini superradiusin"  style="margin-right: 0px; background-color: #1db2a4; color: white; "><strong>GUARDAR</strong></button>		                
+		            					</strong>
+		            				</div>
+		            			</div>		            			
+		            		</div>
+	                	</div>
+
+	                	<div class="row" style="margin-top:10px; display: none; overflow: hidden" id="modal1-form1-6">
+	                		<div class="col-md-12">
+		            			<div class="col-md-12  text-center" >
+		            				<div class="col-md-12" style="padding-top: 7px;">
+		            					<strong>
+		            					<button type="button" onClick="modalhiddenbutton(6)" class="btn btn-mini superradiusin" id="modal1-form1-2" style="margin-right: 5px; background-color: #1db2a4; color: white; "><strong>Descargar PDF</strong></button>		                
+		            					<button type="button" onClick="modalhiddenbutton(6)" class="btn btn-mini superradiusin" id="modal1-form1-3" style="margin-left: 15px; background-color: #1db2a4; color: white; "><strong>Imprimir</strong></button>		                
+		            					
+		            					</strong>
+		            				</div>
+		            			</div>		            			
+		            		</div>
+	                	</div>
+
 		            </div>
 		            <!-- final tercer slider -->
 		        </div>
@@ -822,7 +910,7 @@
  <!-- MODAL DE REGISTRO DE PAGOS SELECCIONADOS-->
 <div class="modal fade in" id="regpagosselect" data-backdrop="static"  >
   <div class="modal-dialog">
-    <div class="modal-content">
+    <div class="modal-content" style="min-width:800">
 
       <div class="modal-header" style="background-color: #FAFAFA; height: 80px; border:0px solid">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -1035,6 +1123,34 @@
 		            			</div>
 		            		</div>
 	                	</div>
+
+	                	<!-- BOTONES DE GUARDAR HE IMPRIMIR -->
+
+	                	<div class="row" style="margin-top:10px;" id="modal1-form1-7">
+	                		<div class="col-md-12">
+		            			<div class="col-md-12  text-center" >
+		            				<div class="col-md-12" style="padding-top: 7px;">
+		            					<strong>
+		            					<button type="button" onclick="modalshowbutton(7)" class="btn btn-mini superradiusin"  style="margin-right: 0px; background-color: #1db2a4; color: white; "><strong>GUARDAR</strong></button>		                
+		            					</strong>
+		            				</div>
+		            			</div>		            			
+		            		</div>
+	                	</div>
+
+	                	<div class="row" style="margin-top:10px; display: none; overflow: hidden" id="modal1-form1-8">
+	                		<div class="col-md-12">
+		            			<div class="col-md-12  text-center" >
+		            				<div class="col-md-12" style="padding-top: 7px;">
+		            					<strong>
+		            					<button type="button" onClick="modalhiddenbutton(8)" class="btn btn-mini superradiusin" style="margin-right: 5px; background-color: #1db2a4; color: white; "><strong>Descargar PDF</strong></button>		                
+		            					<button type="button" onClick="modalhiddenbutton(8)" class="btn btn-mini superradiusin" style="margin-left: 15px; background-color: #1db2a4; color: white; "><strong>Imprimir</strong></button>		                
+		            					
+		            					</strong>
+		            				</div>
+		            			</div>		            			
+		            		</div>
+	                	</div>
 		                
 
 		            </div>
@@ -1233,6 +1349,33 @@
 		            			</div>
 		            		</div>
 	                	</div>
+	                	<!-- BOTONES DE GUARDAR HE IMPRIMIR -->
+
+	                	<div class="row" style="margin-top:10px;" id="modal1-form1-9">
+	                		<div class="col-md-12">
+		            			<div class="col-md-12  text-center" >
+		            				<div class="col-md-12" style="padding-top: 7px;">
+		            					<strong>
+		            					<button type="button" onclick="modalshowbutton(9)" class="btn btn-mini superradiusin"  style="margin-right: 0px; background-color: #1db2a4; color: white; "><strong>GUARDAR</strong></button>		                
+		            					</strong>
+		            				</div>
+		            			</div>		            			
+		            		</div>
+	                	</div>
+
+	                	<div class="row" style="margin-top:10px; display: none; overflow: hidden" id="modal1-form1-10">
+	                		<div class="col-md-12">
+		            			<div class="col-md-12  text-center" >
+		            				<div class="col-md-12" style="padding-top: 7px;">
+		            					<strong>
+		            					<button type="button" onClick="modalhiddenbutton(10)" class="btn btn-mini superradiusin" style="margin-right: 5px; background-color: #1db2a4; color: white; "><strong>Descargar PDF</strong></button>		                
+		            					<button type="button" onClick="modalhiddenbutton(10)" class="btn btn-mini superradiusin" style="margin-left: 15px; background-color: #1db2a4; color: white; "><strong>Imprimir</strong></button>		                
+		            					
+		            					</strong>
+		            				</div>
+		            			</div>		            			
+		            		</div>
+	                	</div>
 		                
 		            </div>
 		            <!-- tercer slider -->
@@ -1428,6 +1571,34 @@
 		            			</div>
 		            		</div>
 	                	</div>
+
+	                	<!-- BOTONES DE GUARDAR HE IMPRIMIR -->
+
+	                	<div class="row" style="margin-top:10px;" id="modal1-form1-11">
+	                		<div class="col-md-12">
+		            			<div class="col-md-12  text-center" >
+		            				<div class="col-md-12" style="padding-top: 7px;">
+		            					<strong>
+		            					<button type="button" onclick="modalshowbutton(11)" class="btn btn-mini superradiusin"  style="margin-right: 0px; background-color: #1db2a4; color: white; "><strong>GUARDAR</strong></button>		                
+		            					</strong>
+		            				</div>
+		            			</div>		            			
+		            		</div>
+	                	</div>
+
+	                	<div class="row" style="margin-top:10px; display: none; overflow: hidden" id="modal1-form1-12">
+	                		<div class="col-md-12">
+		            			<div class="col-md-12  text-center" >
+		            				<div class="col-md-12" style="padding-top: 7px;">
+		            					<strong>
+		            					<button type="button" onClick="modalhiddenbutton(12)" class="btn btn-mini superradiusin" style="margin-right: 5px; background-color: #1db2a4; color: white; "><strong>Descargar PDF</strong></button>		                
+		            					<button type="button" onClick="modalhiddenbutton(12)" class="btn btn-mini superradiusin" style="margin-left: 15px; background-color: #1db2a4; color: white; "><strong>Imprimir</strong></button>		                
+		            					
+		            					</strong>
+		            				</div>
+		            			</div>		            			
+		            		</div>
+	                	</div>
 		                
 		            </div>
 		            <!-- final tercer slider -->
@@ -1472,17 +1643,47 @@
 		//$("#myCarousel").carousel('pause');	
 	}
 
+function modalshowbutton(base){		
+		
+		var location = "#modal1-form1-"+base;
+		$(location).css({
+			"display": "none"
+		});
+		base = base + 1;
+		location = "#modal1-form1-"+base;
+		$(location).css({
+			"display": "inline"
+		})
+	}
 
-	myCarousel2
+	function modalhiddenbutton(base){
+		var location = "#modal1-form1-"+base;
+		$(location).css({
+			"display": "none"
+		});
+		base = base - 1;
+		location = "#modal1-form1-"+base;
+		$(location).css({
+			"display": "inline"
+		})
+		alert("Se a descargado o impreso un archivo")
+	}
 
 $(document).ready(function() {
 	$(function () {
 		$('[data-toggle="tooltip"]').tooltip()
 	});
+
+	//modal1-form1-1
+
+	//$("#modal1-form1-1 to 3")
+
+
 	/*
 	$('#generarrecibos').modal({
 	        show: 'true'
-	    });  */
+	    });  
+	*/
 /*
 	$('#regpagosselect').modal({
 	        show: 'true'
