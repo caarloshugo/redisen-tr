@@ -112,7 +112,7 @@
 					</div>
 					<div class="col-md-4" style="margin-left:-50px;" >
 						<span class="text-gray">
-							<div class="col-md-4" style="border:1px solid; height: 80px;"></div>
+							<div class="col-md-4" style="border:1px solid; height: 80px;"></div> x Quitar Logotipo
 
 						</span>
 					</div>
@@ -253,23 +253,64 @@
 			<div class="col-md-11" style="border-bottom:1px solid #ccc; padding:20px 0 20px 0;">
 				<div class="col-md-12" style="padding:initial;">
 					<div class="col-md-2 ">
-						<span class="text-gray">Contrato 1:</span>
+						<span class="text-gray">Propiedades:</span>
 					</div>
 					<div class="col-md-4" style="margin-left:-50px;">
-						<input type="text" value="Casa de monterrey en romero de terreros" name="edit-tel-casa" id="edit-tel-casa" class="form-control">
-						<!--<span class="text-black">Casa de monterrey en romero de terreros</span>-->
-					</div>
+						<!--<input type="text" value="Casa de monterrey en romero de terreros" name="edit-tel-casa" id="edit-tel-casa" class="form-control">-->
+						<span class="text-black">Casa de monterrey en romero de terreros </span>
+					</div>X
 				</div>
 				
 				<div class="col-md-12" style="padding:initial; padding-top:10px;">
 					<div class="col-md-2 ">
-						<span class="text-gray">Contrato 2:</span>
+						<span class="text-gray"></span>
 					</div>
 					<div class="col-md-4" style="margin-left:-50px;">
-						<input type="text" value="Casa en Colima, Colima" name="edit-tel-casa" id="edit-tel-casa" class="form-control">						
-						<!--<span class="text-black">Casa en Colima, Colima</span>-->
-					</div>
+						<!--<input type="text" value="Casa en Colima, Colima" name="edit-tel-casa" id="edit-tel-casa" class="form-control">						-->
+						<span class="text-black">Casa en Colima, Colima </span>
+					</div>X
 				</div>
+				<div class="col-md-12" style="padding:initial; padding-top:10px;">
+					<div class="col-md-2 ">
+						<span class="text-gray"></span>
+					</div>
+					<div class="col-md-4" style="margin-left:-50px;">
+						<!--<input type="text" value="Casa en Colima, Colima" name="edit-tel-casa" id="edit-tel-casa" class="form-control">						-->
+						<span class="text-black">Propiedad 3 </span>
+					</div>X
+				</div>
+				<div class="col-md-12" style="padding:initial; padding-top:10px;">
+					<div class="col-md-2 ">
+						<span class="text-gray"></span>
+					</div>
+					<div class="col-md-4" style="margin-left:-50px;">
+						<!--<input type="text" value="Casa en Colima, Colima" name="edit-tel-casa" id="edit-tel-casa" class="form-control">						-->
+						<span class="text-black">Propiedad 4 </span>
+					</div>X
+				</div>
+				<div class="col-md-12" style="padding:initial; padding-top:10px;">
+					<div class="col-md-2 ">
+						<span class="text-gray"></span>
+					</div>
+					<div class="col-md-4" style="margin-left:-50px;">
+						<!--<input type="text" value="Casa en Colima, Colima" name="edit-tel-casa" id="edit-tel-casa" class="form-control">						-->
+						<span class="text-black">+ Agregar Propiedad</span>
+					</div>
+					<div class="col-md-4 " style="margin-left:-50px;">
+						<!--<input type="text" value="Casa en Colima, Colima" name="edit-tel-casa" id="edit-tel-casa" class="form-control">						-->
+						<span class="col-md-12 col-md-pull-6 " class="text-black"> 
+							<select class="form-control">
+							  <option></option>
+							  <option></option>
+							  <option></option>
+							  <option></option>
+							  <option></option>
+							</select>
+						</span>
+					</div>
+
+				</div>
+
 			</div>
 
 			<div class="col-md-11" style="border-bottom:1px solid #ccc; padding:20px 0 20px 0;">
