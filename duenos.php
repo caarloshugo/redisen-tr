@@ -99,6 +99,14 @@
 		<div class="col-md-12 collapse" id="collapse-cuenta-propiedad" style="padding:5px 20px 5px 20px;">	
 			<div class="col-md-11" style="border-bottom:1px solid #ccc; padding:20px 0 20px 0; margin-left:-9px">
 				<div class="col-md-12" style="padding:initial;">
+					<div class="row">
+						<div class="col-xs-12 text-right;" style="border:0px solid; overflow:hidden;">
+							<button type="button" class="btn btn-mini superradiusin" style="float:right; margin-right: 0px; background-color: #1db2a4; color: white; "><strong>Guardar Cambios</strong></button>
+							<button type="button" class="btn btn-mini superradiusin" style="float:right; margin-right: 8px; color: gray; border: 2px solid #FAFAFA; border-top: none; border-left: none; background-color:white;" data-dismiss="modal"> <strong>Cancelar</strong> </button>
+			        		
+						</div>
+					</div>
+					
 					<div class="col-md-2 text-left" style="padding: 0px; border:0px solid;">
 						<span class="text-gray"> <img style="width:20px; height: 20px; overflow:hidden" src="iconos/02-Dashboard-InfoToolTip.png">  Logotipo</span>
 					</div>
@@ -127,6 +135,8 @@
 				</div>
 				-->
 			</div>
+			<!-- inicia datos a modificar -->
+<!--
 			<div class="col-md-11" style="border-bottom:1px solid #ccc; padding:20px 0 20px 0; margin-left: -9px">
 				<div class="row">
 					<div class="col-md-2"> <span class="text-gray">  <img style="width:20px; height: 20px; overflow:hidden" src="iconos/02-Dashboard-InfoToolTip.png"> propiedades</span> </div>
@@ -176,7 +186,8 @@
 						<span class="text-black">0443121138379</span>
 					</div>
 				</div>
-				<!--
+				
+				<Comentado originaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 				<div class="col-md-12" style="padding:initial; padding-top:10px;">
 					<div class="col-md-2">
 						<span class="text-gray">Tel Oficina:</span>
@@ -185,7 +196,7 @@
 						<span class="text-black"></span>
 					</div>
 				</div>
-				-->
+			Comentado originaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa >
 				<div class="col-md-12" style="padding:initial; padding-top:10px;">
 					<div class="col-md-2">
 						<span class="text-gray">Correo 1:</span>
@@ -194,7 +205,8 @@
 						<span class="text-black">caarloshugo@gmail.com</span>
 					</div>
 				</div>
-				<!--
+				
+				<Comentado originaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 				<div class="col-md-12" style="padding:initial; padding-top:10px;">
 					<div class="col-md-2">
 						<span class="text-gray">Correo 2:</span>
@@ -203,7 +215,8 @@
 						<span class="text-black"></span>
 					</div>
 				</div>
-			-->
+				Comentado originaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa>
+			
 			</div>
 			<div class="col-md-1"></div>
 			
@@ -231,15 +244,147 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-1"></div>
-			
+		-->
+			<!--  datos a editar final -->
+			<!--  integracion de editar  inicio -->
+			<!--  integracion de editar  inicio -->
+			<!--  integracion de editar  inicio -->
+
+			<div class="col-md-11" style="border-bottom:1px solid #ccc; padding:20px 0 20px 0;">
+				<div class="col-md-12" style="padding:initial;">
+					<div class="col-md-2 ">
+						<span class="text-gray">Contrato 1:</span>
+					</div>
+					<div class="col-md-4" style="margin-left:-50px;">
+						<input type="text" value="Casa de monterrey en romero de terreros" name="edit-tel-casa" id="edit-tel-casa" class="form-control">
+						<!--<span class="text-black">Casa de monterrey en romero de terreros</span>-->
+					</div>
+				</div>
+				
+				<div class="col-md-12" style="padding:initial; padding-top:10px;">
+					<div class="col-md-2 ">
+						<span class="text-gray">Contrato 2:</span>
+					</div>
+					<div class="col-md-4" style="margin-left:-50px;">
+						<input type="text" value="Casa en Colima, Colima" name="edit-tel-casa" id="edit-tel-casa" class="form-control">						
+						<!--<span class="text-black">Casa en Colima, Colima</span>-->
+					</div>
+				</div>
+			</div>
+
 			<div class="col-md-11" style="border-bottom:1px solid #ccc; padding:20px 0 20px 0;">
 				<div class="col-md-12" style="padding:initial; padding-top:10px;">
 					<div class="col-md-2 ">
+						<span class="text-gray">Tel. Casa:</span>
+					</div>
+					<div class="col-md-4" style="margin-left:-50px;">
+						<input type="text" value="01 81 83 66 55 88" name="edit-tel-casa" id="edit-tel-casa" class="form-control">
+					</div>
+				</div>
+				
+				<div class="col-md-12" style="padding:initial; padding-top:10px;">
+					<div class="col-md-2">
+						<span class="text-gray">Celular:</span>
+					</div>
+					<div class="col-md-4" style="margin-left:-50px;">
+						<input type="text" value="044 81 15 43 99 62" name="edit-celular" id="edit-celular" class="form-control">
+					</div>
+				</div>
+				
+				<div class="col-md-12" style="padding:initial; padding-top:10px;">
+					<div class="col-md-2">
+						<span class="text-gray">Tel Oficina:</span>
+					</div>
+					<div class="col-md-4" style="margin-left:-50px;">
+						<input type="text" name="edit-tel-oficina" id="edit-tel-oficina" class="form-control">
+					</div>
+				</div>
+				
+				<div class="col-md-12" style="padding:initial; padding-top:10px;">
+					<div class="col-md-2">
+						<span class="text-gray">Correo 1:</span>
+					</div>
+					<div class="col-md-5" style="margin-left:-50px;">
+						<input type="text" value="daniela.araico@gmail.com" name="edit-correo-1" id="edit-correo-1" class="form-control">
+					</div>
+				</div>
+				
+				<div class="col-md-12" style="padding:initial; padding-top:10px;">
+					<div class="col-md-2">
+						<span class="text-gray">Correo 2:</span>
+					</div>
+					<div class="col-md-5" style="margin-left:-50px;">
+						<input type="text" name="edit-correo-2" id="edit-correo-2" class="form-control">
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-md-12" style="padding:initial; padding-top:10px;">
+				<div class="col-md-2 ">
+					<span class="text-gray">RFC:</span>
+				</div>
+				<div class="col-md-6" style="margin-left:-50px;">
+					<input type="text" value="AAGD920910NS8" name="edit-rfc" id="edit-rfc" class="form-control">
+				</div>
+			</div>
+			<div class="col-md-12" style="padding:initial; padding-top:10px;">
+
+					<div class="col-md-2">
+						<span class="text-gray">Dirección:</span>
+					</div>
+					<div class="col-md-8" style="padding:initial; margin-left:-50px;">
+						<div class="col-md-4">
+							<input type="text" name="edit-calle" id="edit-calle" class="form-control" placeholder="Nombre de la calle">
+						</div>
+						<div class="col-md-2">
+							<input type="text" name="edit-num-ext" id="edit-num-ext" class="form-control" placeholder="Núm. Ext.">
+						</div>
+						<div class="col-md-2">
+							<input type="text" name="edit-num-int" id="edit-num-int" class="form-control" placeholder="Núm. Int.">
+						</div>
+					</div>
+					
+					<div class="col-md-12" style="padding:initial; padding-top:10px;">
+						<div class="col-md-2"></div>			
+						<div class="col-md-6" style="padding:initial; margin-left:-50px;">
+							<div class="col-md-8">
+								<input type="text" name="edit-colonia" id="edit-colonia" class="form-control" placeholder="Nombre de la colonia">
+							</div>
+							<div class="col-md-4">
+								<input type="text" name="edit-cp" id="edit-cp" class="form-control" placeholder="C.P.">
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-12" style="padding:initial; padding-top:10px;">
+						<div class="col-md-2"></div>			
+						<div class="col-md-6" style="padding:initial; margin-left:-50px;">
+							<div class="col-md-4">
+								<input type="text" name="edit-ciudad" id="edit-ciudad" class="form-control" placeholder="Ciudad">
+							</div>
+							<div class="col-md-4">
+								<input type="text" name="edit-estado" id="edit-estado" class="form-control" placeholder="Estado">
+							</div>
+							<div class="col-md-4">
+								<input type="text" name="edit-pais" id="edit-pais" class="form-control" placeholder="País">
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+			<!--  integracion de editar  inicio -->
+			<div class="col-md-1"></div>
+			
+			<div class="col-md-11" style="border-bottom:1px solid #ccc; padding:20px 0 20px 0;">
+				<div class="col-md-12 col-md-pull-1" style="padding:initial; padding-top:10px;">
+					<div class="col-md-2 ">
 						<span class="text-gray">Comentarios:</span>
 					</div>
-					<div class="col-md-10" style="margin-left:-50px;">
-						<span class="text-black">Comentarios sobre el dueño.</span>
+					<div class="col-md-6" style="">
+						<textarea class="form-control col-md-10 col-md-pull-1" rows="2" style="resize:none">Comentarios sobre el dueño.</textarea>
+						<!--<span class="text-black">Comentarios sobre el dueño.</span>-->
 					</div>
 				</div>
 				
@@ -280,6 +425,14 @@
 						<a href=""><img src="css/images/vista-previa.png" alt="Vista previa"/></a>
 						<a href="" style="margin-left:15px;"><img src="css/images/descargar.png" alt="Descargar"/></a>
 						<a href="" style="margin-left:15px;"><img src="css/images/eliminar.png" alt="Eliminar"/></a>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-12 col-xs-pull-1 text-right;" style="border:0px solid; overflow:hidden;">
+						<button type="button" class="btn btn-mini superradiusin" style="float:right; margin-right: 0px; background-color: #1db2a4; color: white; "><strong>Guardar Cambios</strong></button>
+						<button type="button" class="btn btn-mini superradiusin" style="float:right; margin-right: 8px; color: gray; border: 2px solid #FAFAFA; border-top: none; border-left: none; background-color:white;" data-dismiss="modal"> <strong>Cancelar</strong> </button>
+		        		
 					</div>
 				</div>
 				<!--
