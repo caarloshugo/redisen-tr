@@ -383,8 +383,10 @@
 	                	<div class="row " style="margin-top:10px">
 	                		<div class="col-md-12">
 		            			<div class="col-md-12 " >
-		            				<div class="col-md-7 col-md-pull-0" style="height:44px; padding-top: 10px;">
-		            					<button  class="col-md-5 col-md-pull-0" type="button" class="btn btn-mini superradiusin" style="color: gray; border: 3px solid #FAFAFA; border-top: none; border-left: none; background-color:white;"> <strong>Agregar Concepto</strong> </button>
+		            				<div class="col-md-7 col-md-pull-2" style="height:44px; padding-top: 10px;">
+		            					<!--<button  class="col-md-5 col-md-pull-0" type="button" class="btn btn-mini superradiusin" style="color: gray; border: 3px solid #FAFAFA; border-top: none; border-left: none; background-color:white;"> <strong>Agregar Concepto</strong> </button>-->
+		            					<button type="button" class="btn btn-mini superradiusin"  style="margin-right: 0px; background-color: #1db2a4; color: white; "><strong>Agregar Concepto</strong></button>		                
+		            					
 		            				</div>
 		            			</div>
 		            		</div>
@@ -592,8 +594,10 @@
 	                	<div class="row " style="margin-top:10px">
 	                		<div class="col-md-12">
 		            			<div class="col-md-12 " >
-		            				<div class="col-md-7 col-md-pull-0" style="height:44px; padding-top: 10px;">
-		            					<button  class="col-md-5 col-md-pull-0" type="button" class="btn btn-mini superradiusin" style="color: gray; border: 3px solid #FAFAFA; border-top: none; border-left: none; background-color:white;"> <strong>Agregar Concepto</strong> </button>
+		            				<div class="col-md-7 col-md-pull-2" style="height:44px; padding-top: 10px;">
+		            					<!--<button  class="col-md-5 col-md-pull-0" type="button" class="btn btn-mini superradiusin" style="color: gray; border: 3px solid #FAFAFA; border-top: none; border-left: none; background-color:white;"> <strong>Agregar Concepto</strong> </button>-->
+		            					<button type="button" class="btn btn-mini superradiusin"  style="margin-right: 0px; background-color: #1db2a4; color: white; "><strong>Agregar Concepto</strong></button>	
+
 		            				</div>
 		            			</div>
 		            		</div>
@@ -797,7 +801,8 @@
 	                		<div class="col-md-12">
 		            			<div class="col-md-12 " >
 		            				<div class="col-md-7 col-md-pull-0" style="height:44px; padding-top: 10px;">
-		            					<button  class="col-md-5 col-md-pull-0" type="button" class="btn btn-mini superradiusin" style="color: gray; border: 3px solid #FAFAFA; border-top: none; border-left: none; background-color:white;"> <strong>Agregar Concepto</strong> </button>
+		            					<!--<button  class="col-md-5 col-md-pull-0" type="button" class="btn btn-mini superradiusin" style="color: gray; border: 3px solid #FAFAFA; border-top: none; border-left: none; background-color:white;"> <strong>Agregar Concepto</strong> </button>-->
+		            					<button type="button" class="btn btn-mini superradiusin"  style="margin-right: 0px; background-color: #1db2a4; color: white; "><strong>Agregar Concepto</strong></button>	
 		            				</div>
 		            			</div>
 		            		</div>
@@ -1072,8 +1077,9 @@
 	                	<div class="row " style="margin-top:10px">
 	                		<div class="col-md-12">
 		            			<div class="col-md-12 " >
-		            				<div class="col-md-7 col-md-pull-0" style="height:44px; padding-top: 10px;">
-		            					<button  class="col-md-5 col-md-pull-0" type="button" class="btn btn-mini superradiusin" style="color: gray; border: 3px solid #FAFAFA; border-top: none; border-left: none; background-color:white;"> <strong>Agregar Concepto</strong> </button>
+		            				<div class="col-md-7 col-md-pull-2" style="height:44px; padding-top: 10px;">
+		            					<!--<button  class="col-md-5 col-md-pull-0" type="button" class="btn btn-mini superradiusin" style="color: gray; border: 3px solid #FAFAFA; border-top: none; border-left: none; background-color:white;"> <strong>Agregar Concepto</strong> </button>-->
+		            					<button type="button" class="btn btn-mini superradiusin"  style="margin-right: 0px; background-color: #1db2a4; color: white; "><strong>Agregar Concepto</strong></button>	
 		            				</div>
 		            			</div>
 		            		</div>
@@ -1298,8 +1304,11 @@
 	                	<div class="row " style="margin-top:10px">
 	                		<div class="col-md-12">
 		            			<div class="col-md-12 " >
-		            				<div class="col-md-7 col-md-pull-0" style="height:44px; padding-top: 10px;">
-		            					<button  class="col-md-5 col-md-pull-0" type="button" class="btn btn-mini superradiusin" style="color: gray; border: 3px solid #FAFAFA; border-top: none; border-left: none; background-color:white;"> <strong>Agregar Concepto</strong> </button>
+		            				<div class="col-md-7 col-md-pull-2" style="height:44px; padding-top: 10px; ">
+		            					<!--<button  class="col-md-5 col-md-pull-0" type="button" class="btn btn-mini superradiusin" style="color: gray; border: 3px solid #FAFAFA; border-top: none; border-left: none; background-color: #1db2a4;"> <strong>Agregar Concepto</strong> </button>-->
+		            					
+		            					<button type="button" class="btn btn-mini superradiusin"  style="margin-right: 0px; background-color: #1db2a4; color: white; "><strong>Agregar Concepto</strong></button>		                
+		            					
 		            				</div>
 		            			</div>
 		            		</div>
@@ -1520,8 +1529,9 @@
 	                	<div class="row " style="margin-top:10px">
 	                		<div class="col-md-12">
 		            			<div class="col-md-12 " >
-		            				<div class="col-md-7 col-md-pull-0" style="height:44px; padding-top: 10px;">
-		            					<button  class="col-md-5 col-md-pull-0" type="button" class="btn btn-mini superradiusin" style="color: gray; border: 3px solid #FAFAFA; border-top: none; border-left: none; background-color:white;"> <strong>Agregar Concepto</strong> </button>
+		            				<div class="col-md-7 col-md-pull-2" style="height:44px; padding-top: 10px;">
+		            					<!--<button  class="col-md-5 col-md-pull-0" type="button" class="btn btn-mini superradiusin" style="color: gray; border: 3px solid #FAFAFA; border-top: none; border-left: none; background-color:white;"> <strong>Agregar Concepto</strong> </button>-->
+		            					<button type="button" class="btn btn-mini superradiusin"  style="margin-right: 0px; background-color: #1db2a4; color: white; "><strong>Agregar Concepto</strong></button>	
 		            				</div>
 		            			</div>
 		            		</div>
