@@ -315,13 +315,13 @@
 
       <div class="modal-header" style="background-color: #FAFAFA; border: 0px; height: 80px;">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h3 class="modal-title" style=" padding-top:5px; padding-left:15px; " ><img style="width:30px; height: 30px; overflow:hidden;  padding:0px;" src="iconos/02-Dashboard-InfoToolTip.png"> <strong> Nuevo Inquilino</strong> </h3>
+        <h3 class="modal-title" style=" padding-top:5px; padding-left:15px; " ><img style="width:30px; height: 30px; overflow:hidden;  padding:0px;" src="iconos/06-Inquilinos-PersonaFisica.png"> <strong> Nuevo Inquilino</strong> </h3>
       </div>
       <div class="modal-body">
       	<!-- cabecera -->
 
-      	<form class="form-horizontal" role="form">
-      		<div style="border:0px solid; overflow:hidden; margin-bottom:5px;" >
+      	<form class="form-horizontal" role="form" style="padding-left: 10px;">
+      		<div class="" style="border:0px solid; overflow:hidden; margin-bottom:5px;" >
   			<div class="col-xs-8" style="border:0px solid; ">
 				 <label for="inoptradio" class="col-lg-0 control-label" style="float:left; margin-left:-5px; ">Tipo de Persona*</label>
 			 	<div class="radio" style="float:left; width:150px; text-align: center;">
@@ -343,7 +343,7 @@
 	      		<div class="form-group">
 	      			
 				    <div class="col-xs-10" style="border:0px solid; margin-bottom:2px; margin-left: 10px;">
-				    	<label for="niNombres" class="col-lg-1 control-label" style="overflow:hidden; width:85px; padding-left:0px; border:0px solid; text-align: left; margin-left: -0px">Nombre*</label>
+				    	<label for="niNombres" class="col-lg-1 control-label" style="overflow:hidden; width:85px; padding-left:2px; border:0px solid; text-align: left; margin-left: -0px">Nombre*</label>
 				    	<div class="col-xs-10" style="overflow: hidden; border: 0px solid; margin-left:15px;">
 					    		<input style="width:200px; float: left;" type="text" class="form-control superradiusin" name ="niNombres" id="niNombres" maxlength="30"  placeholder="Nombres(s)">
 						    	<input style="width:170px; float: left; margin-left:15px;" type="text" class="form-control superradiusin" maxlength="30" name ="niapepaterno" id="niapepaterno"  placeholder="Apellido Paterno">
@@ -354,34 +354,34 @@
 				    <br><br><hr style="width:740px; overflow:hidden; float:left; margin-left: 35px;">
 				    
 				    <div class="col-xs-10" style="border:0px solid; margin-bottom:2px; margin-left: 10px;">
-				    	<label for="nitelcasa" class="col-lg-1 control-label"  style="overflow:hidden; width:85px; padding-left:0px; border:0px solid; text-align: left; margin-left: -0px">Tel. Casa:</label>
-				    	<div class="col-xs-4"><input type="text" class="form-control superradiusin col-xs-6 input-sm" maxlength="20" id="nitelcasa" name="nitelcasa"  placeholder=""></div>
+				    	<label for="nitelcasa" class="col-lg-1 control-label"  style="overflow:hidden; width:85px; padding-left:0px; border:0px solid; text-align: left; margin-left: 2px">Tel. Casa:</label>
+				    	<div class="col-xs-4"><input type="text" class="form-control superradiusin col-xs-6 input-sm" maxlength="20" id="nitelcasa" name="nitelcasa"  placeholder="555 00 23 423"></div>
 				    </div>
 				    <div class="col-xs-10" style="border:0px solid; margin-bottom:2px; margin-left: 10px;">
-				    	<label for="nicelular" class="col-lg-1 control-label"  style="overflow:hidden; width:85px; padding-left:0px; border:0px solid; text-align: left; margin-left: -0px">Celular:</label>
-					    <div class="col-xs-4"><input type="text" class="form-control superradiusin input-sm" maxlength="20" id="nicelular" name="nicelular"  placeholder=""></div>
+				    	<label for="nicelular" class="col-lg-1 control-label"  style="overflow:hidden; width:85px; padding-left:0px; border:0px solid; text-align: left; margin-left: 2px">Celular:</label>
+					    <div class="col-xs-4"><input type="text" class="form-control superradiusin input-sm" maxlength="20" id="nicelular" name="nicelular"  placeholder="045 555 543 40 32"></div>
 				    </div>
 					<div class="col-xs-10" style="border:0px solid; margin-bottom:6px; margin-left: 10px;">
-				    	<label for="nitelofi" class="col-lg-1 control-label" style="overflow:hidden; width:90px; padding-left:0px; border:0px solid; text-align: left; margin-left: -0px">Tel. Oficina:</label>
-					    <div class="col-xs-4"><input style="margin-left: -5px;" type="text" maxlength="20" class="form-control superradiusin input-sm" id="nitelofi" name="nitelofi"  placeholder=""></div>
+				    	<label for="nitelofi" class="col-lg-1 control-label" style="overflow:hidden; width:90px; padding-left:0px; border:0px solid; text-align: left; margin-left: 2px">Tel. Oficina:</label>
+					    <div class="col-xs-4"><input style="margin-left: -5px;" type="text" maxlength="20" class="form-control superradiusin input-sm" id="nitelofi" name="nitelofi"  placeholder="555 00 23 433"></div>
 				    </div>
 				    <div class="col-xs-10" style="border:0px solid; margin-bottom:2px; margin-left: 10px;">
-				    	<label for="niemail1" class="col-lg-1 control-label" style="overflow:hidden; width:85px; padding-left:0px; border:0px solid; text-align: left; margin-left: -0px">Correo 1:</label>
-					    <div class="col-xs-6"><input type="text" class="form-control superradiusin input-sm" maxlength="30" id="niemail1" name="niemail1"  placeholder=""></div>
+				    	<label for="niemail1" class="col-lg-1 control-label" style="overflow:hidden; width:85px; padding-left:0px; border:0px solid; text-align: left; margin-left: 2px">Correo 1:</label>
+					    <div class="col-xs-6"><input type="text" class="form-control superradiusin input-sm" maxlength="30" id="niemail1" name="niemail1"  placeholder="daniela.araico@gmail.com"></div>
 				    </div>
 				    <div class="col-xs-10" style="border:0px solid; margin-bottom:2px; margin-left: 10px;">
-				    	<label for="niemail2" class="col-lg-1 control-label" style="overflow:hidden; width:85px; padding-left:0px; border:0px solid; text-align: left; margin-left: -0px">Correo 2:</label>
-					    <div class="col-xs-6"><input type="text" class="form-control superradiusin input-sm" maxlength="20" id="niemail2" name="niemail2"  placeholder=""></div>
+				    	<label for="niemail2" class="col-lg-1 control-label" style="overflow:hidden; width:85px; padding-left:0px; border:0px solid; text-align: left; margin-left: 2px">Correo 2:</label>
+					    <div class="col-xs-6"><input type="text" class="form-control superradiusin input-sm" maxlength="20" id="niemail2" name="niemail2"  placeholder="daniela.araico@gmail.com"></div>
 				    </div>
 
 				    <br><br><hr style="width:740px; overflow:hidden; float:left; margin-left: 35px;">
 
 				    <div class="col-xs-10" style="border:0px solid; margin-bottom:6px; margin-left: 10px;">
-				    	<label for="nirfc" class="col-lg-1 control-label" style="overflow:hidden; width:85px; padding-left:0px; border:0px solid; text-align: left; margin-left: -0px">RFC:</label>
-					    <div class="col-xs-8"><input type="text" class="form-control superradiusin input-sm" maxlength="30" id="nirfc" name="nirfc"  placeholder=""></div>
+				    	<label for="nirfc" class="col-lg-1 control-label" style="overflow:hidden; width:85px; padding-left:0px; border:0px solid; text-align: left; margin-left: 2px">RFC:</label>
+					    <div class="col-xs-8"><input type="text" class="form-control superradiusin input-sm" maxlength="30" id="nirfc" name="nirfc"  placeholder="AAGD920910NS8"></div>
 				    </div>
 				    <div class="col-xs-10" style="border:0px solid; margin-bottom:2px; margin-left: 10px;">
-				    	<label for="ninomcalle" class="col-lg-1 control-label" style="overflow:hidden; width:85px; padding-left:0px; border:0px solid; text-align: left; margin-left: -0px">Dirección:</label>
+				    	<label for="ninomcalle" class="col-lg-1 control-label" style="overflow:hidden; width:85px; padding-left:0px; border:0px solid; text-align: left; margin-left: 2px">Dirección:</label>
 				    	 <div class="col-xs-10" style="overflow: hidden">
 			    	 	   <input style="width:335px; float: left;" type="text" maxlength="30" class="form-control superradiusin input-sm" id="ninomcalle" name="ninomcalle"  placeholder="Nombre de la Calle">
 						    <input style="width:104px; float: left; margin-left:15px;" type="text" maxlength="10" class="form-control input-sm" id="ninumint" name="ninumint"  placeholder="Núm. Ext">
@@ -409,9 +409,9 @@
 					  <br><br><hr style="width:740px; overflow:hidden; float:left; margin-left: 35px;">
 
 					  <div class="col-xs-10" style="border:0px solid; margin-bottom:6px; margin-left: 10px;">
-				    	<label for="nicomentarios" class="col-lg-1 control-label" style="overflow:hidden; width:85px; padding-left:0px; border:0px solid; text-align: left; margin-left: -0px" maxlength="200">Comentarios</label>
+				    	<label for="nicomentarios" class="col-lg-1 control-label" style="overflow:hidden; width:85px; padding-left:0px; border:0px solid; text-align: left; margin-left: 2px" maxlength="200">Comentarios</label>
 					    <div class="col-xs-8" style="overflow: hidden">
-					   		<textarea class="form-control superradiusin" rows="2" id="nicomentarios" style="resize: none;"></textarea>
+					   		<textarea class="form-control superradiusin" rows="2" id="nicomentarios" style="resize: none;">Comentarios sobre el dueño.</textarea>
 					   </div>
 					 </div>
 					 <div class="col-xs-10" style="border:0px solid; margin-bottom:2px; margin-left: -0px;">
@@ -458,7 +458,7 @@ $(function(){
 	$('#addinquilino').modal({
         show: 'true'
     }); 
-	*/    
+	*/
 
 })
 

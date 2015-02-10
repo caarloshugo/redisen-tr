@@ -548,15 +548,15 @@
 
       <div class="modal-header" style="background-color: #FAFAFA; border: 0px; height: 80px;">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h3 class="modal-title" style=" padding-top:5px; padding-left:15px; " ><img style="width:30px; height: 30px; overflow:hidden;  padding:0px;" src="iconos/02-Dashboard-InfoToolTip.png"> <strong> Nuevo Dueño</strong> </h3>
+        <h3 class="modal-title" style=" padding-top:5px; padding-left:15px; " ><img style="width:30px; height: 30px; overflow:hidden; margin-left:0px;  padding:0px;" src="iconos/06-Inquilinos-PersonaFisica.png"> <strong> Nuevo Dueño</strong> </h3>
       </div>
-      <div class="modal-body">
+      <div class="modal-body" >
       	<!-- cabecera -->
 
-      	<form class="form-horizontal" role="form">
+      	<form class="form-horizontal" style="padding-left:0px; " role="form">
       		<div style="border:0px solid; overflow:hidden; margin-bottom:5px;" >
   			<div class="col-xs-8" style="border:0px solid; ">
-				 <label for="inoptradio" class="col-lg-0 control-label" style="float:left; margin-left:-5px; ">Tipo de Persona*</label>
+				 <label for="inoptradio" class="col-lg-0 control-label" style="float:left; margin-left: 3px; ">Tipo de Persona*</label>
 			 	<div class="radio" style="float:left; width:150px; text-align: center;">
 			      <label><input type="radio" name="optradio" checked>Persona física</label>
 			    </div>
@@ -572,11 +572,11 @@
 
       		</div>
        	<!-- cuerpo -->
-	       	<div style="border: 0px solid; overflow:hidden; width:880px"  >
-	      		<div class="form-group">
+	       	<div style="border: 0px solid; overflow:hidden; width:880px"   >
+	      		<div class="form-group" >
 	      			
 				    <div class="col-xs-10" style="border:0px solid; margin-bottom:2px; margin-left: 10px;">
-				    	<label for="niNombres" class="col-lg-1 control-label" style="overflow:hidden; width:85px; padding-left:0px; border:0px solid; text-align: left; margin-left: -0px">Nombre*</label>
+				    	<label for="niNombres" class="col-lg-1 control-label" style="overflow:hidden; width:85px; padding-left:0px; border:0px solid; text-align: left; margin-left: 8px">Nombre*</label>
 				    	<div class="col-xs-10" style="overflow: hidden; border: 0px solid; margin-left:15px;">
 					    		<input style="width:200px; float: left;" type="text" class="form-control superradiusin" name ="niNombres" id="niNombres" maxlength="30"  placeholder="Nombres(s)">
 						    	<input style="width:170px; float: left; margin-left:15px;" type="text" class="form-control superradiusin" maxlength="30" name ="niapepaterno" id="niapepaterno"  placeholder="Apellido Paterno">
@@ -584,15 +584,18 @@
 					     </div>
 					 </div>
 
-				    <br><br><hr style="width:740px; overflow:hidden; float:left; margin-left: 35px;">
+				    <br><br>
+				    <hr style="width:740px; overflow:hidden; float:left; margin-left: 35px;">
 
-				    <div class="col-xs-10" style="border:0px solid; margin-bottom:2px; margin-left: 10px; height:130px;">
-				    	<label for="niaddlogotipo" class="col-lg-1 control-label" style="overflow:hidden; width:90px; overflow:hidden; padding:0px; border:0px solid; text-align: left; margin-left: -2px"> <img style="width:20px; height: 20px; overflow:hidden" src="iconos/02-Dashboard-InfoToolTip.png"> Logotipo:</label>				    	
+				    <div class="col-xs-10" style="border:0px solid; margin-bottom:2px; margin-left: -0px; height:130px; zxc">
+				    	<label for="niaddlogotipo" class="col-lg-1 control-label" style="overflow:hidden; width:90px; overflow:hidden; padding:0px; border:0px solid; text-align: left; margin-left: -2px"> 
+				    		<img style="width:20px; height: 20px; margin-left:0px; overflow:hidden" src="iconos/02-Dashboard-InfoToolTip.png"> Logotipo:
+				    	</label>				    	
 				    	<div class="col-xs-4"><input type="text" class="form-control col-xs-6 input-sm" maxlength="20" id="niaddlogotipo" name="niaddlogotipo"  placeholder=""></div>
 				    </div>
 
 				    <div class="col-xs-10" style="border:0px solid; margin-bottom:2px; margin-left: 10px;">
-				    	<label for="niaddpropiedad" class="col-lg-1 control-label" style="overflow:hidden; width:160px; overflow:hidden; padding:0px; border:0px solid; text-align: left; margin-left: -2px"> <img style="width:20px; height: 20px; overflow:hidden" src="iconos/02-Dashboard-InfoToolTip.png"> Agregar Propiedades:</label>				    	
+				    	<label for="niaddpropiedad" class="col-lg-1 control-label" style="overflow:hidden; width:160px; overflow:hidden; padding:0px; border:0px solid; text-align: left; margin-left: -11px"> <img style="width:20px; height: 20px; overflow:hidden" src="iconos/02-Dashboard-InfoToolTip.png"> Agregar Propiedades:</label>				    	
 				    	<div class="col-xs-4">
 				    		<select name="" class="col-md-4 col-md-pull-1 form-control box-shadow" style="margin-left:40px;">
 								<option>Propiedad...</option>
@@ -608,22 +611,22 @@
 				     <br><br><hr style="width:740px; overflow:hidden; float:left; margin-left: 35px;">
 				    
 				    <div class="col-xs-10" style="border:0px solid; margin-bottom:2px; margin-left: 10px;">
-				    	<label for="nitelcasa" class="col-lg-1 control-label"  style="overflow:hidden; width:85px; padding-left:0px; border:0px solid; text-align: left; margin-left: -0px">Tel. Casa:</label>
-				    	<div class="col-xs-4"><input type="text" class="form-control superradiusin col-xs-6 input-sm" maxlength="20" id="nitelcasa" name="nitelcasa"  placeholder=""></div>
-				    	 <label for="niemail1" class="col-lg-1 control-label" style="overflow:hidden; width:100px; padding-left:0px; border:0px solid; text-align: left; margin-left: -0px"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Correo 1:</label>
-					    <div class="col-xs-4"><input style="width:290px;" type="text" class="form-control superradiusin input-sm" maxlength="30" id="niemail1" name="niemail1"  placeholder=""></div>
+				    	<label for="nitelcasa" class="col-lg-1 control-label"  style="overflow:hidden; width:85px; padding-left:0px; border:0px solid; text-align: left; margin-left: 8px">Tel. Casa:</label>
+				    	<div class="col-xs-4"><input type="text" class="form-control superradiusin col-xs-6 input-sm" maxlength="20" id="nitelcasa" name="nitelcasa"  placeholder="01 81 83 66 55 88"></div>
+				    	 <label for="niemail1" class="col-lg-1 control-label" style="overflow:hidden; width:100px; padding-left:0px; border:0px solid; text-align: left; margin-left: 0px"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Correo 1:</label>
+					    <div class="col-xs-4"><input style="width:290px;" type="text" class="form-control superradiusin input-sm" maxlength="30" id="niemail1" name="niemail1"  placeholder="daniela.araico@gmail.com"></div>
 				    
 				    </div>
 				    <div class="col-xs-10" style="border:0px solid; margin-bottom:2px; margin-left: 10px;">
-				    	<label for="nicelular" class="col-lg-1 control-label"  style="overflow:hidden; width:85px; padding-left:0px; border:0px solid; text-align: left; margin-left: -0px">Celular:</label>
-					    <div class="col-xs-4"><input type="text" class="form-control superradiusin input-sm" maxlength="20" id="nicelular" name="nicelular"  placeholder=""></div>
-				     	<label for="niemail2" class="col-lg-1 control-label" style="overflow:hidden; width:100px; padding-left:0px; border:0px solid; text-align: left; margin-left: -0px"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Correo 2:</label>
+				    	<label for="nicelular" class="col-lg-1 control-label"  style="overflow:hidden; width:85px; padding-left:0px; border:0px solid; text-align: left; margin-left: 8px">Celular:</label>
+					    <div class="col-xs-4"><input type="text" class="form-control superradiusin input-sm" maxlength="20" id="nicelular" name="nicelular"  placeholder="044 81 15 43 99 62"></div>
+				     	<label for="niemail2" class="col-lg-1 control-label" style="overflow:hidden; width:100px; padding-left:0px; border:0px solid; text-align: left; margin-left: 0px"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Correo 2:</label>
 					    <div class="col-xs-4"><input style="width:290px;" type="text" class="form-control superradiusin input-sm" maxlength="20" id="niemail2" name="niemail2"  placeholder=""></div>
 				    
 				    </div>
 					<div class="col-xs-10" style="border:0px solid; margin-bottom:6px; margin-left: 10px;">
-				    	<label for="nitelofi" class="col-lg-1 control-label" style="overflow:hidden; width:90px; padding-left:0px; border:0px solid; text-align: left; margin-left: -0px">Tel. Oficina:</label>
-					    <div class="col-xs-4"><input style="margin-left: -5px;" type="text" maxlength="20" class="form-control superradiusin input-sm" id="nitelofi" name="nitelofi"  placeholder=""></div>
+				    	<label for="nitelofi" class="col-lg-1 control-label" style="overflow:hidden; width:90px; padding-left:0px; border:0px solid; text-align: left; margin-left: 8px">Tel. Oficina:</label>
+					    <div class="col-xs-4"><input style="margin-left: -5px;" type="text" maxlength="20" class="form-control superradiusin input-sm" id="nitelofi" name="nitelofi"  placeholder="01 81 83 66 55 "></div>
 				    </div><!--
 				    <div class="col-xs-10" style="border:0px solid; margin-bottom:2px; margin-left: 10px;">
 				    	<label for="niemail1" class="col-lg-1 control-label" style="overflow:hidden; width:85px; padding-left:0px; border:0px solid; text-align: left; margin-left: -0px">Correo 1:</label>
@@ -637,11 +640,11 @@
 				    <br><br><hr style="width:740px; overflow:hidden; float:left; margin-left: 35px;">
 
 				    <div class="col-xs-10" style="border:0px solid; margin-bottom:6px; margin-left: 10px;">
-				    	<label for="nirfc" class="col-lg-1 control-label" style="overflow:hidden; width:85px; padding-left:0px; border:0px solid; text-align: left; margin-left: -0px">RFC:</label>
-					    <div class="col-xs-8"><input type="text" class="form-control superradiusin input-sm" maxlength="30" id="nirfc" name="nirfc"  placeholder=""></div>
+				    	<label for="nirfc" class="col-lg-1 control-label" style="overflow:hidden; width:85px; padding-left:0px; border:0px solid; text-align: left; margin-left: 8px">RFC:</label>
+					    <div class="col-xs-8"><input type="text" class="form-control superradiusin input-sm" maxlength="30" id="nirfc" name="nirfc"  placeholder="AAGD920910NS8"></div>
 				    </div>
 				    <div class="col-xs-10" style="border:0px solid; margin-bottom:2px; margin-left: 10px;">
-				    	<label for="ninomcalle" class="col-lg-1 control-label" style="overflow:hidden; width:85px; padding-left:0px; border:0px solid; text-align: left; margin-left: -0px">Dirección:</label>
+				    	<label for="ninomcalle" class="col-lg-1 control-label" style="overflow:hidden; width:85px; padding-left:0px; border:0px solid; text-align: left; margin-left: 8px">Dirección:</label>
 				    	 <div class="col-xs-10" style="overflow: hidden">
 			    	 	   <input style="width:335px; float: left;" type="text" maxlength="30" class="form-control superradiusin input-sm" id="ninomcalle" name="ninomcalle"  placeholder="Nombre de la Calle">
 						    <input style="width:104px; float: left; margin-left:15px;" type="text" maxlength="10" class="form-control input-sm" id="ninumint" name="ninumint"  placeholder="Núm. Ext">
@@ -650,7 +653,7 @@
 
 					 </div>
 				    <div class="col-xs-10" style="border:0px solid; margin-bottom:2px; margin-left: 10px;">
-				    	<label for="ninomcolonia" class="col-lg-1 control-label" style="overflow:hidden; width:85px; padding-left:0px; border:0px solid; text-align: left; margin-left: -0px"></label>
+				    	<label for="ninomcolonia" class="col-lg-1 control-label" style="overflow:hidden; width:85px; padding-left:0px; border:0px solid; text-align: left; margin-left: 10px"></label>
 					     <div class="col-xs-8" style="overflow: hidden">
 					     	<input style="width:335px; float: left;" type="text" maxlength="30" class="form-control superradiusin input-sm" id="ninomcolonia" name="ninomcolonia"  placeholder="Nombre de la Colonia">
 					    	<input style="width:104px; float: left; margin-left:15px;" maxlength="30" type="text" class="form-control input-sm" id="ninumcp" name="ninumcp"  placeholder="C.P.">
@@ -658,7 +661,7 @@
 					 </div>
 
 					 <div class="col-xs-10" style="border:0px solid; margin-bottom:2px; margin-left: 10px;">
-				    	<label for="ninomcciudad" class="col-lg-1 control-label" style="overflow:hidden; width:85px; padding-left:0px; border:0px solid; text-align: left; margin-left: -0px"></label>
+				    	<label for="ninomcciudad" class="col-lg-1 control-label" style="overflow:hidden; width:85px; padding-left:0px; border:0px solid; text-align: left; margin-left: 10px"></label>
 					    <div class="col-xs-8" style="overflow: hidden">
 					    	<input style="width:141px; float: left;" type="text" maxlength="30" class="form-control superradiusin input-sm" id="ninomcciudad" name="ninomcciudad"  placeholder="Ciudad">
 					    	<input style="width:141px; float: left; margin-left:15px;" type="text" maxlength="30" class="form-control superradiusin input-sm" id="ninomestado" name="ninomestado"  placeholder="Estado">
@@ -669,9 +672,9 @@
 					  <br><br><hr style="width:740px; overflow:hidden; float:left; margin-left: 35px;">
 
 					  <div class="col-xs-10" style="border:0px solid; margin-bottom:6px; margin-left: 10px;">
-				    	<label for="nicomentarios" class="col-lg-1 control-label" style="overflow:hidden; width:85px; padding-left:0px; border:0px solid; text-align: left; margin-left: -0px" maxlength="200">Comentarios</label>
+				    	<label for="nicomentarios" class="col-lg-1 control-label" style="overflow:hidden; width:85px; padding-left:2px; border:0px solid; text-align: left; margin-left: 10px" maxlength="200">Comentarios</label>
 					    <div class="col-xs-8" style="overflow: hidden">
-					   		<textarea class="form-control superradiusin" rows="2" id="nicomentarios" style="resize: none;"></textarea>
+					   		<textarea class="form-control superradiusin" rows="2" id="nicomentarios" style="resize: none;">Comentarios sobre el dueño.</textarea>
 					   </div>
 					 </div>
 					 <div class="col-xs-10" style="border:0px solid; margin-bottom:2px; margin-left: -0px;">
@@ -718,7 +721,7 @@ $(function(){
 	$('#adddueno').modal({
         show: 'true'
     }); 
-	*/	  
+	*/ 
 
 })
 

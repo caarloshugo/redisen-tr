@@ -43,7 +43,7 @@
 			</div>
 			<div class="col-md-12 black-bold">Verifica el monto</div>
 			<div class="col-md-12 padding-top-15">
-				<img style="margin-left:-20px;" src="css/images/step-facturas-2.png" alt="Paso 3 - Datos fiscales del inquilino"/>
+				<img style="margin-left:-20px;" src="css/images/05-3StepFacturas-Paso3-icono.png" alt="Paso 3 - Datos fiscales del inquilino"/>
 			</div>
 		</div>
 	</div>
@@ -104,14 +104,14 @@
       <div class="modal-body" >
       	<div style="padding: 0 15px 0 15px ">
       		<div class="row">
-      			<div class="col-md-3" style=""><a href="#" data-dismiss="modal"> <strong>&lt;&lt; Regresar</strong> </a></div>
+      			<!--<div class="col-md-3" style=""><a href="#" data-dismiss="modal"> <strong>&lt;&lt; Regresar</strong> </a></div>-->
       		</div>  			
   							
   			<div class="row">
   				<div class="col-md-8" style="margin-top: 15px;">
 					<div class="col-md-4">Dueño existente</div>
 					<div class="col-md-8 col-md-pull-1">
-						<input style="" type="text" class="form-control superradiusin" name ="inputnom-dueno-existe" id="inputnom-dueno-existe" maxlength="30"  placeholder="">
+						<input style="" type="text" class="form-control superradiusin" name ="inputnom-dueno-existe" id="inputnom-dueno-existe" maxlength="30"  placeholder="Nombre del dueño">
 					</div>
 				</div>
   			</div>
@@ -128,7 +128,7 @@
 				<div class="col-md-8" style="margin-top:15px">
 					<div class="col-md-4">RFC*</div>
 					<div class="clearfix"></div>
-					<div class="col-md-6"><input type="text" class="form-control superradiusin input-sm" maxlength="30" id="inputrfc-dueno-existe" name="inputrfc-dueno-existe"  placeholder=""></div>
+					<div class="col-md-6"><input type="text" class="form-control superradiusin input-sm" maxlength="30" id="inputrfc-dueno-existe" name="inputrfc-dueno-existe"  placeholder="GOCC880405789"></div>
 				</div>				
 			</div>
 			<div class="row" style="margin-top:10px;">
@@ -137,14 +137,14 @@
 						<div class="col-md-6 text-gray">Calle*</div>
 						<div class="clearfix"></div>
 						<div class="col-md-6">
-							<input style="width:335px; float: left;" type="text" maxlength="30" class="form-control superradiusin input-sm" id="inputcallenom-dueno-existe" name="inputcallenom-dueno-existe"  placeholder="">
+							<input style="width:335px; float: left;" type="text" maxlength="30" class="form-control superradiusin input-sm" id="inputcallenom-dueno-existe" name="inputcallenom-dueno-existe"  placeholder="Paseo del Acueducto">
 						</div>
 					</div>
 					<div class="row col-md-3">
 						<div class="col-md-12 col-md-pull-1 text-gray">Núm Ext*</div>
 						<div class="clearfix"></div>
 						<div class="col-md-12 col-md-pull-1">
-							<input style="" type="text" maxlength="30" class="form-control superradiusin input-sm" id="inputcallenumint-dueno-existe" name="inputcallenumint-dueno-existe"  placeholder="">
+							<input style="" type="text" maxlength="30" class="form-control superradiusin input-sm" id="inputcallenumint-dueno-existe" name="inputcallenumint-dueno-existe"  placeholder="6519">
 						</div>
 					</div>
 					<div class="row col-md-3">
@@ -162,13 +162,13 @@
 					<div class="row col-md-6">
 						<div class="col-md-12">Colonia*</div>
 						<div class="col-md-11">
-							<input type="text" maxlength="30" class="form-control superradiusin input-sm" id="inputcolonia-dueno-existe" name="inputcolonia-dueno-existe"  placeholder="">
+							<input type="text" maxlength="30" class="form-control superradiusin input-sm" id="inputcolonia-dueno-existe" name="inputcolonia-dueno-existe"  placeholder="Ciudad Satélite">
 						</div>
 					</div>
 					<div class="row col-md-6" style="margin-left:5px;">
 						<div class="col-md-12 col-md-pull-1">C.P*</div>
 						<div class="col-md-11 col-md-pull-1">
-							<input type="text" maxlength="30" class="form-control superradiusin input-sm" id="inputcpostal-dueno-existe" name="inputcpostal-dueno-existe"  placeholder="">
+							<input type="text" maxlength="30" class="form-control superradiusin input-sm" id="inputcpostal-dueno-existe" name="inputcpostal-dueno-existe"  placeholder="64960">
 						</div>
 					</div>
 				</div>
@@ -178,25 +178,86 @@
 					<div class="row col-md-4" style="margin:0 3px 0-30px">
 						<div class="col-md-12">Municipio*</div>
 						<div class="col-md-12">
-							<input style="" type="text" maxlength="30" class="form-control superradiusin input-sm" id="inputciudad-dueno-existe" name="inputciudad-dueno-existe"  placeholder="">
+							<input style="" type="text" maxlength="30" class="form-control superradiusin input-sm" id="inputciudad-dueno-existe" name="inputciudad-dueno-existe"  placeholder="Nuevo León">
 						</div>
 					</div>
 					<div class="row col-md-4">
 						<div class="col-md-12">Estado*</div>
 						<div class="col-md-12">
-							<input style="" type="text" maxlength="30" class="form-control superradiusin input-sm" id="inputestado-dueno-existe" name="inputestado-dueno-existe"  placeholder="">
+							<input style="" type="text" maxlength="30" class="form-control superradiusin input-sm" id="inputestado-dueno-existe" name="inputestado-dueno-existe"  placeholder="Monterrey">
 						</div>
 					</div>
 					<div class="row col-md-4">
 						<div class="col-md-12">Pais*</div>
 						<div class="col-md-12">
-							<input style="" type="text" maxlength="30" class="form-control superradiusin input-sm" id="inputpais-dueno-existe" name="inputpais-dueno-existe"  placeholder="">
+							<input style="" type="text" maxlength="30" class="form-control superradiusin input-sm" id="inputpais-dueno-existe" name="inputpais-dueno-existe"  placeholder="México">
 						</div>
 					</div>
 
 				</div>
 			</div>
-			
+			<!-- Carga de CSD -->
+			<div class="row">
+				<div class="col-md-12">
+					<div class="col-md-10"><hr class ="col-md-10 col-md-offset-1"></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 "> <strong > 
+					<h4 class="col-md-2 ">Cargar CSD</h4>  
+					<div class="col-md-4 " style="overflow:hidden; margin-top:9px;"> <a href="">¿Qué es esto?</a>  </div>
+				</strong> </div>	
+
+			</div>
+			<div class="row">
+				<div class="col-md-12 col-md-offset-0 ">  
+					<div class="col-md-3 " style="padding-top :5px;">Contraseña Llave Privada:</div>  
+					<div class="col-md-5 ">
+							<input style="" type="text" maxlength="30" class="form-control superradiusin input-sm" id="inputpais-dueno-existe" name="inputpais-dueno-existe"  placeholder="Contraseña">						
+					</div>
+				</div>	
+			</div>
+			<div class="row" style="padding-top :5px;">
+				<div class="col-md-12 col-md-offset-0">  
+					<div class="col-md-3" style="padding-top :5px;">Certificado (.cer):</div>  
+					<div class="col-md-8 ">
+						<input style="width:325px; float: left; margin-left:0px; margin-right:25px; background-color: white" maxlength="200" type="text" class="form-control superradiusin" id="fileduenoexistenteurldocument" name="nitexturldocument"  placeholder="" disabled>					    
+				    	<span class="btn btn-file superradiusin" style="color: white; border: 2px solid #FAFAFA; border-top: none; border-left: 3px solid #FAFAFA; background-color:#1db2a4;">
+				    		<strong>Seleccionar</strong>  <input id="fileduenoexistente" class="btn btn-mini superradiusin" type="file" >
+				    	</span>
+
+					</div>
+				</div>	
+			</div>
+			<div class="row" style="padding-top :5px;">
+				<div class="col-md-12 col-md-offset-0">  
+					<div class="col-md-3" style="padding-top :5px;">Llave Privada (.key):</div>  
+					<div class="col-md-8 ">
+						<input style="width:325px; float: left; margin-left:0px; margin-right:25px; background-color: white" maxlength="200" type="text" class="form-control superradiusin" id="fileduenoexistenteurldocument2" name="nitexturldocument"  placeholder="" disabled>					    
+				    	<span class="btn btn-file superradiusin" style="color: white; border: 2px solid #FAFAFA; border-top: none; border-left: 3px solid #FAFAFA; background-color:#1db2a4;">
+				    		<strong>Seleccionar</strong>  <input id="fileduenoexistente2" class="btn btn-mini superradiusin" type="file" >
+				    	</span>
+
+					</div>
+				</div>	
+			</div>
+
+
+			<div class="row" style="padding-top :4px;">
+				<div class="col-md-12 col-md-offset-0 " >  
+					<div class="col-md-3 " style="padding-top :5px;"></div>  
+					<div class="col-md-4" >
+						<div class="progress" style=" height:10px;">
+					  		<div class="progress-bar progress-bar-info"  role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+						    <span class="sr-only">40% completado (éxito)</span>
+						  </div>
+						</div>
+					</div>
+					<div class="col-md-4 col-md-pull-0  " style="font-size:10px;">
+						60%
+					</div>
+				</div>	
+			</div>
 
 
       	</div>
@@ -279,7 +340,7 @@
 				<div class="col-md-12" style="margin-top:10px">
 					<div class="col-md-4">RFC*</div>
 					<div class="clearfix"></div>
-					<div class="col-md-5"><input type="text" class="form-control superradiusin input-sm" maxlength="30" id="inputrfc-dueno-nuevo" name="inputrfc-dueno-nuevo"  placeholder=""></div>
+					<div class="col-md-5"><input type="text" class="form-control superradiusin input-sm" maxlength="30" id="inputrfc-dueno-nuevo" name="inputrfc-dueno-nuevo"  placeholder="GOCC880405789"></div>
 				</div>				
 			</div>
 			<div class="row" style="margin-top:10px;">
@@ -288,14 +349,14 @@
 						<div class="col-md-6 text-gray">Calle*</div>
 						<div class="clearfix"></div>
 						<div class="col-md-6">
-							<input style="width:335px; float: left;" type="text" maxlength="30" class="form-control superradiusin input-sm" id="inputcallenom-dueno-nuevo" name="inputcallenom-dueno-nuevo"  placeholder="">
+							<input style="width:335px; float: left;" type="text" maxlength="30" class="form-control superradiusin input-sm" id="inputcallenom-dueno-nuevo" name="inputcallenom-dueno-nuevo"  placeholder="Paseo del Acueducto">
 						</div>
 					</div>
 					<div class="row col-md-3">
 						<div class="col-md-12 col-md-pull-1 text-gray">Núm Ext*</div>
 						<div class="clearfix"></div>
 						<div class="col-md-12 col-md-pull-1">
-							<input style="" type="text" maxlength="30" class="form-control superradiusin input-sm" id="inputcallenumint-dueno-nuevo" name="inputcallenumint-dueno-nuevo"  placeholder="">
+							<input style="" type="text" maxlength="30" class="form-control superradiusin input-sm" id="inputcallenumint-dueno-nuevo" name="inputcallenumint-dueno-nuevo"  placeholder="6519">
 						</div>
 					</div>
 					<div class="row col-md-3">
@@ -313,13 +374,13 @@
 					<div class="row col-md-6">
 						<div class="col-md-12">Colonia*</div>
 						<div class="col-md-11">
-							<input type="text" maxlength="30" class="form-control superradiusin input-sm" id="inputcolonia-dueno-nuevo" name="inputcolonia-dueno-nuevo"  placeholder="">
+							<input type="text" maxlength="30" class="form-control superradiusin input-sm" id="inputcolonia-dueno-nuevo" name="inputcolonia-dueno-nuevo"  placeholder="Ciudad Satélite">
 						</div>
 					</div>
 					<div class="row col-md-6" style="margin-left:5px;">
 						<div class="col-md-12 col-md-pull-1">C.P*</div>
 						<div class="col-md-11 col-md-pull-1">
-							<input type="text" maxlength="30" class="form-control superradiusin input-sm" id="inputcpostal-dueno-nuevo" name="inputcpostal-dueno-nuevo"  placeholder="">
+							<input type="text" maxlength="30" class="form-control superradiusin input-sm" id="inputcpostal-dueno-nuevo" name="inputcpostal-dueno-nuevo"  placeholder="64960">
 						</div>
 					</div>
 				</div>
@@ -329,26 +390,88 @@
 					<div class="row col-md-4" style="margin:0 3px 0-30px">
 						<div class="col-md-12">Municipio*</div>
 						<div class="col-md-12">
-							<input style="" type="text" maxlength="30" class="form-control superradiusin input-sm" id="inputciudad-dueno-nuevo" name="inputciudad-dueno-nuevo"  placeholder="">
+							<input style="" type="text" maxlength="30" class="form-control superradiusin input-sm" id="inputciudad-dueno-nuevo" name="inputciudad-dueno-nuevo"  placeholder="Nuevo León">
 						</div>
 					</div>
 					<div class="row col-md-4">
 						<div class="col-md-12">Estado*</div>
 						<div class="col-md-12">
-							<input style="" type="text" maxlength="30" class="form-control superradiusin input-sm" id="inputestado-dueno-nuevo" name="inputestado-dueno-nuevo"  placeholder="">
+							<input style="" type="text" maxlength="30" class="form-control superradiusin input-sm" id="inputestado-dueno-nuevo" name="inputestado-dueno-nuevo"  placeholder="Monterrey">
 						</div>
 					</div>
 					<div class="row col-md-4">
 						<div class="col-md-12">Pais*</div>
 						<div class="col-md-12">
-							<input style="" type="text" maxlength="30" class="form-control superradiusin input-sm" id="inputpais-dueno-nuevo" name="inputpais-dueno-nuevo"  placeholder="">
+							<input style="" type="text" maxlength="30" class="form-control superradiusin input-sm" id="inputpais-dueno-nuevo" name="inputpais-dueno-nuevo"  placeholder="México">
 						</div>
 					</div>
 
 				</div>
 			</div>
 			
+			<!-- Carga de CSD -->
+			<div class="row">
+				<div class="col-md-12">
+					<div class="col-md-10"><hr class ="col-md-10 col-md-offset-1"></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 "> <strong > 
+					<h4 class="col-md-2 ">Cargar CSD</h4>  
+					<div class="col-md-4 " style="overflow:hidden; margin-top:9px;"> <a href="">¿Qué es esto?</a>  </div>
+				</strong> </div>	
 
+			</div>
+			<div class="row">
+				<div class="col-md-12 col-md-offset-0 ">  
+					<div class="col-md-3 " style="padding-top :5px;">Contraseña Llave Privada:</div>  
+					<div class="col-md-5 ">
+							<input style="" type="text" maxlength="30" class="form-control superradiusin input-sm" id="inputpais-dueno-existe" name="inputpais-dueno-existe"  placeholder="Contraseña">						
+					</div>
+				</div>	
+			</div>
+			<div class="row" style="padding-top :5px;">
+				<div class="col-md-12 col-md-offset-0">  
+					<div class="col-md-3" style="padding-top :5px;">Certificado (.cer):</div>  
+					<div class="col-md-8 ">
+						<input style="width:325px; float: left; margin-left:0px; margin-right:25px; background-color: white" maxlength="200" type="text" class="form-control superradiusin" id="fileduenonuevourldocument" name="nitexturldocument"  placeholder="" disabled>					    
+				    	<span class="btn btn-file superradiusin" style="color: white; border: 2px solid #FAFAFA; border-top: none; border-left: 3px solid #FAFAFA; background-color:#1db2a4;">
+				    		<strong>Seleccionar</strong>  <input id="fileduenonuevo" class="btn btn-mini superradiusin" type="file" >
+				    	</span>
+
+					</div>
+				</div>	
+			</div>
+			<div class="row" style="padding-top :5px;">
+				<div class="col-md-12 col-md-offset-0">  
+					<div class="col-md-3" style="padding-top :5px;">Llave Privada (.key):</div>  
+					<div class="col-md-8 ">
+						<input style="width:325px; float: left; margin-left:0px; margin-right:25px; background-color: white" maxlength="200" type="text" class="form-control superradiusin" id="fileduenonuevourldocument2" name="nitexturldocument"  placeholder="" disabled>					    
+				    	<span class="btn btn-file superradiusin" style="color: white; border: 2px solid #FAFAFA; border-top: none; border-left: 3px solid #FAFAFA; background-color:#1db2a4;">
+				    		<strong>Seleccionar</strong>  <input id="fileduenonuevo2" class="btn btn-mini superradiusin" type="file" >
+				    	</span>
+
+					</div>
+				</div>	
+			</div>
+
+	
+
+			<div class="row" style="padding-top :4px;">
+				<div class="col-md-12 col-md-offset-0 " >  
+					<div class="col-md-3 " style="padding-top :5px;"></div>  
+					<div class="col-md-4" >
+						<div class="progress" style=" height:10px;">
+					  		<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+						    <span class="sr-only">40% completado (éxito)</span>
+						  </div>
+						</div>
+					</div>
+					<div class="col-md-4 col-md-pull-0  " style="font-size:10px;">
+						60%
+					</div>
+				</div>	
+			</div>
 					    
 
       	</div>
@@ -477,6 +600,8 @@
 						<input type="text" class="form-control col-md-2" name="input-pais-inquilino" id="input-pais-inquilino" required>
 					</div>
 				</div>
+
+
 
 
 				<div class="col-md-12 pull-right" style="padding-top:30px;">
@@ -681,20 +806,31 @@ $(function(){
         	show: 'true'
     	}); 
 	});
-
-	
 	 /*
 	 $('#modal-dueno-existente').modal({
-        	show: 'true'
-    	}); 
-
+    	show: 'true'
+	}); 
 	 */
+	$("#fileduenonuevo").change(function(){
+       var fileName = $(this).val();
+       $("#fileduenonuevourldocument").val(fileName);
+	});
+	$("#fileduenonuevo2").change(function(){
+       var fileName = $(this).val();
+       $("#fileduenonuevourldocument2").val(fileName);
+	});
+ 	$("#fileduenoexistente").change(function(){
+       var fileName = $(this).val();
+       $("#fileduenoexistenteurldocument").val(fileName);
+ 	});
+ 	$("#fileduenoexistente2").change(function(){
+       var fileName = $(this).val();
+       $("#fileduenoexistenteurldocument2").val(fileName);
+ 	});
+	 
 
 })
 
-$("#nidocumentofile").change(function(){
-       var fileName = $(this).val();
-       $("#nitexturldocument").val(fileName);
- });
+
 
 </script>

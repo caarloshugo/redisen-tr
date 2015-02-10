@@ -243,9 +243,9 @@
   <div class="modal-dialog">
     <div class="modal-content" style="min-width:800px;">
 
-      <div class="modal-header" style="background-color: #FAFAFA; height: 80px; border:0px solid">
+      <div class="modal-header" style="background-color: #FAFAFA; height: 50px; border:0px solid">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h3 class="modal-title text-center" id="modaltitulo" style=" padding-top:5px; padding-left:15px; " > <strong> Casa Monterrey en ciudad satelite 1-A</strong> </h3>
+        <h3 class="modal-title text-center" id="modaltitulo" style=" padding-top:0px; padding-left:15px; " > <strong> Generar Recibos Seleccionados</strong> </h3>
 
       </div>
   		 <!--<h4 class="modal-title">Modal title</h4>-->
@@ -255,16 +255,16 @@
   		 http://stackoverflow.com/questions/10521165/bootstrap-javascript-carousel-doesnt-stop-cycling
 		
       	-->
-      <div class="modal-body" style="border:0px solid; overflow:hidden;">  <!-- overflow:hidden-->    	
+      <div class="modal-body" style="border:0px solid; overflow:hidden; background-color:#f9f9f9;">  <!-- overflow:hidden-->    	
       	<div class="bs-example" syle="width:100%; overflow:hidden; margin:-10px"><!-- overflow:hidden-->
-		    <div id="myCarousel" class="carousel slide" data-interval="false" data-ride="carousel" style="width:80%; float:left; border:0px solid; margin:0px; padding:0px;">
+		    <div id="myCarousel" class="carousel slide" data-interval="false" data-ride="carousel" style="width:80%; float:left; border:0px solid; margin:0px; padding:0px; background-color: white;">
 		        <!-- Carousel items -->
 		        <div class="carousel-inner " style="whidth:100%; padding:0px;">
 		        	
-
+		        	<!-- INICIO DE FORMULARIO slider 1 -->
 		            <div class="active item" style="background-color: white; padding:0px; width:100%; ">
 		            	<!-- INICIO DE FORMULARIO slider 1 -->
-		            	<div class="row" style="height:140px;">
+		            	<div class="row" style="height:140px; padding-top:10px;" >
 		            		<div class="col-md-3">
 		            			<div class="col-md-4" >
 		            				<div class="col-md-12 col-md-push-0" style="border:1px solid; width:120px; height:130px; background-color: gray"></div>
@@ -469,7 +469,7 @@
 
 		            </div>
 		           <!-- segundo slider -->
-		            <div class="item" style="background-color: white; padding:0px; width:100%; " >		 
+		            <div class="item" style="background-color: white; padding-top:10px; width:100%; " >		 
 		            	
 
 		            	<!-- INICIO DE FORMULARIO slider 2 -->
@@ -677,7 +677,7 @@
 		            <!-- tercer slider -->
 		            <div class="item" style="background-color: white;">
 		            	<!-- INICIO DE FORMULARIO slider 3 -->
-		            	<div class="row" style="height:140px;">
+		            	<div class="row" style="height:140px; padding-top:10px ">
 		            		<div class="col-md-3">
 		            			<div class="col-md-4" >
 		            				<div class="col-md-12 col-md-push-0" style="border:1px solid; width:120px; height:130px; background-color: gray"></div>
@@ -881,15 +881,15 @@
 		        </div>
 		    </div>
 		    <!-- Controls buttons -->
-		    <div class="control-buttons" style="color:#1db2a4; width:18%; min-height:650px; float:left; border-left: 1px solid gray; padding-top:15px;">		        		       
+		    <div class="control-buttons	" style="color:#1db2a4; width:18%; min-height:650px; float:left; border-left: 0px solid gray; padding-top:15px;">		        		       
 		        <div class="row">
-		        	<div class="btn" id="uno" onClick="cambiarform(0)" class="col-md-12"> <strong>Casa Monterrey...</strong>  </div>
+		        	<div id="uno" onClick="cambiarform(0)" class="btn col-md-12" alt="Comentarios" data-toggle="tooltip" data-placement="left" title="Casa Monterrey en ciudad satelite 1-A"> <strong>Casa Monterrey...</strong>  </div>
 		        </div>	 
 		        <div class="row">
-		        	<div class="btn" onClick="cambiarform(1)" class="col-md-12"><strong>Casa Monterrey...</strong> </div>
+		        	<div onClick="cambiarform(1)" class="btn col-md-12" alt="Comentarios" data-toggle="tooltip" data-placement="left" title="Casa Monterrey en ciudad satelite 1-A" ><strong>Casa Monterrey...</strong> </div>
 		        </div>	
 		        <div class="row">
-		        	<div class="btn" onClick="cambiarform(2)" class="col-md-12"><strong>Casa Monterrey...</strong> </div>
+		        	<div onClick="cambiarform(2)" class="btn col-md-12" alt="Comentarios" data-toggle="tooltip" data-placement="left" title="Casa Monterrey en ciudad satelite 1-A"><strong>Casa Monterrey...</strong> </div>
 		        </div>	       		      
 		    </div>
 		</div>      	
@@ -912,9 +912,9 @@
   <div class="modal-dialog">
     <div class="modal-content" style="min-width:800">
 
-      <div class="modal-header" style="background-color: #FAFAFA; height: 80px; border:0px solid">
+      <div class="modal-header" style="background-color: #FAFAFA; height: 50px; border:0px solid">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h3 class="modal-title text-center" id="modaltitulo" style=" padding-top:5px; padding-left:15px; " > <strong> Casa Monterrey en ciudad satelite 1-A</strong> </h3>
+        <h3 class="modal-title text-center" id="modaltitulo" style=" padding-top:0px; padding-left:15px; " > <strong> Registrar Pagos Seleccionados</strong> </h3>
 
       </div>
   		 <!--<h4 class="modal-title">Modal title</h4>-->
@@ -924,16 +924,16 @@
   		 http://stackoverflow.com/questions/10521165/bootstrap-javascript-carousel-doesnt-stop-cycling
 		
       	-->
-      <div class="modal-body" style="border:0px solid; overflow:hidden;">  <!-- overflow:hidden-->    	
+      <div class="modal-body" style="border:0px solid; background-color:#f9f9f9; overflow:hidden;">  <!-- overflow:hidden-->    	
       	<div class="bs-example" syle="width:100%; overflow:hidden; margin:-10px"><!-- overflow:hidden-->
-		    <div id="myCarousel2" class="carousel slide" data-interval="false" data-ride="carousel" style="width:80%; float:left; border:0px solid; margin:0px; padding:0px;">
+		    <div id="myCarousel2" class="carousel slide" data-interval="false" data-ride="carousel" style="width:80%; float:left; border:0px solid; margin:0px; padding:0px; background-color:white;">
 		        <!-- Carousel items -->
 		        <div class="carousel-inner " style="whidth:100%; padding:0px;">
 		        	
 		        	<!-- PREMIER SLIDER -->
 		            <div class="active item" style="background-color: white; padding:0px; width:100%; ">
 		            	<!-- INICIO DE FORMULARIO slider 1 -->
-		            	<div class="row" style="height:145px;">
+		            	<div class="row" style="height:145px; padding-top: 10px;">
 		            		<div class="col-md-3">
 		            			<div class="col-md-4" >
 		            				<div class="col-md-12 col-md-push-0" style="border:1px solid; width:120px; height:140px; background-color: gray"></div>
@@ -1159,7 +1159,7 @@
 		            	
 
 		            	<!-- INICIO DE FORMULARIO slider 2 -->
-		            	<div class="row" style="height:145px;">
+		            	<div class="row" style="height:145px; padding-top:10px;">
 		            		<div class="col-md-3">
 		            			<div class="col-md-4" >
 		            				<div class="col-md-12 col-md-push-0" style="border:1px solid; width:120px; height:140px; background-color: gray"></div>
@@ -1381,7 +1381,7 @@
 		            <!-- tercer slider -->
 		            <div class="item" style="background-color: white;">
 		            	<!-- INICIO DE FORMULARIO slider 3 -->
-		            	<div class="row" style="height:145px;">
+		            	<div class="row" style="height:145px; padding-top:10px;">
 		            		<div class="col-md-3">
 		            			<div class="col-md-4" >
 		            				<div class="col-md-12 col-md-push-0" style="border:1px solid; width:120px; height:140px; background-color: gray"></div>
@@ -1605,15 +1605,15 @@
 		        </div>
 		    </div>
 		    <!-- Controls buttons -->
-		    <div class="control-buttons" style="color:#1db2a4; width:18%; min-height:650px; float:left; border-left: 1px solid gray; padding-top:15px;">		        		       
+		    <div class="control-buttons" style="color:#1db2a4; width:18%; min-height:650px; float:left; border-left: 0px solid gray; padding-top:15px;">		        		       
 		        <div class="row">
-		        	<div class="btn" id="uno" onClick="cambiarform2(0)" class="col-md-12"> <strong>Casa Monterrey...</strong>  </div>
+		        	<div id="uno" alt="Comentarios" onClick="cambiarform2(0)" class=" btn col-md-12" data-toggle="tooltip" data-placement="left" title="Casa Monterrey en ciudad satelite 1-A"> <strong >Casa Monterrey...</strong>  </div>
 		        </div>	 
 		        <div class="row">
-		        	<div class="btn" onClick="cambiarform2(1)" class="col-md-12"><strong>Casa Monterrey...</strong> </div>
+		        	<div onClick="cambiarform2(1)" class="btn col-md-12" data-toggle="tooltip" data-placement="left" title="Casa Monterrey en ciudad satelite 1-A"><strong>Casa Monterrey...</strong> </div>
 		        </div>	
 		        <div class="row">
-		        	<div class="btn" onClick="cambiarform2(2)" class="col-md-12"><strong>Casa Monterrey...</strong> </div>
+		        	<div  onClick="cambiarform2(2)" class="btn col-md-12" data-toggle="tooltip" data-placement="left" title="Casa Monterrey en ciudad satelite 1-A"><strong>Casa Monterrey...</strong> </div>
 		        </div>	       		      
 		    </div>
 		</div>      	
