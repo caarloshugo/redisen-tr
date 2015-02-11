@@ -109,14 +109,14 @@ table.tablesorter thead tr .tablesorter-header {
 }
 
 table.tablesorter thead tr .tablesorter-headerDesc {
-        background-image: url(../iconos/desc.gif);
-        //background-repeat: no-repeat;
-        //background-position: center right;
+        background-image: url(../iconos/02-Dashboard-FlechaOrdenar.png);
+        /*background-repeat: no-repeat;
+        background-position: center right;*/
         
 }
 table.tablesorter thead tr .tablesorter-headerAsc {
-        background-image: url(../iconos/asc.gif);
-        //background-repeat: no-repeat;
-        //background-position: center right;
+        background-image: url(../iconos/02-Dashboard-FlechaOrdenarasc.png);
+        background-repeat: no-repeat;
+        background-position: center right;
         
 }
