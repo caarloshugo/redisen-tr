@@ -36,22 +36,47 @@
 				
 			</div>			
 		</div>
+		<div class="clearfix"></div>
+		<div class="row" style="margin-bottom:15px">
+			<div class="col-md-8 ">
+				<h4 style="padding-left:40px;">
+					<strong>
+						Casa de Monterrey en Satélite Número 1-A
+					</strong>					
+				</h4>
+				
+			</div>
+			<div class="col-md-4">
+				<div class="col-md-3 col-md-offset-6">
+					<a href="" class="a-comentarios">
+						<img style="width:45px; height:45px;" src="iconos/02-Dashboard-Imprimir.png" />
+					</a>
+				</div>
+				<div class="col-md-3 text-rigth ">
+					<a href="" class="text-right">
+						<img style="width:45px; height:45px;" src="iconos/03-Propiedades-EdodeCuenta-DescargarXLS.png" />
+					</a>
+				</div>
+			</div>
+
+		</div>
+		
 		
 		<!-- tabla tablesorter incio-->
 		<div class="col-md-12">
 			<div class="col-md-12" style="padding:0 20px 20px 20px;">
 				<div class="col-md-12" style="padding:initial;" id="dsb-table-recibos-pagos">
 					<div class="table-responsive">
-						<table  class="table table-regular tablesorter" >
+						<table  class="table table-regular tablesorter" id="tablesort-cuenta" >
 							<thead>
 								<tr class="text-center">									
-									<td>Folio</td>
-									<td>Fecha</td>
-									<td>Concepto</td>
-									<td></td>
-									<td>Cargo</td>
-									<td>Abono</td>
-									<td>Saldo</td>
+									<th>Folio</th>
+									<th>Fecha</th>
+									<th>Concepto</th>
+									<th></th>
+									<th>Cargo</th>
+									<th>Abono</th>
+									<th>Saldo</th>
 									
 								</tr>
 							</thead>
@@ -148,7 +173,13 @@
 
 								
 							</tbody>
-						</table>
+						</table>						
+					</div>
+					<div class="col-md-12" style=" border:1px solid gray; background-color: #20353c; color: white;">
+							<div class="col-md-4 col-md-offset-8 text-right" style="padding-right: 0px;">
+								<strong> Saldo Total: $120,000.00 </strong>								
+							</div>
+							
 					</div>
 				</div>
 			</div>
@@ -157,6 +188,29 @@
 
 		</div>
 			<!-- tabla tablesorter final -->
+
+		<div class="clearfix"></div>
+		<div class="row" style="margin-top:15px">
+			<div class="col-md-8 ">
+				
+				
+			</div>
+			<div class="col-md-4">
+				<div class="col-md-3 col-md-offset-6">
+					<a href="" class="a-comentarios">
+						<img style="width:45px; height:45px;" src="iconos/02-Dashboard-Imprimir.png" />
+					</a>
+				</div>
+				<div class="col-md-3 text-rigth ">
+					<a href="" class="text-right">
+						<img style="width:45px; height:45px;" src="iconos/03-Propiedades-EdodeCuenta-DescargarXLS.png" />
+					</a>
+				</div>
+			</div>
+
+		</div>
+
+
 	</div>
 </div>
 
@@ -169,7 +223,7 @@ $(document).ready(function() {
 	$(function () {
 
 		//$('[data-toggle="tooltip"]').tooltip()
-		$(".tablesorter").tablesorter();
+		$("#tablesort-cuenta").tablesorter();
 	});
 	
 

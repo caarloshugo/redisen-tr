@@ -87,3 +87,36 @@ h2{
     border: 1px solid;
     
 }
+/*TABLAS TABLESORTER*/
+@unsortedWhite : url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAQBAMAAADQT4M0AAAAElBMVEUAAADu7u7u7u7u7u7u7u7u7u7yb344AAAABnRSTlMAMhIHKyAHBrhHAAAATElEQVQI12NgYGBSYAABQ2Ew5SgCIlkFBQOAlKKgoBADA7MgEBgwsIAoB4ZAECXKAAFQHkg9WIejoCBIv4mgoDOQYgZpAxkDNARqEQBTkAYuMZEHPgAAAABJRU5ErkJggg==);
+@sortAscWhite  : url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAQBAMAAADQT4M0AAAAHlBMVEUAAADu7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u4+jEeEAAAACXRSTlMAMwkqFV7roCD4hW+/AAAAWUlEQVQI1y3MrQ5AABSG4Xd+Rj0jiDabjKZxB6qqaarGNRh27tY5myd8b/uAeML1l2+wPqUlUd0ss+oNoZqG2rOwe15+p5iC1HNAK5IBlUjnZyIlZsxx0QAfzokSZgp96u4AAAAASUVORK5CYII=);
+@sortDescWhite : url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAQBAMAAADQT4M0AAAAJ1BMVEUAAADu7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u4RJgHSAAAADHRSTlMAMiweCQITaU7olrlu2HdvAAAAXElEQVQI12NgYGBLYAABRxEQyaooFACkmAUFDYBUoqCgGAMDiyAQODAEgShVBkMQJcwABWvOAMEphmgQtZWBZc6ZMycdGBhszpw5DJRkOnNGAaSo5wRYLXsBAwMAi4YWQHRX4F0AAAAASUVORK5CYII=);
+
+.table-regular > thead > tr > th { border:1px solid #fff; }
+thead > tr > th { 
+  color:#fff; 
+  background-color:#20353c;
+ }
+
+
+table.tablesorter thead tr .tablesorter-header {
+        /*background-image: url(../iconos/sort.gif);*/
+        
+        background-repeat: no-repeat;
+        background-position: center right;
+        cursor: pointer;
+        padding-right:10px;
+}
+
+table.tablesorter thead tr .tablesorter-headerDesc {
+        background-image: url(../iconos/desc.gif);
+        //background-repeat: no-repeat;
+        //background-position: center right;
+        
+}
+table.tablesorter thead tr .tablesorter-headerAsc {
+        background-image: url(../iconos/asc.gif);
+        //background-repeat: no-repeat;
+        //background-position: center right;
+        
+}
