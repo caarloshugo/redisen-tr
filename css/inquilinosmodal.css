@@ -96,7 +96,12 @@ h2{
 thead > tr > th { 
   color:#fff; 
   background-color:#20353c;
+  text-align: center;
  }
+ /*.table-regular > tbody > tr > td { border:1px solid #fff; }*/
+#finaltable > td {
+  border:none;
+}
 
 
 table.tablesorter thead tr .tablesorter-header {
