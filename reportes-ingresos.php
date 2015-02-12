@@ -25,13 +25,27 @@
 		<div class="col-md-12">
 			<div class="col-md-9" style="padding:20px 0 20px 0;">
 				<div class="col-md-1 ver-select">Ver: </div>
-				
+					
 				<div class="col-md-3">
 					<select name="" class="form-control box-shadow">
-						<option selected="selected">Estado de Cuenta</option>
-						<option>Ingresos</option>
-						<option>Adeudos</option>
+						<option selected="selected">Ingresos</option>
+						<option></option>
+						<option></option>
 					</select>
+				</div>
+				<div class="col-md-1 ver-select" style="padding-left:0px">de </div>
+				
+				<div class="col-md-3">		
+				<div class="col-md-12 col-md-pull-3">
+					<select name="" class="form-control box-shadow">
+						<option selected="selected">Todos</option>
+						<option>Recibos</option>
+						<option>Facturas</option>
+						<option>Todos</option>
+					</select>
+				</div>			
+					
+					
 				</div>
 				
 			</div>			
@@ -41,7 +55,7 @@
 			<div class="col-md-8 ">
 				<h4 style="padding-left:40px;">
 					<strong>
-						Casa de Monterrey en Satélite Número 1-A
+						
 					</strong>					
 				</h4>
 				
@@ -72,11 +86,12 @@
 								<tr class="text-center">									
 									<th>Folio</th>
 									<th>Fecha</th>
-									<th>Concepto</th>
-									<th></th>
-									<th>Cargo</th>
-									<th>Abono</th>
-									<th>Saldo</th>
+									<th>Inquilino</th>
+									<th>Subtotal</th>
+									<th>IVA</th>
+									<th>Ret. ISR</th>
+									<th>Ret. IVA</th>
+									<th>Total</th>
 									
 								</tr>
 							</thead>
@@ -86,113 +101,112 @@
 									<td>01</td>									
 									<td>01/01/2015</td>
 									<td style="max-width: 250px;">
-										Renta de Casa de Monterrey en Sat..., período: 01 de
-										Noviembre de 2014 a 30 de Noviembre de 2014
-									</td>
-									<td>
-										<a href="" class="a-comentarios">
-											<img src="css/images/comentarios-disabled.png" alt="Comentarios" data-toggle="tooltip" data-placement="bottom" title="Renta de casa de Monterrey, período: 01 de Noviembre de 2014 a 30 de Noviembre de 2015"/>
-										</a>
+										Daniela Alejandra Araico García
 									</td>
 									<td>
 										$50,000.00
 									</td>
 									<td>
-										
+										--
 									</td>
 									<td>
-										$50,000.00
+										--
 									</td>
+									<td>
+										--
+									</td>
+									<td>$50,000.00</td>
 								</tr>
 								<tr class="text-center">
 									
 									<td>01</td>									
 									<td>01/01/2015</td>
-									<td style="max-width: 250px;">Pago</td>
+									<td style="max-width: 250px;">Bernardo Garza Quiroga</td>
 									<td>
-										<a href="" class="a-comentarios">
-											<img src="css/images/comentarios-disabled.png" alt="Comentarios" data-toggle="tooltip" data-placement="bottom" title="Renta de casa de Monterrey, período: 01 de Noviembre de 2014 a 30 de Noviembre de 2015"/>
-										</a>
+										$50,000.00
 									</td>
 									<td>
-										
+										$8,000.00
 									</td>
 									<td>
-										$30,000.00
+										$0.00
 									</td>
 									<td>
-										$20,000.00
+										$0.00
 									</td>
+									<td>$58,000.00</td>
 								</tr>
 									<tr class="text-center ">
 									
 									<td>01</td>									
 									<td>01/02/2015</td>
 									<td style="max-width: 250px;" >
-										Renta de Casa de Monterrey, período: 01 de Diciembre
-										de 2014 a 31 de Diciembre de 2014
+										Bernardo Garza Quiroga
 									</td>
 									<td>
-										<a href="" class="a-comentarios">
-											<img src="css/images/comentarios-disabled.png" alt="Comentarios" data-toggle="tooltip" data-placement="bottom" title="Renta de casa de Monterrey, período: 01 de Noviembre de 2014 a 30 de Noviembre de 2015"/>
-										</a>
+										$10,000.00
 									</td>
 									<td>
-										$50,000.00
+										--
 									</td>
 									<td>
-										
+										--
 									</td>
 									<td>
-										$70,000.00
+										--
 									</td>
+									<td>$10,000.00</td>
 								</tr>
 									<tr class="text-center">
 									
 									<td>04</td>									
 									<td>01/03/2015</td>
 									<td style="max-width: 250px;">
-										Renta de Casa de Monterrey, período: 01 de Enero
-										de 2015 a 31 de Enero de 2015
+										Nombre Completo del Inquilino
 									</td>
 									<td>
-										<a href="" class="a-comentarios" style="oberflow:hidden">
-											<img src="css/images/comentarios-disabled.png" alt="Comentarios" data-toggle="tooltip" data-placement="bottom" title="Renta de casa de Monterrey, período: 01 de Noviembre de 2014 a 30 de Noviembre de 2015"/>
-										</a>
+										$10,000.00
 									</td>
 									<td>
-										$50,000.00
+										$1,600.00
 									</td>
 									<td>
 										
 									</td>
 									<td>
-										$120,000.00
+										$0.00
 									</td>
-								</tr>								
+									<td>$120,000.00</td>
+								</tr>
+								</tr >
+									
+								</tr>
+								
 							</tbody>
 							<tfoot>						
 						  <tr class="text-center" id="finaltable" style=" border:1px solid gray; background-color: #20353c; color: white;">									
-								<td></td>									
-									<td></td>
-									<td style="max-width: 250px;">
-										
-									</td>
-									<td>
-										
-									</td>
-									<td>
-										
-									</td>
-									<td>
-										<strong>Saldo Total:</strong>										 
-									</td>
-									<td>
-										$120,000.00
-									</td>
-							 </tr>
+								<td ></td>									
+								<td ></td>
+								<td style="max-width: 250px;" style=" border:none">
+									
+								</td>
+								<td>
+									$120,000.00
+								</td>
+								<td>
+									$9,600.00
+								</td>
+								<td>
+									$0.00
+								</td>
+								<td>
+									$0.00
+								</td>
+								<td>$129,000.00</td>
+						 </tr>
 						</tfoot>
-						</table>						
+						</table>			
+									
 					</div>
 					<!--
 					<div class="col-md-12" style=" border:1px solid gray; background-color: #20353c; color: white;">
@@ -243,7 +257,9 @@ $(document).ready(function() {
 	$(function () {
 
 		//$('[data-toggle="tooltip"]').tooltip()
-		$("#tablesort-cuenta").tablesorter();
+		$("#tablesort-cuenta").tablesorter({
+
+		});
 	});
 	
 
