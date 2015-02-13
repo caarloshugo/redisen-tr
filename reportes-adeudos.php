@@ -2,6 +2,16 @@
 
 
 <div class="col-md-12 pull-right" style="padding:50px 5px 20px 0;">
+	<div class="col-md-12 pull-right">
+		<div class="col-md-6">
+			<ol class="breadcrumb">
+				<li><a href="">Inicio</a></li>
+				<li class="active"><a href="#">Adeudos</a></li>
+				
+			</ol>
+		</div>
+	</div>
+
 	<div class="col-md-6"></div>
 	<div class="col-md-6 pull-right input-group">
 		<div class="col-md-5">
