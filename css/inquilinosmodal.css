@@ -32,6 +32,23 @@
     display: block;		    
 
 }
+.btninputtranparent{
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: right;    
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block; 
+    cursor: pointer;
+    background-color: #fff;
+    box-shadow: 1px 1px 2px #888888;
+    color: #969696;
+    
+    
+
+}
 .superradiusin {
 	border-radius: 8px;
 	-moz-border-radius: 8px;
@@ -125,3 +142,27 @@ table.tablesorter thead tr .tablesorter-headerAsc {
         background-position: center right;
         
 }
+
+.menuajusteshead {
+    margin: 0;     
+    /*color: #666;*/
+    padding-top: 40px;
+    font-size: 40px;
+    font-weight: bold ;
+    
+    /*font-family: "trebuchet ms", sans-serif;  */
+
+}
+
+.hilang {
+    margin: 15px 0 10px 0;
+
+
+}
+.hilang:hover {
+    cursor:default;
+    /*background-color: gray;*/
+    color: #1db2a4;
+
+}
+

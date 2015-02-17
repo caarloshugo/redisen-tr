@@ -507,7 +507,7 @@
 			<div class="col-md-9 section-process-form" id="section-datos-propiedad" style="padding:20px 0 0 20px; border:1x solid;">
 				
 				<div class="col-md-12" style="padding-top:20px;">
-					<div class="col-md-5 label-input-2">Nombre Completo/Razón Sociial*</div>
+					<div class="col-md-5 label-input-2">Nombre Completo/Razón Social*</div>
 					
 					<div class="col-md-7" style="margin-left: -70px;">
 						<input type="text" style="width:475px;" class="form-control col-md-2" name="nombre-razon-social-inquilino" id="nombre-razon-social-inquilino" required>
