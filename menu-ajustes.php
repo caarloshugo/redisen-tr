@@ -119,7 +119,7 @@
 
 							<div class="col-md-9" style="padding-top:30px;">
 								<label>
-									<button type="submit" class="btninputtranparent btn no-decoration pull-right" style="background-color: #1db2a4; color: white">
+									<button type="" class="btninputtranparent btn no-decoration pull-right" style="background-color: #1db2a4; color: white">
 										<span class=""> <strong> Guardar Cambios </strong> </span>
 									</button>
 								</label>
@@ -137,35 +137,33 @@
 				<div class="col-md-12" style="padding:20px 0px 60px 0px;">	<span class="menuajusteshead"> Suscripción Actual</span>
 				<div class="col-md-12">Recuerda que TengoRentas.com te regala 1 propiedad ¡de por vida!</div>	
 				</div>
-				<div class="col-md-2 OpenSansBold title-section-propiedad" style="margin-top:60px;"  >  <h3>Suscripción Actual</h3></div>
+				<!-- SUSCRIPCION ACTUAL -->
+				<div class="show" id="panel_actdatos_suscri">
+					<div class="col-md-2 OpenSansBold title-section-propiedad" style="margin-top:60px;"  >  <h3>Suscripción Actual</h3></div>
+					
 					<div class="col-md-9 section-process-form table-bordered" id="" style="padding:20px 0 0 20px; border:1x solid; border-width: 0 0 0 1px;">
 						<form class="form-horizontal" role="form">	
 							<div class="col-md-12">
-								<div class="form-group ">
-									
-										<div class="col-md-5 " style="margin-top: 15px;">Propiedades Administradas:</div>
-										<div class="col-md-7 col-md-pull-2 " style="margin-top: 30px;">1</div>
-								
-							
-										<div class="col-md-5 " style="margin-top: 15px;">Plan:</div>
-										<div class="col-md-7 col-md-pull-2 " style="margin-top: 30px;">--</div>
-							
-								
-										<div class="col-md-5 " style="margin-top: 30px;">Monto por periodo:</div>
-										<div class="col-md-7 col-md-pull-2 " style="margin-top: 30px;">$0.00/mes</div>
-							
-									
-										<div class="col-md-5 " style="margin-top: 30px;">Próximo cobro:</div>
-										<div class="col-md-7 col-md-pull-2 " style="margin-top: 30px;">--</div>
-																	
-																		
+								<div class="form-group ">		
+
+									<div class="col-md-5 " style="margin-top: 15px;">Propiedades Administradas:</div>
+									<div class="col-md-7 col-md-pull-2 " style="margin-top: 30px;">1</div>
+														
+									<div class="col-md-5 " style="margin-top: 15px;">Plan:</div>
+									<div class="col-md-7 col-md-pull-2 " style="margin-top: 30px;">--</div>
+														
+									<div class="col-md-5 " style="margin-top: 30px;">Monto por periodo:</div>
+									<div class="col-md-7 col-md-pull-2 " style="margin-top: 30px;">$0.00/mes</div>
+															
+									<div class="col-md-5 " style="margin-top: 30px;">Próximo cobro:</div>
+									<div class="col-md-7 col-md-pull-2 " style="margin-top: 30px;">--</div>
 								</div>							
 
 							</div>	
 
 							<div class="col-md-5" style="padding-top:30px;">
 								<label>
-									<button type="submit" class="btninputtranparent btn no-decoration pull-right" style="background-color: #ff9009; color: white;">
+									<button type="button" id="btn_actdatos_suscri" class="btninputtranparent btn no-decoration pull-right" style="background-color: #ff9009; color: white;">
 										<span > <strong> Actualizar </strong> </span>
 									</button>
 								</label>
@@ -173,6 +171,104 @@
 							</div>
 						</form>				
 					</div>
+				</div>
+			
+				<!-- ACTUALIZAR SUSCRIPCION -->
+				<div class="hidden" id="panel_gdatos_suscri">
+					<div class="col-md-2 OpenSansBold title-section-propiedad" style="margin-top:60px;"  >  <h3>Actualizar</h3></div>
+					
+					<div class="col-md-9 section-process-form table-bordered" id="" style="padding:20px 0 0 20px; border:1x solid; border-width: 0 0 0 1px;">
+						<form class="form-horizontal" role="form">	
+							
+								<div class="form-group col-md-7">
+									<label class="col-md-6 label-input-2" style="padding-top: 5px;" for="">Propiedades Administradas:</label>				
+									<div class="col-md-3">
+										<select class="form-control">
+											<option>3</option>
+											<option>4</option>
+											<option>5</option>
+										</select>
+									</div>
+								</div>	
+
+								<div class="form-group col-md-7">
+									<label class="col-md-6 label-input-2" style="padding-top: 5px;" for="">Plan:</label>				
+									<div class="col-md-4">
+										<select class="form-control">
+											<option>Mensual</option>
+											<option>Bimestral</option>
+											<option>Semestral</option>
+											<option>Anual</option>
+										</select>
+									</div>
+								</div>
+								
+								<div class="form-group col-md-7">
+									<label class="col-md-6 label-input-2" style="padding-top: 5px;" for="">Subtotal por periodo:</label>				
+									<div class="col-md-3 ">
+										$33.00
+									</div>
+								</div>
+
+								<div class="form-group col-md-7">
+									<label class="col-md-6 label-input-2" style="padding-top: 5px;" for="">1 propiedad gratis:</label>				
+									<div class="col-md-3 ">
+										-$11.00
+									</div>
+								</div>
+
+								<div class="form-group col-md-7">
+									<label class="col-md-6 label-input-2" style="padding-top: 5px;" for="">TOTAL Mensual:</label>				
+									<div class="col-md-3 ">
+										$22.00
+									</div>
+								</div>
+
+								<div class="form-group col-md-7">
+									<label class="col-md-6 label-input-2" style="padding-top: 5px;" for="">Próximo cobro:</label>				
+									<div class="col-md-3 ">
+										06/03/2015
+									</div>
+								</div>
+
+								<div class="form-group col-md-10">													
+									<div class="col-md-5 ">
+										<input class="form-control" id="val_cod_desc" type="text" placeholder="CODIGO PROMOCIONAL"></input>										
+									</div>
+									<div class="hidden" id="val_cod_result">
+										<div class="col-md-1 " style="padding: 5px; 0 0 0;" >
+											<img style="" id="" src="css/images/dashboard-info-tooltip-small.png" alt="" class="img-rounded">
+										</div>
+										<div class="col-md-5 " style="padding: 5px 0 0 0;">¡10% de descuento para 03/2015!</div>
+									</div>									
+								</div>
+
+								<div class="clearfix"></div>
+																						
+								<div class="col-md-3" style="margin-top:25px;">
+									<label>
+										<button type="button" id="btn_gdatos_suscri_c" class="btninputtranparent btn no-decoration btn-sm"  >
+											<span class=""> <strong> Cancelar </strong> </span>
+										</button>
+									</label>								
+								</div>
+
+								<div class="col-md-2" style="padding-top:30px; margin-top:20px;">
+									<label>
+										<button type="button" id="btn_gdatos_suscri_a" class="btninputtranparent btn no-decoration " style="background-color: #1db2a4; color: white;">
+											<span > <strong> Aceptar &gt;&gt; </strong> </span>
+										</button>
+									</label>
+									
+								</div>
+						</form>				
+					</div>
+				</div>
+				
+
+
+
+
 				</div>
 				<!-- **************************** -->
 
@@ -370,6 +466,49 @@
 <?php include 'footer2.php';?>
 <script>	
 $(function() {
+		//nav suscripciones validacion
+		$("#btn_actdatos_suscri").click(function(){
+			$("#panel_actdatos_suscri").removeClass("show");
+			$("#panel_actdatos_suscri").addClass("hidden");
+
+			$("#panel_gdatos_suscri").removeClass("hidden");
+			$("#panel_gdatos_suscri").addClass("show");
+
+		})
+
+		$("#btn_gdatos_suscri_c").click(function(){
+			$("#panel_gdatos_suscri").removeClass("show");
+			$("#panel_gdatos_suscri").addClass("hidden");
+
+			$("#panel_actdatos_suscri").removeClass("hidden");
+			$("#panel_actdatos_suscri").addClass("show");
+		})
+
+		$("#btn_gdatos_suscri_a").click(function(){
+			$("#panel_gdatos_suscri").removeClass("show");
+			$("#panel_gdatos_suscri").addClass("hidden");
+
+			$("#panel_actdatos_suscri").removeClass("hidden");
+			$("#panel_actdatos_suscri").addClass("show");
+		})
+
+		$("#val_cod_desc").keypress(function(e){
+			var cadena = $(this).val();
+			var cadenalenght =  cadena.length;
+			var tecla = e.keyCode || e.which;
+			
+
+			if (cadenalenght > 2) {
+				$("#val_cod_result").removeClass("hidden");
+				$("#val_cod_result").addClass("show");
+			}else{
+				$("#val_cod_result").removeClass("show");
+				$("#val_cod_result").addClass("hidden");
+			}
+			
+		}) 
+
+		//nav pagos validacion
 		$("#btn_gdatos_tar").click(function(){
 			$("#panel_gdatos_tar").removeClass("show");
 			$("#panel_gdatos_tar").addClass("hidden");
@@ -377,14 +516,18 @@ $(function() {
 			$("#panel_camdatos_tar").removeClass("hidden");
 			$("#panel_camdatos_tar").addClass("show");		
 			
-		})
+		});
 		$("#btn_cambdatos_tar").click(function(){
 			$("#panel_camdatos_tar").removeClass("show");
 			$("#panel_camdatos_tar").addClass("hidden");
 			$("#panel_gdatos_tar").removeClass("hidden");
 			$("#panel_gdatos_tar").addClass("show");
 			
-		})
+		});
+
+
+
+
 		
 
 	        $('#cardval').validateCreditCard(function(result) {           
