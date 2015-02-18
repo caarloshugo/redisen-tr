@@ -166,3 +166,15 @@ table.tablesorter thead tr .tablesorter-headerAsc {
 
 }
 
+/* */
+/*
+.opacity img {
+filter:alpha(opacity=50);
+-moz-opacity: 0.5;
+opacity: 0.5;}
+*/
+.imagopacabanco {
+filter:alpha(opacity= 50);
+-moz-opacity: 0.5;
+opacity: 0.5;
+}

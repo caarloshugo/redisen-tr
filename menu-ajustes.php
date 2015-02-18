@@ -49,7 +49,7 @@
 								<div class="form-group ">
 									<label class="col-md-2 label-input-2 " style="padding-top: -2px;" for="id">Correo Electrónico</label>
 									<div class="col-md-6">
-										<input class="form-control" id="" type="text" placeholder="daniela.araico@gmail.com"></input>
+										<input class="form-control" id="superprueba" type="text" placeholder="daniela.araico@gmail.com"></input>
 									</div>
 
 								</div>
@@ -184,23 +184,29 @@
 				<div class="col-md-12" style="padding:20px 0px 60px 20px;">	<span class="menuajusteshead"> Información de Pagos</span>	
 					<div class="col-md-12">Aceptamos tarjetas de crédito y débito VISA, MasterCard y American Express.</div>
 				</div>
+				<!-- INFORMACION DE PAGOS : ACTUALMENTE ESTAS PAGANDO -->
 				
 				<div class="col-md-2 text-center OpenSansBold title-section-propiedad" style="margin-top:60px; padding-left:20px;"  >  <h3>Pagos</h3></div>
 					
-					<div class="col-md-10 section-process-form table-bordered" id="" style="padding:20px 0px 0px 20px; border:1x solid; border-width: 0 0 0 1px;">
+					<div class="col-md-10 section-process-form table-bordered hidden" id="panel_gdatos_tar" style="padding:20px 0px 0px 20px; border:1x solid; border-width: 0 0 0 1px;">
 						<form class="form-horizontal" role="form">	
 							<div class="col-md-8">
-								<div class="col-md-2 "><img src="css/images/inquilinos-contacto-correo.png" alt="..." class="img-rounded"></div>
-								<div class="col-md-2 "><img src="css/images/inquilinos-contacto-correo.png" alt="..." class="img-rounded"></div>
-								<div class="col-md-2 "><img src="css/images/inquilinos-contacto-correo.png" alt="..." class="img-rounded"></div>
+								<div class="col-md-9" style="padding:0px; margin-bottom: 20px;">
+									<div class="col-md-2 "><img style="width:50px;" id="iconovisa" src="iconos/07-Pagos-visa.png" alt="..." class="img-rounded imagopacabanco"></div>
+									<div class="col-md-2 "><img style="width:50px;" id="iconomastercar"  src="iconos/07-Pagos-mastercard.png" alt="..." class="img-rounded imagopacabanco"></div>
+									<div class="col-md-2 "><img style="width:50px;" id="iconoameexpress"  src="iconos/07-Pagos-americanexpress.png" alt="..." class="img-rounded imagopacabanco"></div>
 							
+								</div>
+								
 								<div class="clearfix"></div>
 								<div class="form-group ">
 									<label class="col-md-4 label-input-2  " style="padding-top: 5px;;" for="">Número de Tarjeta</label>
-									<div class="col-md-7">
-										<input class="form-control" id="" type="text" placeholder="0000 1111 2222 3333"></input>										
+									<div class="col-md-7">										
+										<input class="form-control" id="cardval" type="text" placeholder="52MC 34AE 49VI 3333">									
 									</div>
-									<div class="col-md-1 col-md-pull-1" style="padding-left:0px;"><img src="css/images/inquilinos-contacto-correo.png" alt="..." class="glyphicon "> </div>
+									
+									<div class="col-md-1 col-md-pull-1" style="padding-left:0px;"><img src="css/images/inquilinos-contacto-correo.png" alt="..." class="glyphicon "> 
+									</div>
 								</div>
 								<div class="clearfix"></div>
 								<div class="form-group ">
@@ -231,7 +237,7 @@
 								</div>
 								<div class="form-group ">
 									<label class="col-md-4 label-input-2" style="padding-top: 0px;" for="id">CVV  <img src="iconos/02-Dashboard-InfoToolTip.png" alt="..." style="width:25px; margin-top: -4px;" class="glyphicon "> </label>
-									<div class="col-md-3">
+									<div class="col-md-3">										
 										<input class="form-control" id="" type="text" placeholder="CVV"></input>
 									</div>
 								</div>
@@ -257,14 +263,13 @@
 											<div class="col-md-5 " style="font-size:14px; padding:0px; margin-top:3px; color:#1db2a4"> <strong>$12322.00</strong> </div>
 										</div>
 								</div>
-
 							</div>
 							<div class="clearfix"></div>
 
 							<div class="col-md-11" style="margin-top:30px;">
 								<div class="col-md-6">
 									<label>
-									<button type="submit" class="btninputtranparent btn no-decoration pull-right" style="background-color:#ff9009; color:white;">
+									<button type="button" id="btn_gdatos_tar" class="btninputtranparent btn no-decoration pull-right" style="background-color:#ff9009; color:white;">
 										<span class=""> <strong> <img src="iconos/05-3StepFacturas-CandadoBotones.png" alt="..." style="width:21px; margin-top: -4px;" class="glyphicon "> Confirmar Suscripción </strong> </span>
 									</button>
 								</label>
@@ -273,8 +278,57 @@
 								
 								
 							</div>
-						</form>				
+						</form>	
 					</div>
+
+					<!-- INFORMACION DE PAGOS : ACTUALMENTE ESTAS PAGANDO -->
+						<div class="col-md-10 section-process-form table-bordered" id="panel_camdatos_tar" style="padding:20px 0px 0px 20px; border:1x solid; border-width: 0 0 0 1px;">
+						
+							<div class="col-md-8">
+								<div class="col-md-12  label-input-2" style="padding:0px; margin-bottom: 20px;">
+									Actualmente estás pagando con:
+								</div>
+
+								<div class="col-md-9" style="padding:0px; margin-bottom: 20px;" >
+									<div class="col-md-2 "><img style="width:70px;" id="iconovisa" src="iconos/07-Pagos-visa.png" alt="..." class="img-rounded"></div>
+									<div class="col-md-8 col-md-push-1  label-input-2" style="padding:0px; margin-bottom: 15px;">
+										**** **** **** 4998
+									</div>									
+								</div>
+								<div class="col-md-12  label-input-2" style="padding:0px; margin-bottom: 15px;">
+									La tarjeta vence el:
+								</div>
+								<div class="col-md-12  " style="padding:0px; margin-bottom: 10px;">
+									06/2019
+								</div>
+								
+								
+							</div>	
+
+						
+							<div class="clearfix"></div>
+
+							<div class="col-md-11" style="margin-top:30px;">
+								<div class="col-md-6">
+									<label>
+									<button id="btn_cambdatos_tar" class="btninputtranparent btn no-decoration pull-right" style="background-color:#1db2a4; color:white;">
+										<span class=""> <strong> Cambiar </strong> </span>
+									</button>
+								</label>
+
+								</div>
+								
+								
+							</div>
+									
+					</div>
+					
+				
+					
+
+
+
+
 			</div>
 				<!-- **************************** -->
 
@@ -289,6 +343,8 @@
 			<div class="col-md-12">
 				<div class="col-md-10 col-md-offset-2 label-input" style="padding:20px 20px 0 0;">* Campos Requeridos</div>
 			</div>
+			http://jquerycreditcardvalidator.com/
+			http://jquerycreditcardvalidator.com/#supported-cards
 		-->
 
 		<div class="col-md-12 menuajusteshead" style="color: #20353c">
@@ -298,26 +354,67 @@
 			<strong>¡Recomienda el sistema a todos tus amigos en tus redes sociales o por correo electrónico!</strong>
 			
 		</div>
-		<div class="col-md-12">
-			iconos sociales
+		<div class="col-md-12" style="margin-top:40px;">
+			<div class="col-md-1 "><img style="width:65px;" src="iconos/08-Ajustes-Facebook.png" alt="..." class="img-rounded"></div>
+			<div class="col-md-1 "><img style="width:65px;" src="iconos/08-Ajustes-Twitter.png" alt="..." class="img-rounded"></div>
+			<div class="col-md-1 "><img style="width:65px;" src="iconos/08-Ajustes-Gplus.png" alt="..." class="img-rounded"></div>			
+			<div class="col-md-1 "><img style="width:65px;" src="iconos/08-Ajustes-Mail.png" alt="..." class="img-rounded"></div>
 		</div>
-
-
-
 
 	</div>
 </div>
+<div class="log2">
 
+</div>
 
-<?php include 'footer.php';?>
+<?php include 'footer2.php';?>
 <script>	
+$(function() {
+		$("#btn_gdatos_tar").click(function(){
+			$("#panel_gdatos_tar").removeClass("show");
+			$("#panel_gdatos_tar").addClass("hidden");
 
-$(document).ready(function() {
-	$(function(){
+			$("#panel_camdatos_tar").removeClass("hidden");
+			$("#panel_camdatos_tar").addClass("show");		
+			
+		})
+		$("#btn_cambdatos_tar").click(function(){
+			$("#panel_camdatos_tar").removeClass("show");
+			$("#panel_camdatos_tar").addClass("hidden");
+			$("#panel_gdatos_tar").removeClass("hidden");
+			$("#panel_gdatos_tar").addClass("show");
+			
+		})
+		
 
+	        $('#cardval').validateCreditCard(function(result) {           
+	            if (result.card_type != null) {
+	            	if (result.card_type.name == "mastercard") {
+	            		 $("#iconomastercar").removeClass("imagopacabanco");
+	            	};
+	            	if (result.card_type.name == "visa") {
+	            		 $("#iconovisa").removeClass("imagopacabanco");
+	            	};
+	            	if (result.card_type.name == "amex") {
+	            		 $("#iconoameexpress").removeClass("imagopacabanco");
+	            	};                
+            }else{
+            	$("#iconomastercar").addClass("imagopacabanco");
+            	$("#iconovisa").addClass("imagopacabanco");
+            	$("#iconoameexpress").addClass("imagopacabanco");
+                //errorninguno  
+            }
+               
+             /*
+            $('.log').html(
+                'Card type: ' + (result.card_type == null ? '-' : result.card_type.name)
+                     + '<br>Valid: ' + result.valid
+                     + '<br>Length valid: ' + result.length_valid
+                     + '<br>Luhn valid: ' + result.luhn_valid);
+            */
 
-	});
-});
+	        });
+    	});
 
 
 

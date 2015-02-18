@@ -21,8 +21,11 @@
 		<link href="css/dashboard.css" rel="stylesheet">
 
 		<link href="css/inquilinosmodal.css" rel="stylesheet">
+
 		<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+		<script src="js/jquery.creditCardValidator.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>
@@ -36,7 +39,7 @@
 			<div class="col-md-6">
 				<div class="navbar-header">
 					<a class="" href="/">
-						<img src="css/images/menu-logo.png" title="TengoRentas.com" alt="TengoRentas.com" />
+						<img src="css/images/menu-logor.png" title="TengoRentas.com" alt="TengoRentas.com" />
 					</a>
 				</div>
 			</div>
