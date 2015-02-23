@@ -226,8 +226,7 @@
 			$("#section-step-1").removeClass("step-inactive").addClass("step-active");
 			$("#section-step-2").removeClass("step-active").addClass("step-inactive");
 			$("#section-step-3").removeClass("step-active").addClass("step-inactive");
-		});
-		
+		});		
 		
 		/* Save and exit*/
 		$('#save-and-exit').click(function() {
