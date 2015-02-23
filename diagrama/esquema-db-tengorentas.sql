@@ -6,21 +6,11 @@ SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
 
 -- -----------------------------------------------------
--- Schema mydb
+-- Table `propiedad`
 -- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `mydb` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci ;
--- -----------------------------------------------------
--- Schema posesio_app_user_
--- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `posesio_app_user_` DEFAULT CHARACTER SET utf8 ;
-USE `mydb` ;
+DROP TABLE IF EXISTS `propiedad` ;
 
--- -----------------------------------------------------
--- Table `mydb`.`propiedad`
--- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`propiedad` ;
-
-CREATE TABLE IF NOT EXISTS `mydb`.`propiedad` (
+CREATE TABLE IF NOT EXISTS `propiedad` (
   `id_propiedad` INT NOT NULL AUTO_INCREMENT,
   `ruta_foto` VARCHAR(255) NULL DEFAULT NULL,
   `nickname` VARCHAR(255) NOT NULL,
@@ -50,11 +40,11 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`contacto`
+-- Table `contacto`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`contacto` ;
+DROP TABLE IF EXISTS `contacto` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`contacto` (
+CREATE TABLE IF NOT EXISTS `contacto` (
   `id_contacto` BIGINT NOT NULL AUTO_INCREMENT,
   `nombre` VARCHAR(255) NULL DEFAULT NULL,
   `apellido_paterno` VARCHAR(255) NULL DEFAULT NULL,
@@ -86,11 +76,11 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`contrato`
+-- Table `contrato`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`contrato` ;
+DROP TABLE IF EXISTS `contrato` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`contrato` (
+CREATE TABLE IF NOT EXISTS `contrato` (
   `id_contrato` INT NOT NULL AUTO_INCREMENT,
   `propiedad_id_propiedad` INT NOT NULL,
   `contacto_id_contacto` BIGINT NOT NULL,
@@ -121,28 +111,28 @@ CREATE TABLE IF NOT EXISTS `mydb`.`contrato` (
   INDEX `fk_contrato_contacto2_idx` (`id_fiador` ASC),
   CONSTRAINT `fk_contrato_propiedad1`
     FOREIGN KEY (`propiedad_id_propiedad`)
-    REFERENCES `mydb`.`propiedad` (`id_propiedad`)
+    REFERENCES `propiedad` (`id_propiedad`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_contrato_contacto1`
     FOREIGN KEY (`contacto_id_contacto`)
-    REFERENCES `mydb`.`contacto` (`id_contacto`)
+    REFERENCES `contacto` (`id_contacto`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_contrato_contacto2`
     FOREIGN KEY (`id_fiador`)
-    REFERENCES `mydb`.`contacto` (`id_contacto`)
+    REFERENCES `contacto` (`id_contacto`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`datos_fiscales`
+-- Table `datos_fiscales`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`datos_fiscales` ;
+DROP TABLE IF EXISTS `datos_fiscales` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`datos_fiscales` (
+CREATE TABLE IF NOT EXISTS `datos_fiscales` (
   `id_datos_fiscales` BIGINT NOT NULL AUTO_INCREMENT,
   `ruta_logo` VARCHAR(255) NULL DEFAULT NULL,
   `persona` VARCHAR(10) NULL DEFAULT NULL,
@@ -165,11 +155,11 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`recibo`
+-- Table `recibo`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`recibo` ;
+DROP TABLE IF EXISTS `recibo` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`recibo` (
+CREATE TABLE IF NOT EXISTS `recibo` (
   `id_recibo` INT NOT NULL AUTO_INCREMENT,
   `contrato_id_contrato` INT NOT NULL,
   `contrato_propiedad_id_propiedad` INT NOT NULL,
@@ -196,18 +186,18 @@ CREATE TABLE IF NOT EXISTS `mydb`.`recibo` (
   INDEX `fk_pago_contrato1_idx` (`contrato_id_contrato` ASC, `contrato_propiedad_id_propiedad` ASC, `contrato_contacto_id_contacto` ASC),
   CONSTRAINT `fk_pago_contrato1`
     FOREIGN KEY (`contrato_id_contrato` , `contrato_propiedad_id_propiedad` , `contrato_contacto_id_contacto`)
-    REFERENCES `mydb`.`contrato` (`id_contrato` , `propiedad_id_propiedad` , `contacto_id_contacto`)
+    REFERENCES `contrato` (`id_contrato` , `propiedad_id_propiedad` , `contacto_id_contacto`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`concepto`
+-- Table `concepto`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`concepto` ;
+DROP TABLE IF EXISTS `concepto` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`concepto` (
+CREATE TABLE IF NOT EXISTS `concepto` (
   `id_concepto` INT NOT NULL AUTO_INCREMENT,
   `recibo_id_recibo` INT NOT NULL,
   `recibo_contrato_id_contrato` INT NOT NULL,
@@ -219,18 +209,18 @@ CREATE TABLE IF NOT EXISTS `mydb`.`concepto` (
   INDEX `fk_concepto_recibo1` (`recibo_id_recibo` ASC, `recibo_contrato_id_contrato` ASC, `recibo_contrato_propiedad_id_propiedad` ASC, `recibo_contrato_contacto_id_contacto` ASC),
   CONSTRAINT `fk_concepto_recibo1`
     FOREIGN KEY (`recibo_id_recibo` , `recibo_contrato_id_contrato` , `recibo_contrato_propiedad_id_propiedad` , `recibo_contrato_contacto_id_contacto`)
-    REFERENCES `mydb`.`recibo` (`id_recibo` , `contrato_id_contrato` , `contrato_propiedad_id_propiedad` , `contrato_contacto_id_contacto`)
+    REFERENCES `recibo` (`id_recibo` , `contrato_id_contrato` , `contrato_propiedad_id_propiedad` , `contrato_contacto_id_contacto`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`factura`
+-- Table `factura`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`factura` ;
+DROP TABLE IF EXISTS `factura` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`factura` (
+CREATE TABLE IF NOT EXISTS `factura` (
   `recibo_id_recibo` INT NOT NULL,
   `recibo_contrato_id_contrato` INT NOT NULL,
   `recibo_contrato_propiedad_id_propiedad` INT NOT NULL,
@@ -249,18 +239,18 @@ CREATE TABLE IF NOT EXISTS `mydb`.`factura` (
   PRIMARY KEY (`recibo_id_recibo`, `recibo_contrato_id_contrato`, `recibo_contrato_propiedad_id_propiedad`, `recibo_contrato_contacto_id_contacto`, `id_factura`),
   CONSTRAINT `fk_factura_recibo1`
     FOREIGN KEY (`recibo_id_recibo` , `recibo_contrato_id_contrato` , `recibo_contrato_propiedad_id_propiedad` , `recibo_contrato_contacto_id_contacto`)
-    REFERENCES `mydb`.`recibo` (`id_recibo` , `contrato_id_contrato` , `contrato_propiedad_id_propiedad` , `contrato_contacto_id_contacto`)
+    REFERENCES `recibo` (`id_recibo` , `contrato_id_contrato` , `contrato_propiedad_id_propiedad` , `contrato_contacto_id_contacto`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`pago`
+-- Table `pago`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`pago` ;
+DROP TABLE IF EXISTS `pago` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`pago` (
+CREATE TABLE IF NOT EXISTS `pago` (
   `id_pago` BIGINT NOT NULL AUTO_INCREMENT,
   `recibo_id_recibo` INT NULL DEFAULT NULL,
   `recibo_contrato_id_contrato` INT NOT NULL,
@@ -276,18 +266,18 @@ CREATE TABLE IF NOT EXISTS `mydb`.`pago` (
   INDEX `fk_pago_recibo1` (`recibo_id_recibo` ASC, `recibo_contrato_id_contrato` ASC, `recibo_contrato_propiedad_id_propiedad` ASC, `recibo_contrato_contacto_id_contacto` ASC),
   CONSTRAINT `fk_pago_recibo1`
     FOREIGN KEY (`recibo_id_recibo` , `recibo_contrato_id_contrato` , `recibo_contrato_propiedad_id_propiedad` , `recibo_contrato_contacto_id_contacto`)
-    REFERENCES `mydb`.`recibo` (`id_recibo` , `contrato_id_contrato` , `contrato_propiedad_id_propiedad` , `contrato_contacto_id_contacto`)
+    REFERENCES `recibo` (`id_recibo` , `contrato_id_contrato` , `contrato_propiedad_id_propiedad` , `contrato_contacto_id_contacto`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`duenos`
+-- Table `duenos`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`duenos` ;
+DROP TABLE IF EXISTS `duenos` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`duenos` (
+CREATE TABLE IF NOT EXISTS `duenos` (
   `id_dueno` BIGINT NOT NULL AUTO_INCREMENT,
   `persona` VARCHAR(10) NULL DEFAULT NULL,
   `razon_social` VARCHAR(255) NULL DEFAULT NULL,
@@ -309,11 +299,11 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`usuario`
+-- Table `usuario`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`usuario` ;
+DROP TABLE IF EXISTS `usuario` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`usuario` (
+CREATE TABLE IF NOT EXISTS `usuario` (
   `id_usuario` INT NOT NULL AUTO_INCREMENT,
   `email` VARBINARY(255) NOT NULL,
   `password` VARBINARY(255) NOT NULL,
@@ -332,11 +322,11 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`paquete`
+-- Table `paquete`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`paquete` ;
+DROP TABLE IF EXISTS `paquete` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`paquete` (
+CREATE TABLE IF NOT EXISTS `paquete` (
   `id_paquete` INT NOT NULL AUTO_INCREMENT,
   `nombre` VARCHAR(100) NOT NULL,
   `total_propiedades` INT NOT NULL,
@@ -351,11 +341,11 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`ci_sessions`
+-- Table `ci_sessions`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`ci_sessions` ;
+DROP TABLE IF EXISTS `ci_sessions` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`ci_sessions` (
+CREATE TABLE IF NOT EXISTS `ci_sessions` (
   `session_id` VARCHAR(40) NOT NULL DEFAULT '0',
   `ip_address` VARCHAR(45) NOT NULL DEFAULT '0',
   `user_agent` VARCHAR(120) NOT NULL,
@@ -366,11 +356,11 @@ CREATE TABLE IF NOT EXISTS `mydb`.`ci_sessions` (
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`usuario_has_paquete`
+-- Table `usuario_has_paquete`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`usuario_has_paquete` ;
+DROP TABLE IF EXISTS `usuario_has_paquete` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`usuario_has_paquete` (
+CREATE TABLE IF NOT EXISTS `usuario_has_paquete` (
   `usuario_id_usuario` INT NOT NULL,
   `paquete_id_paquete` INT NOT NULL,
   `fecha_reg` DATETIME NOT NULL,
@@ -382,12 +372,12 @@ CREATE TABLE IF NOT EXISTS `mydb`.`usuario_has_paquete` (
   INDEX `fk_usuario_has_paquete_usuario_idx` (`usuario_id_usuario` ASC),
   CONSTRAINT `fk_usuario_has_paquete_usuario`
     FOREIGN KEY (`usuario_id_usuario`)
-    REFERENCES `mydb`.`usuario` (`id_usuario`)
+    REFERENCES `usuario` (`id_usuario`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_usuario_has_paquete_paquete1`
     FOREIGN KEY (`paquete_id_paquete`)
-    REFERENCES `mydb`.`paquete` (`id_paquete`)
+    REFERENCES `paquete` (`id_paquete`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
@@ -395,11 +385,11 @@ ENGINE = InnoDB;
 USE `posesio_app_user_` ;
 
 -- -----------------------------------------------------
--- Table `posesio_app_user_`.`usuario`
+-- Table `usuario`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `posesio_app_user_`.`usuario` ;
+DROP TABLE IF EXISTS `usuario` ;
 
-CREATE TABLE IF NOT EXISTS `posesio_app_user_`.`usuario` (
+CREATE TABLE IF NOT EXISTS `usuario` (
   `id_usuario` INT NOT NULL AUTO_INCREMENT,
   `email` VARBINARY(255) NOT NULL,
   `password` VARBINARY(255) NOT NULL,
@@ -418,11 +408,11 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `posesio_app_user_`.`paquete`
+-- Table `paquete`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `posesio_app_user_`.`paquete` ;
+DROP TABLE IF EXISTS `paquete` ;
 
-CREATE TABLE IF NOT EXISTS `posesio_app_user_`.`paquete` (
+CREATE TABLE IF NOT EXISTS `paquete` (
   `id_paquete` INT NOT NULL AUTO_INCREMENT,
   `nombre` VARCHAR(100) NOT NULL,
   `total_propiedades` INT NOT NULL,
@@ -437,11 +427,11 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `posesio_app_user_`.`ci_sessions`
+-- Table `ci_sessions`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `posesio_app_user_`.`ci_sessions` ;
+DROP TABLE IF EXISTS `ci_sessions` ;
 
-CREATE TABLE IF NOT EXISTS `posesio_app_user_`.`ci_sessions` (
+CREATE TABLE IF NOT EXISTS `ci_sessions` (
   `session_id` VARCHAR(40) NOT NULL DEFAULT '0',
   `ip_address` VARCHAR(45) NOT NULL DEFAULT '0',
   `user_agent` VARCHAR(120) NOT NULL,
@@ -452,11 +442,11 @@ CREATE TABLE IF NOT EXISTS `posesio_app_user_`.`ci_sessions` (
 
 
 -- -----------------------------------------------------
--- Table `posesio_app_user_`.`usuario_has_paquete`
+-- Table `usuario_has_paquete`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `posesio_app_user_`.`usuario_has_paquete` ;
+DROP TABLE IF EXISTS `usuario_has_paquete` ;
 
-CREATE TABLE IF NOT EXISTS `posesio_app_user_`.`usuario_has_paquete` (
+CREATE TABLE IF NOT EXISTS `usuario_has_paquete` (
   `usuario_id_usuario` INT NOT NULL,
   `paquete_id_paquete` INT NOT NULL,
   `fecha_reg` DATETIME NOT NULL,
@@ -468,23 +458,23 @@ CREATE TABLE IF NOT EXISTS `posesio_app_user_`.`usuario_has_paquete` (
   INDEX `fk_usuario_has_paquete_usuario_idx` (`usuario_id_usuario` ASC),
   CONSTRAINT `fk_usuario_has_paquete_usuario`
     FOREIGN KEY (`usuario_id_usuario`)
-    REFERENCES `posesio_app_user_`.`usuario` (`id_usuario`)
+    REFERENCES `usuario` (`id_usuario`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_usuario_has_paquete_paquete1`
     FOREIGN KEY (`paquete_id_paquete`)
-    REFERENCES `posesio_app_user_`.`paquete` (`id_paquete`)
+    REFERENCES `paquete` (`id_paquete`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `posesio_app_user_`.`propiedad`
+-- Table `propiedad`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `posesio_app_user_`.`propiedad` ;
+DROP TABLE IF EXISTS `propiedad` ;
 
-CREATE TABLE IF NOT EXISTS `posesio_app_user_`.`propiedad` (
+CREATE TABLE IF NOT EXISTS `propiedad` (
   `id_propiedad` INT NOT NULL AUTO_INCREMENT,
   `usuario_id_usuario` INT NOT NULL,
   `ruta_foto` VARCHAR(255) NULL DEFAULT NULL,
@@ -514,18 +504,18 @@ CREATE TABLE IF NOT EXISTS `posesio_app_user_`.`propiedad` (
   INDEX `fk_propiedad_usuario1_idx` (`usuario_id_usuario` ASC),
   CONSTRAINT `fk_propiedad_usuario1`
     FOREIGN KEY (`usuario_id_usuario`)
-    REFERENCES `posesio_app_user_`.`usuario` (`id_usuario`)
+    REFERENCES `usuario` (`id_usuario`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `posesio_app_user_`.`contacto`
+-- Table `contacto`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `posesio_app_user_`.`contacto` ;
+DROP TABLE IF EXISTS `contacto` ;
 
-CREATE TABLE IF NOT EXISTS `posesio_app_user_`.`contacto` (
+CREATE TABLE IF NOT EXISTS `contacto` (
   `id_contacto` BIGINT NOT NULL AUTO_INCREMENT,
   `usuario_id_usuario` INT NOT NULL,
   `nombre` VARCHAR(255) NULL DEFAULT NULL,
@@ -557,18 +547,18 @@ CREATE TABLE IF NOT EXISTS `posesio_app_user_`.`contacto` (
   INDEX `fk_contacto_usuario1_idx` (`usuario_id_usuario` ASC),
   CONSTRAINT `fk_contacto_usuario1`
     FOREIGN KEY (`usuario_id_usuario`)
-    REFERENCES `posesio_app_user_`.`usuario` (`id_usuario`)
+    REFERENCES `usuario` (`id_usuario`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `posesio_app_user_`.`contrato`
+-- Table `contrato`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `posesio_app_user_`.`contrato` ;
+DROP TABLE IF EXISTS `contrato` ;
 
-CREATE TABLE IF NOT EXISTS `posesio_app_user_`.`contrato` (
+CREATE TABLE IF NOT EXISTS `contrato` (
   `id_contrato` INT NOT NULL AUTO_INCREMENT,
   `usuario_id_usuario` INT NOT NULL,
   `propiedad_id_propiedad` INT NOT NULL,
@@ -601,33 +591,33 @@ CREATE TABLE IF NOT EXISTS `posesio_app_user_`.`contrato` (
   INDEX `fk_contrato_usuario1_idx` (`usuario_id_usuario` ASC),
   CONSTRAINT `fk_contrato_propiedad1`
     FOREIGN KEY (`propiedad_id_propiedad`)
-    REFERENCES `posesio_app_user_`.`propiedad` (`id_propiedad`)
+    REFERENCES `propiedad` (`id_propiedad`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_contrato_contacto1`
     FOREIGN KEY (`contacto_id_contacto`)
-    REFERENCES `posesio_app_user_`.`contacto` (`id_contacto`)
+    REFERENCES `contacto` (`id_contacto`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_contrato_contacto2`
     FOREIGN KEY (`id_fiador`)
-    REFERENCES `posesio_app_user_`.`contacto` (`id_contacto`)
+    REFERENCES `contacto` (`id_contacto`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_contrato_usuario1`
     FOREIGN KEY (`usuario_id_usuario`)
-    REFERENCES `posesio_app_user_`.`usuario` (`id_usuario`)
+    REFERENCES `usuario` (`id_usuario`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `posesio_app_user_`.`datos_fiscales`
+-- Table `datos_fiscales`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `posesio_app_user_`.`datos_fiscales` ;
+DROP TABLE IF EXISTS `datos_fiscales` ;
 
-CREATE TABLE IF NOT EXISTS `posesio_app_user_`.`datos_fiscales` (
+CREATE TABLE IF NOT EXISTS `datos_fiscales` (
   `id_datos_fiscales` BIGINT NOT NULL AUTO_INCREMENT,
   `usuario_id_usuario` INT NOT NULL,
   `ruta_logo` VARCHAR(255) NULL DEFAULT NULL,
@@ -649,18 +639,18 @@ CREATE TABLE IF NOT EXISTS `posesio_app_user_`.`datos_fiscales` (
   PRIMARY KEY (`id_datos_fiscales`),
   CONSTRAINT `fk_datos_fiscales_usuario1`
     FOREIGN KEY (`id_datos_fiscales`)
-    REFERENCES `posesio_app_user_`.`usuario` (`id_usuario`)
+    REFERENCES `usuario` (`id_usuario`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `posesio_app_user_`.`recibo`
+-- Table `recibo`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `posesio_app_user_`.`recibo` ;
+DROP TABLE IF EXISTS `recibo` ;
 
-CREATE TABLE IF NOT EXISTS `posesio_app_user_`.`recibo` (
+CREATE TABLE IF NOT EXISTS `recibo` (
   `id_recibo` INT NOT NULL AUTO_INCREMENT,
   `usuario_id_usuario` INT NOT NULL,
   `contrato_id_contrato` INT NOT NULL,
@@ -689,23 +679,23 @@ CREATE TABLE IF NOT EXISTS `posesio_app_user_`.`recibo` (
   INDEX `fk_recibo_usuario1_idx` (`usuario_id_usuario` ASC),
   CONSTRAINT `fk_pago_contrato1`
     FOREIGN KEY (`contrato_id_contrato` , `contrato_propiedad_id_propiedad` , `contrato_contacto_id_contacto`)
-    REFERENCES `posesio_app_user_`.`contrato` (`id_contrato` , `propiedad_id_propiedad` , `contacto_id_contacto`)
+    REFERENCES `contrato` (`id_contrato` , `propiedad_id_propiedad` , `contacto_id_contacto`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_recibo_usuario1`
     FOREIGN KEY (`usuario_id_usuario`)
-    REFERENCES `posesio_app_user_`.`usuario` (`id_usuario`)
+    REFERENCES `usuario` (`id_usuario`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `posesio_app_user_`.`concepto`
+-- Table `concepto`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `posesio_app_user_`.`concepto` ;
+DROP TABLE IF EXISTS `concepto` ;
 
-CREATE TABLE IF NOT EXISTS `posesio_app_user_`.`concepto` (
+CREATE TABLE IF NOT EXISTS `concepto` (
   `id_concepto` INT NOT NULL AUTO_INCREMENT,
   `usuario_id_usuario` INT NOT NULL,
   `recibo_id_recibo` INT NOT NULL,
@@ -719,23 +709,23 @@ CREATE TABLE IF NOT EXISTS `posesio_app_user_`.`concepto` (
   INDEX `fk_concepto_usuario1_idx` (`usuario_id_usuario` ASC),
   CONSTRAINT `fk_concepto_recibo1`
     FOREIGN KEY (`recibo_id_recibo` , `recibo_contrato_id_contrato` , `recibo_contrato_propiedad_id_propiedad` , `recibo_contrato_contacto_id_contacto`)
-    REFERENCES `posesio_app_user_`.`recibo` (`id_recibo` , `contrato_id_contrato` , `contrato_propiedad_id_propiedad` , `contrato_contacto_id_contacto`)
+    REFERENCES `recibo` (`id_recibo` , `contrato_id_contrato` , `contrato_propiedad_id_propiedad` , `contrato_contacto_id_contacto`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_concepto_usuario1`
     FOREIGN KEY (`usuario_id_usuario`)
-    REFERENCES `posesio_app_user_`.`usuario` (`id_usuario`)
+    REFERENCES `usuario` (`id_usuario`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `posesio_app_user_`.`factura`
+-- Table `factura`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `posesio_app_user_`.`factura` ;
+DROP TABLE IF EXISTS `factura` ;
 
-CREATE TABLE IF NOT EXISTS `posesio_app_user_`.`factura` (
+CREATE TABLE IF NOT EXISTS `factura` (
   `recibo_id_recibo` INT NOT NULL,
   `usuario_id_usuario` INT NOT NULL,
   `recibo_contrato_id_contrato` INT NOT NULL,
@@ -756,23 +746,23 @@ CREATE TABLE IF NOT EXISTS `posesio_app_user_`.`factura` (
   INDEX `fk_factura_usuario1_idx` (`usuario_id_usuario` ASC),
   CONSTRAINT `fk_factura_recibo1`
     FOREIGN KEY (`recibo_id_recibo` , `recibo_contrato_id_contrato` , `recibo_contrato_propiedad_id_propiedad` , `recibo_contrato_contacto_id_contacto`)
-    REFERENCES `posesio_app_user_`.`recibo` (`id_recibo` , `contrato_id_contrato` , `contrato_propiedad_id_propiedad` , `contrato_contacto_id_contacto`)
+    REFERENCES `recibo` (`id_recibo` , `contrato_id_contrato` , `contrato_propiedad_id_propiedad` , `contrato_contacto_id_contacto`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_factura_usuario1`
     FOREIGN KEY (`usuario_id_usuario`)
-    REFERENCES `posesio_app_user_`.`usuario` (`id_usuario`)
+    REFERENCES `usuario` (`id_usuario`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `posesio_app_user_`.`pago`
+-- Table `pago`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `posesio_app_user_`.`pago` ;
+DROP TABLE IF EXISTS `pago` ;
 
-CREATE TABLE IF NOT EXISTS `posesio_app_user_`.`pago` (
+CREATE TABLE IF NOT EXISTS `pago` (
   `id_pago` BIGINT NOT NULL AUTO_INCREMENT,
   `usuario_id_usuario` INT NOT NULL,
   `recibo_id_recibo` INT NULL DEFAULT NULL,
@@ -790,23 +780,23 @@ CREATE TABLE IF NOT EXISTS `posesio_app_user_`.`pago` (
   INDEX `fk_pago_usuario1_idx` (`usuario_id_usuario` ASC),
   CONSTRAINT `fk_pago_recibo1`
     FOREIGN KEY (`recibo_id_recibo` , `recibo_contrato_id_contrato` , `recibo_contrato_propiedad_id_propiedad` , `recibo_contrato_contacto_id_contacto`)
-    REFERENCES `posesio_app_user_`.`recibo` (`id_recibo` , `contrato_id_contrato` , `contrato_propiedad_id_propiedad` , `contrato_contacto_id_contacto`)
+    REFERENCES `recibo` (`id_recibo` , `contrato_id_contrato` , `contrato_propiedad_id_propiedad` , `contrato_contacto_id_contacto`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_pago_usuario1`
     FOREIGN KEY (`usuario_id_usuario`)
-    REFERENCES `posesio_app_user_`.`usuario` (`id_usuario`)
+    REFERENCES `usuario` (`id_usuario`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `posesio_app_user_`.`duenos`
+-- Table `duenos`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `posesio_app_user_`.`duenos` ;
+DROP TABLE IF EXISTS `duenos` ;
 
-CREATE TABLE IF NOT EXISTS `posesio_app_user_`.`duenos` (
+CREATE TABLE IF NOT EXISTS `duenos` (
   `id_dueno` BIGINT NOT NULL AUTO_INCREMENT,
   `usuario_id_usuario` INT NOT NULL,
   `persona` VARCHAR(10) NULL DEFAULT NULL,
@@ -828,7 +818,7 @@ CREATE TABLE IF NOT EXISTS `posesio_app_user_`.`duenos` (
   INDEX `fk_duenos_usuario1_idx` (`usuario_id_usuario` ASC),
   CONSTRAINT `fk_duenos_usuario1`
     FOREIGN KEY (`usuario_id_usuario`)
-    REFERENCES `posesio_app_user_`.`usuario` (`id_usuario`)
+    REFERENCES `usuario` (`id_usuario`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
